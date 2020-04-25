@@ -40,7 +40,7 @@ foreach ( glob( dirname( __FILE__ ) . '/includes/*.php' ) as $file ) { include $
 // Enqueue CSS files.
 add_action( 'wp_enqueue_scripts', 'maitheme_enqueue_fonts' );
 function maitheme_enqueue_fonts() {
-	wp_enqueue_style( 'maitheme-google-fonts', '//fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900|Roboto:300,400,700,900&display=swap', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'maitheme-google-fonts', '//fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900|Roboto:100,300,400,500,700,900&display=swap', array(), CHILD_THEME_VERSION );
 }
 
 // Customize the site footer text.
@@ -106,6 +106,19 @@ function custom_scripts() {
 }
 	  
 	add_action( 'wp_enqueue_scripts', 'custom_scripts' );  
+
+//add home hero shortcode
+function home_hero( $attr ) {  
+    return get_template_part('template-parts/home-hero');
+}
+add_shortcode( 'insert-home-hero', 'home_hero' );
+
+//add home quote shortcode
+function home_quote( $attr ) {  
+    return get_template_part('template-parts/home-quote');
+}
+add_shortcode( 'insert-home-quote', 'home_quote' );	
+
 
 	// generic email octopus form shortcode
 	function eo_shortcode(){

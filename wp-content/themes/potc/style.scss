@@ -18,20 +18,23 @@
 
 */
 
-@import 'sass/_globals.scss';
-@import 'sass/_footer.scss';
-@import 'sass/_home.scss';
-@import 'sass/_about.scss';
-@import 'sass/_simple-social.scss';
-@import 'sass/_styled-eo.scss';
-@import 'sass/_ashley.scss';
-@import 'sass/_subpage.scss';
-@import 'sass/_404.scss';
-@import 'sass/_contact.scss';
-@import 'sass/_thank-you.scss';
-@import 'sass/_tbl.scss';
-@import 'sass/_disclosure.scss';
-@import 'sass/_privacy.scss';
-@import 'sass/_home-optin.scss';
-@import 'sass/_about-optin.scss';
-@import 'sass/_tbl-optin.scss';
+@import 'sass/globals.scss';
+@import 'sass/header.scss';
+@import 'sass/footer.scss';
+@import 'sass/home.scss';
+@import 'sass/about.scss';
+@import 'sass/simple-social.scss';
+@import 'sass/ashley.scss';
+@import 'sass/subpage.scss';
+@import 'sass/404.scss';
+@import 'sass/contact.scss';
+@import 'sass/thank-you.scss';
+@import 'sass/tbl.scss';
+@import 'sass/disclosure.scss';
+@import 'sass/privacy.scss';
+@import 'sass/shortcodes/styled-eo.scss';
+@import 'sass/shortcodes/home-optin.scss';
+@import 'sass/shortcodes/about-optin.scss';
+@import 'sass/shortcodes/tbl-optin.scss';
+@import 'sass/shortcodes/home-hero.scss';
+@import 'sass/shortcodes/home-quote.scss';

@@ -2,7 +2,8 @@
 ---------------------------------------------------------------------------------------------------- */
 /* VARIABLES  */
 $dark-green: #53beb4;
-$medium-green: #2fc3b5;
+// $medium-green: #2fc3b5;
+$medium-green: #97D8D1;
 $light-green: #def3ec;
 $blue-overlay: rgba(39, 118, 159, 0.6);
 $dark-blue:#1e88bb;
@@ -14,6 +15,7 @@ $text-color: #5f5f5f;
 $orange-overlay: rgba(255, 130, 71, .3);
 $white-overlay: rgba(255, 255, 255, .6);
 $main-transition: all 0.3s linear;
+$grey-border: rgba(0,0,0,.1);
 
 
 
@@ -39,43 +41,50 @@ h2,
 h3,
 h4,
 h5,
+h6{
+	line-height: 1.3;
+	color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6,
 .site-title a,
 .adjacent-entry-pagination a {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
+	
 }
-p:not([class])>a:not([class]) {
-    text-decoration: none;
-    border-bottom: none;
+// p:not([class])>a:not([class]) {
+//     text-decoration: none;
+//     border-bottom: none;
     
-}
-p:not([class])>a:not([class]):focus, p:not([class])>a:not([class]):hover {
-    text-decoration: none;
-    border-bottom: none;
-}
+// }
+// p:not([class])>a:not([class]):focus, p:not([class])>a:not([class]):hover {
+//     text-decoration: none;
+//     border-bottom: none;
+// }
 
-a
-/* p > a, */
-/* p:hover > a,
-p:not([class])>a:not([class]) */
-{
-    color: $dark-blue;
-    text-decoration: none !important;
+a{
+    color: $orange;
+	border-bottom: none;
+	text-decoration: underline;
     transition: $main-transition;
-    border-bottom: none;
+	
+	&:hover{
+		color: $medium-green;
+		border-bottom: none;
+		text-decoration: underline;
+	}
     
 }
-
-a:hover
-/* p:hover > a, */
-/* p > a:hover, */
-/* p:not([class])>a:not([class]):hover, */
-/* p:not([class]):hover >a:not([class]) */
-{
-    color: $dark-green;
-    border-bottom: none;
+.entry-title a:focus, .entry-title a:hover, .sidebar .widget-title a:focus, .sidebar .widget-title a:hover, .sidebar .widgettitle a:focus, .sidebar .widgettitle a:hover, a:focus, a:hover {
+    color: $medium-green;
 }
+
 
 .banner-title,
 .heading,
@@ -114,6 +123,13 @@ a:hover
 	box-shadow: 0 4px 24px rgba(0,0,0,0.025);
 }
 
+.entry.boxed:not(.has-bg-image),
+.site-title a,
+.site-title a{
+	color: $text-color;
+}
+
+
 /* ## Entry Meta
 --------------------------------------------- */
 
@@ -129,9 +145,7 @@ a:hover
 :focus{
     outline:0;
 }
-.entry-title a:focus, .entry-title a:hover, .sidebar .widget-title a:focus, .sidebar .widget-title a:hover, .sidebar .widgettitle a:focus, .sidebar .widgettitle a:hover, a:focus, a:hover {
-    color: $dark-green;
-}
+
 
 
 input, textarea, :focus{
