@@ -1,0 +1,33 @@
+{
+  "name": "potc-prod-2020-04-19",
+  "version": "1.0.0",
+  "description": "prod site",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "node-sass": "latest",
+    "onchange": "^5.2.0",
+    "postcss-cli": "latest"
+  },
+  "scripts": {
+    "build:sass": "node-sass --output-style=expanded --source-map=true style.scss style.css",
+    "prefix": "npm run build:sass && postcss style.css --use=autoprefixer --output=style.css",
+    "start": "onchange \"sass/**/*.scss\" -- npm run prefix"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "keywords": [
+    "SASS"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashley-King/potc-prod-current-20200425.git"
+  },
+  "author": "Ashley King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashley-King/potc-prod-current-20200425/issues"
+  },
+  "homepage": "https://github.com/Ashley-King/potc-prod-current-20200425#readme"
+}

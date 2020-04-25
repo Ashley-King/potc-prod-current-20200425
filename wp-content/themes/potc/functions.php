@@ -59,56 +59,35 @@ function maitheme_site_footer_text( $text ) {
 }
 
 //add body classes
-add_filter( 'body_class', 'about_body_class' );
-function about_body_class( $classes ) {
-
-	if ( is_page( 'about' ) )
-		$classes[] = 'about_page  sub_page';
-		return $classes;
-
-}
-add_filter( 'body_class', 'ashley_body_class' );
-function ashley_body_class( $classes ) {
-	if ( is_page( 'ashley-king' ) )
-		$classes[] = 'ashley_page sub_page';
-		return $classes;
-
-}
-add_filter( 'body_class', 'contact_body_class' );
-function contact_body_class( $classes ) {
-	if ( is_page( 'contact' ) )
-		$classes[] = 'contact_page sub_page';
-		return $classes;
-
-}
-
-add_filter( 'body_class', 'thankyou_body_class' );
-function thankyou_body_class( $classes ) {
-	if ( is_page( 'thank-you' ) )
+add_filter( 'body_class', 'potc_body_class' );
+function potc_body_class( $classes ) {
+	
+	if(is_page('about')){
+		$classes[] = 'sub_page about_page';
+	
+	}	
+	if(is_page('tbl')){
+		$classes[] = 'sub_page tbl_page';
+		
+	}	
+	if(is_page('contact')){
+		$classes[] = 'sub_page contact_page';
+	
+	}	
+	if(is_page('disclosure')){
+		$classes[] = 'sub_page disclosure_page';
+		
+	}
+	if(is_page('privacy-policy')){
+		$classes[] = 'sub_page privacy_page';
+		
+	}	
+	if ( is_page( 'thank-you' ) ){
 		$classes[] = 'thank-you_page sub_page';
-		return $classes;
+		
 
-}
-
-add_filter( 'body_class', 'tbl_body_class' );
-function tbl_body_class( $classes ) {
-	if ( is_page( 'tbl' ) )
-		$classes[] = 'tbl_page sub_page';
-		return $classes;
-
-}
-add_filter( 'body_class', 'disclosure_body_class' );
-function disclosure_body_class( $classes ) {
-	if ( is_page( 'disclosure' ) )
-		$classes[] = 'disclosure_page sub_page';
-		return $classes;
-
-}
-add_filter( 'body_class', 'privacy_body_class' );
-function privacy_body_class( $classes ) {
-	if ( is_page( 'privacy-policy' ) )
-		$classes[] = 'privacy_page sub_page';
-		return $classes;
+	}
+	return $classes;
 
 }
 
