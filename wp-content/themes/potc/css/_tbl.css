@@ -1,0 +1,9 @@
+.tbl_page .subpage__section__text .wrap{
+    padding-top: 0;
+}
+.tbl_page .styled__eo-form .email-octopus-form-wrapper form .email-octopus-form-row-subscribe button:hover {
+    
+    background-color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+    
+}

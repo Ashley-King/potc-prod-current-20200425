@@ -1,0 +1,73 @@
+/**
+ * Theme Name:          POTC
+ * Theme URI............https:github.com/Ashley-King
+ * Description:         A custom theme for POTC based on the awesome Mai Lifestyle Theme
+ * Author:              Ashley King / https://maitheme.com/
+ * Author URI:          https:github.com/Ashley-King
+ * Version:             1.0
+ *
+ * Template:            genesis
+ *
+ * License:             GPL-2.0+
+ * License URI:         http://www.opensource.org/licenses/gpl-license.php
+ */
+
+
+/* Styles
+
+	Imported from partials
+
+*/
+
+@import 'css/_globals.css';
+@import 'css/_footer.css';
+@import 'css/_home.css';
+@import 'css/_about.css';
+@import 'css/_simple-social.css';
+@import 'css/_styled-eo.css';
+@import 'css/_ashley.css';
+@import 'css/_subpage.css';
+@import 'css/_404.css';
+@import 'css/_contact.css';
+@import 'css/_thank-you.css';
+@import 'css/_tbl.css';
+@import 'css/_disclosure.css';
+@import 'css/_privacy.css';
+@import 'css/_home-optin.css';
+@import 'css/_about-optin.css';
+@import 'css/_tbl-optin.css';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* # Media Queries (mobile-first)
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 545px) {}
+
+@media only screen and (min-width: 769px) {}
+
+@media only screen and (min-width: 993px) {}
+
+@media only screen and (min-width: 1160px) {}
+
+/* # Media Queries (mobile-second)
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1159px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 544px) {}

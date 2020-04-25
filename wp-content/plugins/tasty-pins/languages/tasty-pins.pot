@@ -1,0 +1,296 @@
+# Copyright (C) 2020 WP Tasty
+# This file is distributed under the same license as the Tasty Pins plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tasty Pins 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tasty-pins\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-01-09T14:18:55+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: tasty-pins\n"
+
+#. Plugin Name of the plugin
+#: inc/class-admin.php:472
+msgid "Tasty Pins"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://www.wptasty.com/tasty-pins"
+msgstr ""
+
+#. Description of the plugin
+msgid "Optimize your blog’s images for Pinterest, SEO, and screenreaders."
+msgstr ""
+
+#. Author of the plugin
+msgid "WP Tasty"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.wptasty.com"
+msgstr ""
+
+#: inc/class-admin.php:187
+msgid "Convert Pinterest Images from Social Warfare to Tasty Pins"
+msgstr ""
+
+#: inc/class-admin.php:188
+msgid "About Tasty Pins"
+msgstr ""
+
+#: inc/class-admin.php:214
+msgid "Tasty Pins is almost ready"
+msgstr ""
+
+#: inc/class-admin.php:214
+msgid "enter your license key to continue"
+msgstr ""
+
+#: inc/class-admin.php:216
+#: inc/class-admin.php:266
+msgid "Save license key"
+msgstr ""
+
+#: inc/class-admin.php:219
+msgid "Don't have a Tasty Pins license yet?"
+msgstr ""
+
+#: inc/class-admin.php:219
+msgid "Get one in just a few minutes time"
+msgstr ""
+
+#: inc/class-admin.php:219
+msgid "and report back once you've gotten your license key"
+msgstr ""
+
+#: inc/class-admin.php:264
+msgid "To enable updates and support for Tasty Pins"
+msgstr ""
+
+#: inc/class-admin.php:264
+msgid "enter a valid license key"
+msgstr ""
+
+#: inc/class-admin.php:269
+msgid "Think you've reached this message in error?"
+msgstr ""
+
+#: inc/class-admin.php:269
+msgid "Submit a support ticket"
+msgstr ""
+
+#: inc/class-admin.php:269
+msgid "and we'll do our best to help out."
+msgstr ""
+
+#: inc/class-admin.php:329
+msgid "Remove license"
+msgstr ""
+
+#: inc/class-admin.php:361
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: inc/class-admin.php:380
+msgid "Sorry, you don't have permission to do this."
+msgstr ""
+
+#: inc/class-admin.php:396
+msgid ""
+"Social Warfare Pinterest Images were detected. If you'd like, use the button below to convert these over to Tasty Pins.\n"
+"\n"
+"This will migrate Pinterest descriptions and hidden images to use Tasty Pins functionality. Existing Social Warfare data will not be altered."
+msgstr ""
+
+#: inc/class-admin.php:401
+#: inc/class-admin.php:410
+msgid "Convert Pinterest images"
+msgstr ""
+
+#: inc/class-admin.php:405
+msgid "Converting Social Warfare Pinterest images. Leave this window open until the conversion is complete."
+msgstr ""
+
+#: inc/class-admin.php:412
+msgid "Social Warfare Pinterest image conversion complete. Feel free to navigate to a different page."
+msgstr ""
+
+#: inc/class-admin.php:424
+msgid "No conversion needed; either no Social Warfare Pinterest images were found, or they have already been converted."
+msgstr ""
+
+#: inc/class-admin.php:488
+msgid "Pinterest hidden images"
+msgstr ""
+
+#: inc/class-admin.php:492
+msgid "Force pinning of first hidden image"
+msgstr ""
+
+#: inc/class-admin.php:500
+msgid "Pinterest Hidden Images"
+msgstr ""
+
+#: inc/class-admin.php:500
+msgid "Select Images"
+msgstr ""
+
+#: inc/class-admin.php:517
+msgid "Default Pinterest Title"
+msgstr ""
+
+#: inc/class-admin.php:519
+msgid "Default Pinterest Title will be applied to any images in the content that do not have a Pinterest Title set. If no Default Pinterest Title is provided, the post title will be used. If a hidden image is forced, the hidden image's Pinterest Title will be used instead."
+msgstr ""
+
+#: inc/class-admin.php:519
+#: inc/class-admin.php:526
+msgid "Learn more."
+msgstr ""
+
+#: inc/class-admin.php:524
+msgid "Default Pinterest Text"
+msgstr ""
+
+#: inc/class-admin.php:526
+msgid "Default Pinterest Text will be applied to any images in the content that do not have a Pinterest Text set. If a hidden image is forced, the hidden image's Pinterest Text will be used instead."
+msgstr ""
+
+#: inc/class-updater.php:240
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: inc/class-updater.php:248
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr ""
+
+#: inc/class-updater.php:491
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: inc/class-updater.php:491
+msgid "Error"
+msgstr ""
+
+#. translators: The ID for the post.
+#: inc/converters/class-social-warfare.php:75
+msgid "No post found for post id %d"
+msgstr ""
+
+#. Translators: post id, edit post link.
+#: inc/converters/class-social-warfare.php:103
+msgid "The image in post %1$d could not be found. Convert manually by <a href=\"%2$s\">editing the post</a>."
+msgstr ""
+
+#: templates/about.php:53
+msgid "Welcome to Tasty Pins! 🎉"
+msgstr ""
+
+#: templates/about.php:57
+msgid "Tasty Pins is a Pinterest optimization plugin for WordPress websites. By purchasing Tasty Pins, you're getting access to amazing Pinterest tools for your images, superior code quality, and a helpful support team ready to answer all your questions."
+msgstr ""
+
+#: templates/about.php:59
+msgid "Getting Started"
+msgstr ""
+
+#: templates/about.php:61
+msgid "Tasty Pins doesn't require any sort of configuration - it just works! The magic happens in your posts, where you can add extra information to your images to help your content stand out on Pinterest."
+msgstr ""
+
+#: templates/about.php:67
+msgid "Add Pinterest Descriptions"
+msgstr ""
+
+#: templates/about.php:71
+msgid "Tasty Pins enables you to set a Pinterest Description for your images separate from the alt text. This means that you can use your alt text for what it's intended - describing the image for screen readers and search results - while still providing an optimized description for Pinterest."
+msgstr ""
+
+#. translators: "adding Pinterest text to your images" and "writing great Pinterest descriptions".
+#. translators: "adding hidden images" and "force-pinning hidden images".
+#: templates/about.php:77
+#: templates/about.php:125
+msgid "Learn more about %1$s and %2$s."
+msgstr ""
+
+#: templates/about.php:80
+msgid "adding Pinterest Text to your images"
+msgstr ""
+
+#: templates/about.php:84
+msgid "writing great Pinterest descriptions"
+msgstr ""
+
+#: templates/about.php:90
+msgid "Grow Your Pin Repin Count"
+msgstr ""
+
+#: templates/about.php:92
+msgid "The number of Repins (or saves) an image has on Pinterest is a type of \"ranking signal\" for Pinterest searches. Pins with higher numbers of repins show up in search more frequently."
+msgstr ""
+
+#: templates/about.php:94
+msgid "With Tasty Pins, you can add a Repin ID to your images to help boost the number of repins for images already on Pinterest."
+msgstr ""
+
+#. translators: "Pinterest Repins".
+#: templates/about.php:100
+msgid "Learn more about %1$s and how to make them work for you."
+msgstr ""
+
+#: templates/about.php:103
+msgid "Pinterest Repins"
+msgstr ""
+
+#: templates/about.php:113
+msgid "Add Hidden Images"
+msgstr ""
+
+#: templates/about.php:117
+msgid "Some images are great for Pinterest, but they don't look that great on your site. Add these as Hidden Images to your page and they'll appear as an option when readers go to save your content to Pinterest."
+msgstr ""
+
+#: templates/about.php:119
+msgid "Better yet, check the \"force-pin\" box and any image in the content will automatically use this hidden image when it's saved to Pinterest."
+msgstr ""
+
+#: templates/about.php:128
+msgid "adding hidden images"
+msgstr ""
+
+#: templates/about.php:132
+msgid "force-pinning hidden images"
+msgstr ""
+
+#: templates/about.php:142
+msgid "Visit Our Documentation"
+msgstr ""
+
+#: templates/about.php:144
+msgid "There's even more to Tasty Pins! To learn more and get answers to your questions, visit our plugin documentation. If your questions aren't answered there, send us a quick chat and we'll be happy to help."
+msgstr ""
+
+#: templates/about.php:146
+msgid "Visit Documentation"
+msgstr ""
+
+#: assets/block-editor/image-block-fields.js:89
+msgid "Pinterest Title"
+msgstr ""
+
+#: assets/block-editor/image-block-fields.js:94
+msgid "Pinterest Text"
+msgstr ""
+
+#: assets/block-editor/image-block-fields.js:100
+msgid "Pinterest Repin ID"
+msgstr ""
+
+#: assets/block-editor/image-block-fields.js:105
+msgid "Disable Pinning"
+msgstr ""

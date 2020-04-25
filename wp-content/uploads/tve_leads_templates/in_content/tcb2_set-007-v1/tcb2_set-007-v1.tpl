@@ -1,0 +1,18 @@
+<div class="thrv-leads-form-box tve_no_drag tve_no_icons thrv_wrapper tve_editor_main_content thrv-leads-in-content tve_empty_dropzone" style="" data-css="tve-u-15e1aedcf84"><div class="thrv_wrapper thrv-columns" style="" data-css="tve-u-15e1aed9543"><div class="tcb-flex-row tcb-resized tcb--cols--2" data-css="tve-u-15e1aed9820"><div class="tcb-flex-col" data-css="tve-u-15e1aebb6cd" style=""><div class="tcb-col tve_empty_dropzone" style="" data-css="tve-u-15e1aee4fb4"><div class="thrv_wrapper thrv-columns" style="" data-css="tve-u-15e1aed7ff8"><div class="tcb-flex-row tcb-resized tcb--cols--2" data-css="tve-u-15e1aed7c24"><div class="tcb-flex-col" data-css="tve-u-15e1aed539d" style=""><div class="tcb-col tve_empty_dropzone" style="" data-css="tve-u-15e1af63150"><div class="thrv_wrapper tve_image_caption tcb-mobile-hidden" data-css="tve-u-15e1aec3d9f" style=""><span class="tve_image_frame" style="width: 100%;"><img class="tve_image wp-image-2414" alt="" width="251" height="506" title="set7_phone" data-id="2414" src="{tve_leads_base_url}/images/set7_phone.png" style="width: 100%;"></span></div></div></div><div class="tcb-flex-col" data-css="tve-u-15e1aed539f" style=""><div class="tcb-col tve_empty_dropzone" style="" data-css="tve-u-15e1af60094"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style=""><p data-default="Enter your text here..." data-css="tve-u-15e1af27b10">FIND <strong><span style="color: rgb(144, 179, 72);" data-css="tve-u-15e1af322b4">THE BEST</span></strong> PLACES TO TRAVEL</p></div><div class="thrv_wrapper thrv-divider" data-style="tve_sep-1" data-thickness="1" data-color="rgba(255, 255, 255, 0.4)" style="" data-css="tve-u-15e1af6ae48">
+<hr class="tve_sep tve_sep-1">
+</div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style=""><p data-default="Enter your text here..." data-css="tve-u-15e1af35aed">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit oficina.</p></div></div></div></div></div></div></div><div class="tcb-flex-col" data-css="tve-u-15e1aebb6d1" style=""><div class="tcb-col tve_empty_dropzone" style="" data-css="tve-u-15e1af5de45"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style=""><p data-default="Enter your text here..." data-css="tve-u-15e1af3d4ad"><strong>GET STARTED:</strong></p></div><div class="thrv_wrapper thrv_lead_generation" data-connection="api" style=""><input type="hidden" class="tve-lg-err-msg" value="{&quot;email&quot;:&quot;Email address invalid&quot;,&quot;phone&quot;:&quot;Phone number invalid&quot;,&quot;password&quot;:&quot;Password invalid&quot;,&quot;passwordmismatch&quot;:&quot;Password mismatch error&quot;,&quot;required&quot;:&quot;Required field missing&quot;}">
+<div class="thrv_lead_generation_container tve_clearfix">
+<form action="#" method="post" novalidate="novalidate">
+<div class="tve_lead_generated_inputs_container tve_clearfix tve_empty_dropzone">
+<div class="tve_lg_input_container tve_lg_input" data-css="tve-u-15e1af45e66">
+<input type="text" data-field="name" name="name" placeholder="Name" data-placeholder="Name" style="">
+</div><div class="tve_lg_input_container tve_lg_input" data-css="tve-u-15e1af45e69">
+<input type="email" data-field="email" data-required="1" data-validation="email" name="email" placeholder="Email" data-placeholder="Email">
+</div>
+<div class="tve_lg_input_container tve_submit_container tve_lg_submit" data-css="tve-u-15e1af51713">
+<button type="submit" class="tve-froala" style="">SIGN UP</button>
+</div>
+</div>
+</form>
+</div>
+</div></div></div></div></div></div>

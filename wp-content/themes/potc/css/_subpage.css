@@ -1,0 +1,50 @@
+/* SUBPAGE MENU  */
+.sub_page .nav-header .current-menu-item > a
+ {
+	color: var(--text-color);
+	display: inline-block;
+    border-bottom: 1px solid var(--text-color);
+    transition: var(--main-transition);
+
+	
+}
+.sub_page .nav-header .current-menu-item > a:hover{
+    border-bottom-color: var(--dark-green);
+}
+.sub_page .nav-header a{
+	color: var(--text-color);
+}
+
+
+.sub_page .nav-header a:hover{
+    color: var(--dark-green);
+}
+
+.sub_page .mai-bars {
+    
+        
+        color: var(--text-color);
+        
+    
+}
+
+.sub_page .mai-bars, .sub_page .mai-bars::after,  .sub_page .mai-bars::before {
+    background-color: var(--text-color) ;
+}
+
+/* SUBPAGE HEADER  */
+.sub_page .subpage__section__header{
+    margin-top: 30px;
+}
+
+.sub_page .subpage__section__header .section-content h1{
+
+	margin:0 auto;
+	font-size: 50px;
+	font-weight: 700;
+	color: var(--text-color);
+}
+
+.sub_page .subpage__section__text h3{
+    color: var(--orange);
+}

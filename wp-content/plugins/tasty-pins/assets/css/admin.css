@@ -1,0 +1,5 @@
+@media screen and (min-width: 900px) {
+	.media-modal .setting[data-setting='tp_pinterest_repin_id'] input {
+		height: 40px;
+	}
+}
