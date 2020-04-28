@@ -1,0 +1,70 @@
+/* ORIGINAL HOME OPTIN  */
+
+html div#cohiUljRzi div#cohiUljRzi_inpost.mo-optin-form-wrapper{
+    border-radius: 0 !important;
+}
+html div#cohiUljRzi div#cohiUljRzi_inpost.mo-optin-form-wrapper{
+    border: none !important;
+    background-color: var(--white-overlay) !important;
+    
+}
+html div#cohiUljRzi div#cohiUljRzi_inpost.columbine-container div.columbine-heading h3{
+    color: var(--text-color) !important;
+}
+div#cohiUljRzi div#cohiUljRzi_inpost .mo-optin-form-description, div#cohiUljRzi div.mo-optin-form-container div#cohiUljRzi_inpost p{
+    color: var(--text-color) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+html div#cohiUljRzi div#cohiUljRzi_inpost.columbine-container input.columbine-submit{
+    transition: var(--main-transition);
+    text-transform: uppercase !important;
+}
+html div#cohiUljRzi div#cohiUljRzi_inpost.columbine-container input.columbine-submit:hover{
+    background-color: var(--dark-green) !important; 
+    
+}
+
+/* TBL COPY OPTIN  */
+
+html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.mo-optin-form-wrapper{
+    border-radius: 0 !important;
+}
+html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.mo-optin-form-wrapper{
+    border: none !important;
+    background-color: var(--white-overlay) !important;
+    
+}
+div#DJTFHdVeFK div#DJTFHdVeFK_inpost .mo-optin-form-headline, div#DJTFHdVeFK div.mo-optin-form-container h2, div#DJTFHdVeFK div.mo-optin-form-container h1{
+    color: var(--text-color) !important;
+}
+div#DJTFHdVeFK div#DJTFHdVeFK_inpost .mo-optin-form-description, div#DJTFHdVeFK div.mo-optin-form-container div#DJTFHdVeFK_inpost p{
+    color: var(--text-color) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal .moElegance_note span{
+    color: var(--text-color) !important;
+}
+
+html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal input.moEleganceModal_input_fields, html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal input.mo-optin-form-custom-field.text-field, html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal input.mo-optin-form-custom-field.date-field, html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal .mo-optin-form-custom-field.select-field, html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal textarea.mo-optin-form-custom-field.textarea-field {
+    
+    border: none !important;
+    outline: 0 !important;
+}
+
+html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal .moEleganceModal_button{
+    text-transform: uppercase !important;
+    transition: var(--main-transition);
+}
+html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal .moEleganceModal_button:hover{
+    background-color: var(--dark-green) !important;
+}
+html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal h2.moElegance_header{
+    line-height: 1.2 !important;
+   
+}
+html div#DJTFHdVeFK div#DJTFHdVeFK_inpost.moEleganceModal .moElegance_description{
+    margin-bottom: 1em !important;
+}

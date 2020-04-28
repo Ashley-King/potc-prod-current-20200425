@@ -1,0 +1,27 @@
+.blog{
+    .archive-title{
+        color: $text-color;
+        text-align:center;
+        text-transform: uppercase;
+    }
+    .entry-title{
+        a{
+            color: $text-color;
+            &:hover{
+                color: $medium-green;
+            }
+        }
+
+    }
+    .more-link{
+        background-color: #fff;
+        color: $orange;
+        padding: 11px 14px 11px 0px;
+        &:hover{
+            color: $medium-green;
+            background-color: #fff;
+            padding: 11px 14px 11px 0px;
+        }
+    }
+    
+}

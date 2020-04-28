@@ -83,9 +83,10 @@ function potc_body_class( $classes ) {
 		
 	}	
 	if ( is_page( 'thank-you' ) ){
-		$classes[] = 'thank-you_page sub_page';
-		
-
+		$classes[] = 'thank-you_page sub_page';	
+	}
+	if ( is_page( 'ashley-king' ) ){
+		$classes[] = 'ashley_page sub_page';	
 	}
 	return $classes;
 
@@ -166,4 +167,3 @@ add_shortcode( 'insert-home-quote', 'home_quote' );
 	}
 	add_shortcode('styled-eo-form', 'styled_eo_shortcode');
 
-	

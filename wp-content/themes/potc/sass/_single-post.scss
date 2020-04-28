@@ -1,0 +1,16 @@
+.single-post{
+    article{
+        header{
+            .entry-title{
+                color: $dark-green;
+            }
+        }
+        .entry-content{
+            h3{
+                color: $dark-green;
+                text-transform: capitalize;
+            }
+        }
+        
+    }
+}

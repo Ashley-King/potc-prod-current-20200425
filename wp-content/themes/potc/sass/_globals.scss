@@ -35,6 +35,22 @@ body {
 p, ul, li{
 	color: $text-color;
 }
+ul, .menu {
+	list-style: none !important; /* Remove default bullets */
+  }
+  ul li, .entry-content li, .widget li {
+	list-style-type: none !important;
+	text-indent: -2px;
+  }
+  ul:not(.menu) li::before {
+	content: "\2734";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: $dark-green; /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1em; /* Also needed for space (tweak if needed) */
+	margin-left: -1em; /* Also needed for space (tweak if needed) */
+	margin-right: 2px;
+  }
 
 h1,
 h2,
@@ -58,6 +74,8 @@ h6,
 	font-weight: 500;
 	
 }
+
+
 // p:not([class])>a:not([class]) {
 //     text-decoration: none;
 //     border-bottom: none;

@@ -6,7 +6,7 @@
              
     </blockquote>
     <blockquote class="quote bottom-quote">
-        The private practice checklist has been a godsend! I'm finally on the right track. Thank you!
+        The private practice checklist has been a godsend! I finally have a plan. Thank you!
         <p>- Tasha, OTR/L, Phoenix, AZ </p>
              
     </blockquote>

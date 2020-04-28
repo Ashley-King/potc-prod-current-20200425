@@ -1,0 +1,35 @@
+
+html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.mo-optin-form-wrapper{
+    border-radius: 0 !important;
+}
+html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.mo-optin-form-wrapper{
+    border: none !important;
+    background-color: var(--orange-overlay) !important;
+    margin-top: 40px !important;
+    
+}
+div#RtTnYTJvLy div#RtTnYTJvLy_inpost .mo-optin-form-headline, div#RtTnYTJvLy div.mo-optin-form-container h2, div#RtTnYTJvLy div.mo-optin-form-container h1{
+    color: var(--orange) !important;
+}
+div#RtTnYTJvLy div#RtTnYTJvLy_inpost .mo-optin-form-description, div#RtTnYTJvLy div.mo-optin-form-container div#RtTnYTJvLy_inpost p{
+    color: var(--dark-green) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.moEleganceModal .moElegance_note span{
+    color: var(--dark-green) !important;
+}
+
+html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.moEleganceModal input.moEleganceModal_input_fields, html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.moEleganceModal input.mo-optin-form-custom-field.text-field, html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.moEleganceModal input.mo-optin-form-custom-field.date-field, html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.moEleganceModal .mo-optin-form-custom-field.select-field, html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.moEleganceModal textarea.mo-optin-form-custom-field.textarea-field {
+    
+    border: none !important;
+    outline: 0 !important;
+}
+
+html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.moEleganceModal .moEleganceModal_button{
+    text-transform: uppercase !important;
+    transition: var(--main-transition);
+}
+html div#RtTnYTJvLy div#RtTnYTJvLy_inpost.moEleganceModal .moEleganceModal_button:hover{
+    background-color: var(--dark-green) !important;
+}
