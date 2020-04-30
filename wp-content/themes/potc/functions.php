@@ -167,3 +167,13 @@ add_shortcode( 'insert-home-quote', 'home_quote' );
 	}
 	add_shortcode('styled-eo-form', 'styled_eo_shortcode');
 
+
+
+// Run after Mai Theme.
+add_action( 'genesis_before', function() {
+
+	// Move featured image before the content.
+remove_action( 'genesis_before_entry', 'mai_do_entry_featured_image');
+add_action( 'genesis_before_entry_content', 'mai_do_entry_featured_image' );
+
+});
