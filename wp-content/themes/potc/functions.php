@@ -120,7 +120,11 @@ function home_quote( $attr ) {
 }
 add_shortcode( 'insert-home-quote', 'home_quote' );	
 
-
+//add in-post optin shortcode
+function in_post_optin( $attr ) {  
+    return get_template_part('template-parts/in-post-optin');
+}
+add_shortcode( 'in-post-optin', 'in_post_optin' );
 	// generic email octopus form shortcode
 	function eo_shortcode(){
 		
