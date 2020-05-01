@@ -121,10 +121,13 @@ function home_quote( $attr ) {
 add_shortcode( 'insert-home-quote', 'home_quote' );	
 
 //add in-post optin shortcode
-function in_post_optin( $attr ) {  
-    return get_template_part('template-parts/in-post-optin');
+function checklist_optin( $attr ) { 
+	 
+	ob_start();
+    get_template_part('template-parts/checklist-optin');
+    return ob_get_clean(); 
 }
-add_shortcode( 'in-post-optin', 'in_post_optin' );
+add_shortcode( 'checklist-optin', 'checklist_optin' );
 	// generic email octopus form shortcode
 	function eo_shortcode(){
 		

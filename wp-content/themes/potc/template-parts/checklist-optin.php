@@ -1,4 +1,7 @@
-<div class="in-post__section">
+<?php 
+    $text = get_field('checklist_optin_text');
+?>
+<section class="in-post__section">
     <div class="in-post__section__wrapper">
         <div class="in-post__image" >
             <div class="image__wrapper">
@@ -7,6 +10,9 @@
             
         </div>
         <div class="in-post__form">
+            <div class="in-post__form__text">
+                <?php echo $text ?>
+            </div>
         <form method="post" action="https://sendfox.com/form/10zgnm/1xq8nm" class="sendfox-form" id="1xq8nm" data-async="true">
 <p><input type="text" placeholder="First Name" name="first_name" required /></p>
 <p><input type="email" placeholder="Email" name="email" required /></p>
@@ -18,4 +24,4 @@
 			
         </div>
     </div>
-</div>
+</section>
