@@ -1,4 +1,4 @@
-<section class="in-post__section">
+<div class="in-post__section">
     <div class="in-post__section__wrapper">
         <div class="in-post__image" >
             <div class="image__wrapper">
@@ -18,4 +18,4 @@
 			
         </div>
     </div>
-</section>
+</div>
