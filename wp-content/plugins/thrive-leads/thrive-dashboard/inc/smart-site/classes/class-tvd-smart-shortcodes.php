@@ -21,13 +21,27 @@ final class TVD_Smart_Shortcodes {
 	 */
 	private $db;
 
+	public static $smart_shortcodes
+		= array(
+			TVD_Smart_Site::GLOBAL_FIELDS_SHORTCODE     => 'tvd_tss_smart_fields',
+			TVD_Smart_Site::GLOBAL_FIELDS_SHORTCODE_URL => 'tvd_tss_smart_url',
+
+		);
+
 	/**
 	 * TVD_Smart_Shortcodes constructor.
 	 */
 	public function __construct() {
 		$this->db = new TVD_Smart_DB();
-		add_shortcode( TVD_Smart_Site::GLOBAL_FIELDS_SHORTCODE, array( $this, 'tvd_tss_smart_fields' ) );
-		add_shortcode( TVD_Smart_Site::GLOBAL_FIELDS_SHORTCODE_URL, array( $this, 'tvd_tss_smart_url' ) );
+
+		foreach ( static::$smart_shortcodes as $shortcode => $func ) {
+			$function = array( $this, $func );
+			add_shortcode( $shortcode, static function ( $attr ) use ( $function ) {
+				$output = call_user_func_array( $function, func_get_args() );
+
+				return TVD_Global_Shortcodes::maybe_link_wrap( $output, $attr );
+			} );
+		}
 	}
 
 	/**

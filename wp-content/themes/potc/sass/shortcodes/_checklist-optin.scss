@@ -1,0 +1,101 @@
+.in-post__section{
+    margin-top: 20px;
+    padding:40px;
+    border-top: 1px solid #efefef;
+    // border-bottom:1px solid #efefef;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    .in-post__section__wrapper{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        .in-post__image{
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+            .image__wrapper{
+                width: 325px;
+                text-align:center;
+                img{
+                    max-width: 70%;
+                    height: auto;
+                    max-height: 100%;
+                    -webkit-box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
+                    -moz-box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
+                    box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
+                }
+            }
+            
+        }
+        .in-post__form{
+            width: 50%;
+            justify-self: flex-start;
+            .in-post__form__text{
+                width: 80%;
+                
+                .text{
+                    font-size: 1.7rem;
+                    color: $orange;
+                    .bootstrap{
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                    .checklist{
+                        font-style:italic;
+                    }
+                    .free{
+                        text-transform: uppercase;
+                    }
+                    .money{
+                        color: $dark-green;
+                    }
+                }
+            }
+            
+        }
+        form{
+            width: 80%;
+            
+            button{
+                background-color: $orange;
+                width: 100%;
+                transition: $main-transition;
+                text-transform: uppercase;
+                font-weight: 500;
+                &:hover{
+                    background-color: $dark-green;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .in-post__section{
+        padding: 40px 0;
+    }
+    .in-post__section .in-post__section__wrapper .in-post__form{
+        width: 100%;
+        justify-content: center;
+    }
+    .in-post__section .in-post__section__wrapper{
+        flex-direction:column;
+    }
+    .in-post__section .in-post__section__wrapper .in-post__form .in-post__form__text{
+        text-align:center;
+        margin: 20px auto;
+    }
+    .in-post__section .in-post__section__wrapper form{
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 480px){
+    
+    .in-post__section .in-post__section__wrapper .in-post__form .in-post__form__text .text{
+        font-size: 1em;
+    }
+}

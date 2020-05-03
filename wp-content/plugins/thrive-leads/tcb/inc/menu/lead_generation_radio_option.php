@@ -16,14 +16,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 	<div class="dropdown-content">
+		<div class="tve-control gl-st-button-toggle-1 hide-states" data-view="RadioPalettes"></div>
+		<div class="tve-control tve-style-options no-space preview" data-view="StyleChange"></div>
+		<div class="tve-control" data-key="RadioStylePicker" data-initializer="radioStylePicker"></div>
+		<hr>
 		<div class="tve-control" data-view="LabelAsValue"></div>
 		<div class="tve-control" data-view="InputValue"></div>
 		<div class="tve-control" data-view="SetAsDefault"></div>
 		<div class="tve-control" data-view="RadioSize"></div>
-		<div class="tve-control hide-states tve-style-options no-space preview" data-view="StyleChange"></div>
-		<div class="tve-control" data-key="RadioStylePicker" data-initializer="radioStylePicker"></div>
-		<div class="eff-settings">
-			<div class="tve-control hide-states eff-setting eff-color" data-view="RadioStyleColor"></div>
-		</div>
 	</div>
 </div>

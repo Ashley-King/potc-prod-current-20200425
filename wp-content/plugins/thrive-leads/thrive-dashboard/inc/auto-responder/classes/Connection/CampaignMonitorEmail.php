@@ -310,6 +310,29 @@ class Thrive_Dash_List_Connection_CampaignMonitorEmail extends Thrive_Dash_List_
 		} catch ( Exception $e ) {
 			return $e->getMessage();
 		}
+		if ( $data['send_confirmation'] ) {
+			$confirmation_email = array(
+				'Subject' => $data['confirmation_subject'],
+				'Html'    => $data['confirmation_html'],
+				'Text'    => '',
+				'BBC'     => '',
+				'CC'      => '',
+				'From'    => $data['from_name'] . '< ' . $data['from_email'] . ' >',
+				'To'      => array( $data['sender_email'] ),
+			);
+			try {
+				$clients        = $cm->get_clients();
+				$current_client = current( $clients );
+
+				/** @var Thrive_Dash_Api_CampaignMonitor_ClassicEmail $email */
+				$email = $cm->transactional();
+				$email->set_client( $current_client['id'] );
+				$email->send( $confirmation_email );
+
+			} catch ( Exception $e ) {
+				return $e->getMessage();
+			}
+		}
 
 		return true;
 	}

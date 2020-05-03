@@ -92,7 +92,7 @@ class TCB_Columns_Element extends TCB_Element_Abstract {
 								array(
 									'icon'    => 'top',
 									'default' => true,
-									'value'   => '',
+									'value'   => 'flex-start',
 								),
 								array(
 									'icon'  => 'vertical',

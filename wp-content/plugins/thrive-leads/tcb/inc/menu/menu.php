@@ -39,7 +39,7 @@ if ( is_ssl() ) {
 			</div>
 			<hr>
 			<div class="tve-control tve-choose-menu-template" data-view="ModalPicker"></div>
-			<div class="tve-control" data-view="MenuPalettes"></div>
+			<div class="tve-control hide-states" data-view="MenuPalettes"></div>
 			<hr>
 			<div class="tve-control btn-group-light no-space" data-view="MenuSpacing"></div>
 			<div class="spacing">

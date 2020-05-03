@@ -5,7 +5,7 @@
  * Description: A robust scheduling library for use in WordPress plugins.
  * Author: Automattic
  * Author URI: https://automattic.com/
- * Version:     1.5.9.5
+ * Version:     1.6.0.1
  * License: GPLv3
  *
  * Copyright 2019 Automattic, Inc.  (https://automattic.com/contact/)

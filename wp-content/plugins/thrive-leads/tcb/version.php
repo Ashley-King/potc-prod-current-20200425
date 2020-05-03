@@ -9,4 +9,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Silence is golden!
 }
 
-return '2.5.2.2';
+return '2.5.3.1';

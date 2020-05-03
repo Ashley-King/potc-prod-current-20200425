@@ -167,6 +167,19 @@ class Thrive_Dash_List_Connection_Postmark extends Thrive_Dash_List_Connection_A
 			$data['email'] = $email;
 			$this->sendCustomEmail( $data );
 		}
+
+		/**
+		 * Send confirmation email
+		 */
+		if ( $data['send_confirmation'] ) {
+			$confirmation = array(
+				'email'        => $data['sender_email'],
+				'from_name'    => $data['from_name'],
+				'html_content' => $data['confirmation_html'],
+				'subject'      => $data['confirmation_subject'],
+			);
+			$this->sendCustomEmail( $confirmation );
+		}
 	}
 
 

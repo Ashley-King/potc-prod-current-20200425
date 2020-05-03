@@ -57,23 +57,42 @@ class TVD_Global_Shortcodes {
 		/**
 		 * If a static link is detected in config, we need to wrap $content in that link (only if a link doesn't already exist in $shortcode_content ..)
 		 */
-		if ( $shortcode_content && ! empty( $attr['static-link'] ) && strpos( $shortcode_content, '</a>' ) === false ) {
+		if ( $shortcode_content && ! empty( $attr['static-link'] ) ) {
 			$link_attr = json_decode( htmlspecialchars_decode( $attr['static-link'] ), true );
+			if ( strpos( $shortcode_content, '</a>' ) === false ) {
 
-			if ( ! empty( $link_attr ) && ! empty( $link_attr['href'] ) ) {
-				/* replacement for shortcode open "[" */
-				if ( strpos( $link_attr['href'], '((' ) === 0 ) {
-					$link_attr['href'] = str_replace( array( '((', '))' ), array( '[', ']' ), $link_attr['href'] );
-					$link_attr['href'] = do_shortcode( $link_attr['href'] );
+				if ( ! empty( $link_attr ) && ! empty( $link_attr['href'] ) ) {
+					/* replacement for shortcode open "[" */
+					if ( strpos( $link_attr['href'], '((' ) === 0 ) {
+						$link_attr['href'] = str_replace( array( '((', '))' ), array( '[', ']' ), $link_attr['href'] );
+						$link_attr['href'] = do_shortcode( $link_attr['href'] );
+					}
+					$attributes = [];
+					foreach ( $link_attr as $attr_name => $value ) {
+						$attributes[] = ( $attr_name === 'className' ? 'class' : $attr_name ) . '="' . esc_attr( $value ) . '"';
+					}
+					$shortcode_content = '<a ' . implode( ' ', $attributes ) . '>' . $shortcode_content . '</a>';
 				}
-				$attributes = [];
-				foreach ( $link_attr as $attr_name => $value ) {
-					$attributes[] = ( $attr_name === 'className' ? 'class' : $attr_name ) . '="' . esc_attr( $value ) . '"';
+			} else if ( isset( $link_attr['className'] ) ) {
+				/**
+				 * For elements already containing an a link just add the old classes (e.g global styles)
+				 */
+				$DOM = new DOMDocument;
+				$DOM->loadHTML( mb_convert_encoding( $shortcode_content, 'HTML-ENTITIES', 'UTF-8' ) );
+				$DOM->encoding = 'UTF-8';
+
+				$items = $DOM->getElementsByTagName( 'a' );
+
+				for ( $i = 0; $i < $items->length; $i ++ ) {
+					$link = $items->item( $i );
+					if ( $link ) {
+						$link->setAttribute( 'class', $link_attr['className'] );
+					}
 				}
-				$shortcode_content = '<a ' . implode( ' ', $attributes ) . '>' . $shortcode_content . '</a>';
+
+				$shortcode_content = $DOM->saveHTML();
 			}
 		}
-
 		return $shortcode_content;
 	}
 
@@ -498,7 +517,8 @@ class TVD_Global_Shortcodes {
 	}
 
 	public static function date_shortcode( $args ) {
-		return trim( date( $args['id'] ) );
+
+		return trim( current_time( $args['id'] ) );
 	}
 
 

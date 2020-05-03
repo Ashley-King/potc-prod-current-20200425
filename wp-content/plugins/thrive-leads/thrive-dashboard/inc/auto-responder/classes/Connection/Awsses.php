@@ -179,28 +179,42 @@ class Thrive_Dash_List_Connection_Awsses extends Thrive_Dash_List_Connection_Abs
 		}
 
 		try {
-			$messsage = new Thrive_Dash_Api_Awsses_SimpleEmailServiceMessage();
-			$messsage->addTo( $data['emails'] );
-			$messsage->setFrom( $from_email );
-			$messsage->setSubject( $data['subject'] );
-			$messsage->setMessageFromString( empty ( $data['text_content'] ) ? '' : $data['text_content'], empty ( $data['html_content'] ) ? '' : $data['html_content'] );
+			$message = new Thrive_Dash_Api_Awsses_SimpleEmailServiceMessage();
+			$message->addTo( $data['emails'] );
+			$message->setFrom( $from_email );
+			$message->setSubject( $data['subject'] );
+			$message->setMessageFromString( empty ( $data['text_content'] ) ? '' : $data['text_content'], empty ( $data['html_content'] ) ? '' : $data['html_content'] );
 
 			if ( ! empty( $data['reply_to'] ) ) {
-				$messsage->addReplyTo( $data['reply_to'] );
+				$message->addReplyTo( $data['reply_to'] );
 			}
 
 			if ( ! empty( $data['cc'] ) ) {
-				$messsage->addCC( $data['cc'] );
+				$message->addCC( $data['cc'] );
 			}
 
 			if ( ! empty( $data['bcc'] ) ) {
-				$messsage->addBCC( $data['bcc'] );
+				$message->addBCC( $data['bcc'] );
 			}
 
-			$awsses->sendEmail( $messsage );
+			$awsses->sendEmail( $message );
 
 		} catch ( Exception $e ) {
 			return $e->getMessage();
+		}
+		/* Send confirmation email */
+		if ( $data['send_confirmation'] ) {
+			try {
+				$message = new Thrive_Dash_Api_Awsses_SimpleEmailServiceMessage();
+				$message->addTo( $data['sender_email'] );
+				$message->setFrom( $from_email );
+				$message->setSubject( $data['confirmation_subject'] );
+				$message->setMessageFromString( empty ( $data['confirmation_text'] ) ? '' : $data['confirmation_text'], empty ( $data['confirmation_html'] ) ? '' : $data['confirmation_html'] );
+
+				$awsses->sendEmail( $message );
+			} catch ( Exception $e ) {
+				return $e->getMessage();
+			}
 		}
 
 		return true;

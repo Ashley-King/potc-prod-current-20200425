@@ -145,6 +145,14 @@ class TCB_Post_List_Shortcodes {
 						 */
 						$output = apply_filters( 'tcb_render_shortcode_' . $tag, $output, $attr, $content );
 
+						/**
+						 * If a static link is detected in config, we need to wrap $output in that link
+						 * ::is_inline() check seems to address backwards compatibility issues from the time where not all post list shortcodes were inline texts.
+						 */
+						if ( TCB_Post_List_Shortcodes::is_inline( $attr ) ) {
+							$output = TVD_Global_Shortcodes::maybe_link_wrap( $output, $attr );
+						}
+
 						array_pop( TCB_Post_List_Shortcodes()->execution_stack );
 					}
 
@@ -753,6 +761,7 @@ class TCB_Post_List_Shortcodes {
 
 	/**
 	 * Author image url
+	 * We are calling this from the theme also
 	 *
 	 * @param array  $attr
 	 * @param string $content

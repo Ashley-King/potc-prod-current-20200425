@@ -65,8 +65,8 @@ if ( ! isset( $lp_template ) ) {
 				width: 100vw;
 				left: 50%;
 				right: 50%;
-				margin-left: -50vw;
-				margin-right: -50vw;
+				margin-left: -50vw !important;
+				margin-right: -50vw !important;
 			}
 		</style>
 

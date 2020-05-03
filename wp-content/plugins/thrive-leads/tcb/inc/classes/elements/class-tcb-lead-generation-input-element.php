@@ -69,10 +69,11 @@ class TCB_Lead_Generation_Input_Element extends TCB_Element_Abstract {
 						),
 					),
 					'required'    => array(
-						'config' => array(
+						'config'  => array(
 							'default' => false,
 							'label'   => __( 'Required field' ),
 						),
+						'extends' => 'Switch',
 					),
 				),
 			),

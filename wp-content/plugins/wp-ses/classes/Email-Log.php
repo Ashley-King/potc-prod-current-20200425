@@ -226,6 +226,7 @@ class Email_Log {
 	 */
 	public static function get_log_durations() {
 		$default_durations = array(
+			'7'   => __( 'After 7 days', 'wp-offload-ses' ),
 			'30'  => __( 'After 30 days', 'wp-offload-ses' ),
 			'60'  => __( 'After 60 days', 'wp-offload-ses' ),
 			'90'  => __( 'After 90 days', 'wp-offload-ses' ),

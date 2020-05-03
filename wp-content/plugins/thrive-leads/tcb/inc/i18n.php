@@ -202,7 +202,7 @@ return array(
 	'SuccessNotification'                => __( 'Show success notification', $d ),
 	'NextStepInQuiz'                     => __( 'Go to next step in quiz', $d ),
 	'InvalidHTML'                        => __( 'Invalid code! Please add at least one input.', $d ),
-	'ApiConnected'                       => __( 'API successfully added', $d ),
+	'ApiConnected'                       => __( 'API successfully added!', $d ),
 	'apiChoose'                          => __( 'Choose connection', $d ),
 	'NoConnections'                      => __( 'You have no active connections.', $d ),
 	'DeleteContentInLandingPage'         => __( "Are you sure you want to DELETE all of the content that was created in this landing page and revert to the theme page?\nIf you click OK, any custom content you added to the landing page will be deleted.", $d ),
@@ -355,6 +355,7 @@ return array(
 	'inherit_theme_font'                 => __( 'Inherit Theme Font', $d ),
 	'inherit'                            => __( 'Inherit', $d ),
 	'placeholder_text'                   => __( 'Click to add text or drag and drop element from right hand panel', $d ),
+	'dropdown_placeholder'               => __( 'Please Select One', $d ),
 	'global'                             => array(
 		'element_not_found'      => __( 'There aren\'t any instances on this page. You can add it by drag and drop.', $d ),
 		'global_styles'          => __( 'Global Styles', $d ),
@@ -415,6 +416,7 @@ return array(
 	'linkSet'                            => __( 'You have a %s link set. Remove it first.', $d ),
 	'post_list_no_author_description'    => __( 'No Author Description', $d ),
 	'multipleApis'                       => __( "You're about to connect more than one API to the form!", $d ),
+	'apiConnectionChanged'               => __( 'API connection setup changed wih success!', $d ),
 	'lgConnectionRemoved'                => __( 'That API connection is not available anymore. Remove it and choose another one.', $d ),
 	'resetStateAction'                   => __( 'State has been reset!', $d ),
 	'lp_default'                         => __( 'Landing Page Default', $d ),
@@ -427,6 +429,7 @@ return array(
 	'redirect_autofill'                  => __( 'Autofill form inputs on target URL', $d ),
 	'lg_err'                             => array(
 		'missing_from_name' => __( 'From Name should not be empty', $d ),
+		'missing_to_emails' => __( 'Please add at least one email address', $d ),
 		'invalid_email'     => __( 'Invalid Email', $d ),
 		'invalid_data'      => __( "Some fields aren't properly completed", $d ),
 		'single_reply_to'   => __( 'Only one email is allowed for "Reply To" field', $d ),
@@ -448,6 +451,12 @@ return array(
 		'forgot_password'       => __( 'Password Recovery', $d ),
 		'recovery_confirmation' => __( 'Password Recovery Confirmation', $d ),
 		'already_logged_in'     => __( 'Already Logged In', $d ),
+	),
+	'lg_email'                           => array(
+		'email_subject'              => __( 'Someone filled out your form', $d ),
+		'email_message'              => __( "Someone filled out your form with the following details: \n\n [all_form_fields]", $d ),
+		'email_confirmation_subject' => __( 'Your submission was received', $d ),
+		'email_confirmation_message' => __( "Hello, \n\nThanks for contacting us. We'll get back to you as soon as possible with the information you need . \n\nBest regards, \n[wp_site_title]", $d ),
 	),
 );
 // phpcs:enable

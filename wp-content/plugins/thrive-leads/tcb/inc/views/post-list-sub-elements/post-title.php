@@ -16,18 +16,16 @@ if ( empty( $title ) ) {
 } else {
 	$queried_object = get_queried_object();
 
-	$is_inline_shortcode_without_url = ! empty( $data['inline'] ) && ( ( empty( $data['url'] ) && empty( $data['link'] ) ) || ( ! empty( $data['link'] ) && $data['link'] === '0' ) );
+	$is_inline_shortcode_without_url = ! empty( $data['inline'] ) && empty( $data['url'] ) && empty( $data['link'] );
 
-	/* when the title is on the same page with its post, we don't display the link */
+	/* when the title is on the same page with its post, the link's href attribute should just be '#' */
 	$same_page_as_post = ! empty( $queried_object ) && ! empty( $queried_object->ID ) && $queried_object->ID === get_the_ID();
 
-	$no_link = $is_inline_shortcode_without_url || $same_page_as_post;
-
-	if ( $no_link ) {
+	if ( $is_inline_shortcode_without_url ) {
 		echo $title;
 	} else {
 		$attrs = array(
-			'href'     => get_the_permalink(),
+			'href'     => $same_page_as_post ? '#' : get_the_permalink(),
 			'title'    => $title,
 			'data-css' => empty( $data['css'] ) ? '' : $data['css'],
 		);

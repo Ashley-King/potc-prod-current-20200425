@@ -675,6 +675,12 @@ TVE_Dash.API.views = TVE_Dash.API.views || {};
 			this.$el.replaceWith( view.$el );
 			this.setElement( view.$el );
 			this.$el.find( 'select' ).select2();
+			/* Add the request new integration link in the dropdown */
+			this.$el.find( '#selected-api' ).on( 'select2:open', function ( e ) {
+				if ( $( '.select2-dropdown .tvd-request-api' ).length === 0 ) {
+					$( '.select2-dropdown' ).append( '<div class="tvd-request-api"><a href="https://thrivethemes.com/request-a-new-api-integration/" target="_blank">' + 'REQUEST A NEW INTEGRATION' + '</a></div>' )
+				}
+			} );
 			if ( window.rebindWistiaFancyBoxes ) {
 				window.rebindWistiaFancyBoxes();
 			}

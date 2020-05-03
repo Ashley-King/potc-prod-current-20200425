@@ -58,7 +58,7 @@ class Connect {
 	}
 
 	/**
-	 * Generates and returns WPForms Connect URL.
+	 * Generate and return WPForms Connect URL.
 	 *
 	 * @since 1.5.5
 	 */

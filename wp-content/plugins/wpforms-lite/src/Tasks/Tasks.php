@@ -37,6 +37,18 @@ class Tasks {
 
 		add_action( 'admin_menu', [ $this, 'admin_hide_as_menu' ], PHP_INT_MAX );
 
+		/*
+		 * By default we send emails in the same process as the form submission is done.
+		 * That means that when many emails are set in form Notifications -
+		 * the form submission can take a while because of all those emails that are sending in the background.
+		 * Since WPForms 1.6.0 users can enable a new option in Settings > Emails,
+		 * called "Optimize Email Sending", to send email in async way.
+		 * This feature was enabled for WPForms 1.5.9, but some users were not happy.
+		 */
+		if ( ! (bool) wpforms_setting( 'email-async', false ) ) {
+			add_filter( 'wpforms_tasks_entry_emails_trigger_send_same_process', '__return_true' );
+		}
+
 		add_action( EntryEmailsTask::ACTION, [ EntryEmailsTask::class, 'process' ] );
 	}
 
@@ -141,11 +153,24 @@ class Tasks {
 			return false;
 		}
 
-		// No tasks if ActionScheduler has not migrated.
-		if ( ! \ActionScheduler_DataController::is_migration_complete() ) {
+		return \ActionScheduler_DataController::is_migration_complete();
+	}
+
+	/**
+	 * Whether task has been scheduled and is pending.
+	 *
+	 * @since 1.6.0
+	 *
+	 * @param string $hook Hook to check for.
+	 *
+	 * @return bool
+	 */
+	public function is_scheduled( $hook ) {
+
+		if ( ! function_exists( 'as_next_scheduled_action' ) ) {
 			return false;
 		}
 
-		return true;
+		return as_next_scheduled_action( $hook );
 	}
 }

@@ -17,6 +17,12 @@ $json_available_apis = Thrive_Dash_List_Manager::toJSON( $available_apis );
 	<div class="tvd-row tvd-api-list"></div>
 
 	<div class="tvd-row">
+		<div class="tvd-col tvd-s12">
+			<div style="height: 100px"></div>
+		</div>
+	</div>
+
+	<div class="tvd-row">
 		<div class="tvd-col tvd-s12 tvd-m6">
 			<a href="<?php echo admin_url( 'admin.php?page=tve_dash_section' ); ?>"
 			   class="tvd-waves-effect tvd-waves-light tvd-btn-small tvd-btn-gray">
@@ -70,9 +76,6 @@ $json_available_apis = Thrive_Dash_List_Manager::toJSON( $available_apis );
 		<div class="tvd-card-content tvd-valign tvd-center-align tvd-pointer">
 			<i class="tvd-icon-plus tvd-icon-rounded tvd-icon-medium"></i>
 			<h4><?php echo __( "Add new Connection", TVE_DASH_TRANSLATE_DOMAIN ) ?></h4>
-			<a class="tvd-request-api" href="https://thrivethemes.com/request-a-new-api-integration/" target="_blank">
-				<?php echo __( 'Request a new integration', TVE_DASH_TRANSLATE_DOMAIN ) ?>
-			</a>
 		</div>
 	</div>
 </script>
@@ -92,10 +95,6 @@ $json_available_apis = Thrive_Dash_List_Manager::toJSON( $available_apis );
 					</div>
 				</div>
 			</div>
-			<h4 class="tvd-dark-text"><?php echo __( "Add new Connection", TVE_DASH_TRANSLATE_DOMAIN ) ?></h4>
-			<a href="https://thrivethemes.com/request-a-new-api-integration/" target="_blank">
-				<?php echo __( 'Request a new integration', TVE_DASH_TRANSLATE_DOMAIN ) ?>
-			</a>
 		</div>
 	</div>
 </script>
@@ -149,7 +148,8 @@ $json_available_apis = Thrive_Dash_List_Manager::toJSON( $available_apis );
 				<# } else { #>
 				<?php echo __( "You can now connect your opt-in forms to ", TVE_DASH_TRANSLATE_DOMAIN ) ?>
 				<#= item.get('title') #>.
-				<a class="wistia-popover[height=450,playerColor=2bb914,width=800]" href="//fast.wistia.net/embed/iframe/7sv6uvfshp?popover=true"><?php echo __( "See how it's done.", TVE_DASH_TRANSLATE_DOMAIN ) ?></a>
+				<a class="wistia-popover[height=450,playerColor=2bb914,width=800]"
+				   href="//fast.wistia.net/embed/iframe/7sv6uvfshp?popover=true"><?php echo __( "See how it's done.", TVE_DASH_TRANSLATE_DOMAIN ) ?></a>
 				<# } #>
 
 

@@ -69,7 +69,6 @@ class TCB_Image_Element extends TCB_Element_Abstract {
 						'config' => array(
 							'label' => __( 'Replace Image', 'thrive-cb' ),
 						),
-						//						'to'     => 'img',
 					),
 					'ExternalFields'    => array(
 						'config'  => array(

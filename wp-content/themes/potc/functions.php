@@ -97,13 +97,8 @@ function potc_body_class( $classes ) {
 function custom_scripts() {
 	wp_register_script('custom_script', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'),'1.', true);
 	wp_enqueue_script('custom_script');
-	wp_register_script('eo_script', get_stylesheet_directory_uri() . '/js/eo-submit.js', array('jquery'),'1.', true);
-	wp_enqueue_script('eo_script');
-	//sweet alert 2 
-	wp_register_script('sweet-alert', 'https://cdn.jsdelivr.net/npm/sweetalert2@9', array('jquery'),'1.0', true);
-	wp_enqueue_script('sweet-alert');
-	// wp_register_script('sweet-alert-polyfill', 'https://cdn.jsdelivr.net/npm/promise-polyfill', array('jquery'),'1.0', true);
-	wp_enqueue_script('sweet-alert-polyfill');
+	
+
 }
 	  
 	add_action( 'wp_enqueue_scripts', 'custom_scripts' );  
@@ -121,57 +116,26 @@ function home_quote( $attr ) {
 add_shortcode( 'insert-home-quote', 'home_quote' );	
 
 //add in-post optin shortcode
-function in_post_optin( $attr ) {  
-    return get_template_part('template-parts/in-post-optin');
+function checklist_optin( $attr ) { 
+	 
+	ob_start();
+    get_template_part('template-parts/checklist-optin');
+    return ob_get_clean(); 
 }
-add_shortcode( 'in-post-optin', 'in_post_optin' );
-	// generic email octopus form shortcode
-	function eo_shortcode(){
-		
-		return '<div class="email-octopus-form-wrapper"><form id="email-octopus-form" class="email-octopus-form" method="post">
-		<div class="email-octopus-form-row">
-		<input class="field_1" name="field_1" type="text" placeholder="Enter Your First Name" /></div>
-		<div class="email-octopus-form-row">
-		<input class="field_0" name="field_0" type="email" placeholder="Enter Your Email" />
-		<input name="user[fax_number]" type=checkbox value="1" style="display: none;" 
-		tabindex="-1" autocomplete="false"/>
-		</div>
-		<div class="email-octopus-form-row-subscribe">
-		<button type="submit">Sign Me Up!</button>
-		
-		</div>
-		</form></div>';
-	}
-	add_shortcode('eo-form', 'eo_shortcode');
-
-	// orange email octopus form shortcode
-	//use in three-fourths column
-	function styled_eo_shortcode($atts){
-		$a = shortcode_atts( array(
-			'title' => 'Keep Progressing',
-			'text'  =>  '<span class="white-space">Get the best out-of-the-box ideas for</span><span class="white-space"> pediatric therapy, business &amp; life.</span>',
-			'subtext' => 'Give it a try.<span class="white-space"> Easily unsubscribe anytime.</span>',
-			'classes' => 'bg-orange'
-		), $atts );
-		
-		return '<div class="styled__eo-form '.$a['classes'].'"><h3>'. $a['title'].'</h3>
-		<p class="margin-zero">'.$a['text'].'</p>
-		<p class="margin-zero">'.$a['subtext'].'</p><div class="email-octopus-form-wrapper "><form id="email-octopus-form" class="email-octopus-form" method="post">
-		<div class="email-octopus-form-row">
-		<input class="field_1" name="field_1" type="text" placeholder="Enter Your First Name" /></div>
-		<div class="email-octopus-form-row">
-		<input class="field_0" name="field_0" type="email" placeholder="Enter Your Email" />
-		<input name="user[fax_number]" type=checkbox value="1" style="display: none;" 
-		tabindex="-1" autocomplete="false"/>
-		</div>
-		<div class="email-octopus-form-row-subscribe">
-		<button type="submit">Sign Me Up!</button>
-		</div>
-		</form></div></div>';
-	}
-	add_shortcode('styled-eo-form', 'styled_eo_shortcode');
+add_shortcode( 'checklist-optin', 'checklist_optin' );
 
 
+//add options page
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Site Options',
+		'menu_title'	=> 'Site Options',
+		'menu_slug' 	=> 'site-options',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+}
 
 // Run after Mai Theme.
 add_action( 'genesis_before', function() {
@@ -180,4 +144,12 @@ add_action( 'genesis_before', function() {
 remove_action( 'genesis_before_entry', 'mai_do_entry_featured_image');
 add_action( 'genesis_before_entry_content', 'mai_do_entry_featured_image' );
 
+//put shorcode in footer
+function add_checklist(){
+	echo do_shortcode('[checklist-optin]');
+}
+if(!is_front_page() && !is_page('thank-you')){
+	add_action('genesis_before_footer', 'add_checklist');
+}
+	
 });

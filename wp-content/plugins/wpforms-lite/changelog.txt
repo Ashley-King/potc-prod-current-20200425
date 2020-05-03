@@ -1,5 +1,21 @@
 == Changelog ==
 
+= 1.6.0.1 =
+- Added: Admin bar menu item.
+- Added: Form Builder alert when using browser "Back" button if form contains unsaved changes.
+- Added: Settings > Emails: "Optimize Email Sending" option which enables sending emails asynchronously.
+- Changed: Async form notification emails are now off by default.
+- Changed: Number Slider field display improvements on small devices.
+- Fixed: Error if there are some plugins or themes add `widget_title` filter.
+- Fixed: Choice Images not displaying in form notifications if no label is set.
+- Fixed: Form Builder "drag zone" not available when all fields are deleted.
+- Fixed: Empty `div` appended to end of form display.
+- Fixed: Block alignment issues (WordPress 5.4+).
+- Fixed: Form Builder field option panel is not available if field is placed before the last form field.
+- Fixed: Fallback population for fields with choices (checkbox, radio etc) when special characters are used.
+- Fixed: Integrity of decoded data with additional sanitizing.
+- Fixed: Compatibility issues with Elementor.
+
 = 1.5.9.5 =
 - Fixed: do not try to process entries in Lite.
 

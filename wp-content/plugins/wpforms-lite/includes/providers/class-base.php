@@ -44,7 +44,7 @@ abstract class WPForms_Provider {
 	public $priority = 10;
 
 	/**
-	 * Holds the API connections.
+	 * Store the API connections.
 	 *
 	 * @since 1.0.0
 	 *
@@ -1053,7 +1053,7 @@ abstract class WPForms_Provider {
 	}
 
 	/**
-	 * Wraps the builder content with the required markup.
+	 * Wrap the builder content with the required markup.
 	 *
 	 * @since 1.0.0
 	 */
@@ -1072,8 +1072,7 @@ abstract class WPForms_Provider {
 					data-provider="<?php echo esc_attr( $this->slug ); ?>"
 					data-type="<?php echo esc_attr( strtolower( $this->type ) ); ?>">
 					<?php
-					printf(
-						/* translators: %s - Provider type. */
+					printf( /* translators: %s - Provider type. */
 						esc_html__( 'Add New %s', 'wpforms-lite' ),
 						esc_html( $this->type )
 					);

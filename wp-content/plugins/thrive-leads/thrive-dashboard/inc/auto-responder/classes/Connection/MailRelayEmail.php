@@ -216,6 +216,28 @@ class Thrive_Dash_List_Connection_MailRelayEmail extends Thrive_Dash_List_Connec
 			return $e->getMessage();
 		}
 
+		if ( $data['send_confirmation'] ) {
+			try {
+
+				$message = array(
+					'html'    => empty ( $data['confirmation_html'] ) ? '' : $data['confirmation_html'],
+					'subject' => $data['confirmation_subject'],
+					'emails'  => array(
+						array(
+							'email' => $data['sender_email'],
+							'name'  => '',
+						),
+					),
+				);
+
+				$mr->send_email( $message );
+
+			} catch ( Exception $e ) {
+				return $e->getMessage();
+			}
+
+		}
+
 		return true;
 	}
 
@@ -224,9 +246,9 @@ class Thrive_Dash_List_Connection_MailRelayEmail extends Thrive_Dash_List_Connec
 	 *
 	 * @param $post_data
 	 *
+	 * @return bool|string
 	 * @throws Exception
 	 *
-	 * @return bool|string
 	 */
 	public function sendEmail( $post_data ) {
 		$mr = $this->getApi();

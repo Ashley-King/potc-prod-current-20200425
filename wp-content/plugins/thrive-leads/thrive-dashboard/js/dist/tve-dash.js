@@ -5748,10 +5748,10 @@ if (jQuery) {
  * Released under the MIT license
  * https://github.com/select2/select2/blob/master/LICENSE.md
  */
-(function ( factory ) {
+( function ( factory ) {
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD. Register as an anonymous module.
-		define( ['jquery'], factory );
+		define( [ 'jquery' ], factory );
 	} else if ( typeof exports === 'object' ) {
 		// Node/CommonJS
 		factory( require( 'jquery' ) );
@@ -5763,14 +5763,14 @@ if (jQuery) {
 	// This is needed so we can catch the AMD loader configuration and use it
 	// The inner file should be wrapped (by `banner.start.js`) in a function that
 	// returns the AMD loader references.
-	var S2 = (function () {
+	var S2 = ( function () {
 		// Restore the Select2 AMD loader so it can be used
 		// Needed mostly in the language files, where the loader is not inserted
 		if ( jQuery && jQuery.fn && jQuery.fn.select2 && jQuery.fn.select2.amd ) {
 			var S2 = jQuery.fn.select2.amd;
 		}
 		var S2;
-		(function () {
+		( function () {
 			if ( ! S2 || ! S2.requirejs ) {
 				if ( ! S2 ) {
 					S2 = {};
@@ -5788,8 +5788,9 @@ if (jQuery) {
 				/*global setTimeout: false */
 
 				var requirejs, require, define;
-				(function ( undef ) {
-					var main, req, makeMap, handlers, defined = {}, waiting = {}, config = {}, defining = {}, hasOwn = Object.prototype.hasOwnProperty, aps = [].slice, jsSuffixRegExp = /\.js$/;
+				( function ( undef ) {
+					var main, req, makeMap, handlers, defined = {}, waiting = {}, config = {}, defining = {},
+						hasOwn = Object.prototype.hasOwnProperty, aps = [].slice, jsSuffixRegExp = /\.js$/;
 
 					function hasProp( obj, prop ) {
 						return hasOwn.call( obj, prop );
@@ -5804,7 +5805,9 @@ if (jQuery) {
 					 * @returns {String} normalized name
 					 */
 					function normalize( name, baseName ) {
-						var nameParts, nameSegment, mapValue, foundMap, lastIndex, foundI, foundStarMap, starI, i, j, part, baseParts = baseName && baseName.split( "/" ), map = config.map, starMap = (map && map['*']) || {};
+						var nameParts, nameSegment, mapValue, foundMap, lastIndex, foundI, foundStarMap, starI, i, j,
+							part, baseParts = baseName && baseName.split( "/" ), map = config.map,
+							starMap = ( map && map[ '*' ] ) || {};
 
 						//Adjust any relative paths.
 						if ( name && name.charAt( 0 ) === "." ) {
@@ -5816,8 +5819,8 @@ if (jQuery) {
 								lastIndex = name.length - 1;
 
 								// Node .js allowance:
-								if ( config.nodeIdCompat && jsSuffixRegExp.test( name[lastIndex] ) ) {
-									name[lastIndex] = name[lastIndex].replace( jsSuffixRegExp, '' );
+								if ( config.nodeIdCompat && jsSuffixRegExp.test( name[ lastIndex ] ) ) {
+									name[ lastIndex ] = name[ lastIndex ].replace( jsSuffixRegExp, '' );
 								}
 
 								//Lop off the last part of baseParts, so that . matches the
@@ -5828,12 +5831,12 @@ if (jQuery) {
 
 								//start trimDots
 								for ( i = 0; i < name.length; i += 1 ) {
-									part = name[i];
+									part = name[ i ];
 									if ( part === "." ) {
 										name.splice( i, 1 );
 										i -= 1;
 									} else if ( part === ".." ) {
-										if ( i === 1 && (name[2] === '..' || name[0] === '..') ) {
+										if ( i === 1 && ( name[ 2 ] === '..' || name[ 0 ] === '..' ) ) {
 											//End of the line. Keep at least one non-dot
 											//path segment at the front so it can be mapped
 											//correctly to disk. Otherwise, there is likely
@@ -5858,7 +5861,7 @@ if (jQuery) {
 						}
 
 						//Apply map config if available.
-						if ( (baseParts || starMap) && map ) {
+						if ( ( baseParts || starMap ) && map ) {
 							nameParts = name.split( '/' );
 
 							for ( i = nameParts.length; i > 0; i -= 1 ) {
@@ -5868,12 +5871,12 @@ if (jQuery) {
 									//Find the longest baseName segment match in the config.
 									//So, do joins on the biggest to smallest lengths of baseParts.
 									for ( j = baseParts.length; j > 0; j -= 1 ) {
-										mapValue = map[baseParts.slice( 0, j ).join( '/' )];
+										mapValue = map[ baseParts.slice( 0, j ).join( '/' ) ];
 
 										//baseName segment has  config, find if it has one for
 										//this name.
 										if ( mapValue ) {
-											mapValue = mapValue[nameSegment];
+											mapValue = mapValue[ nameSegment ];
 											if ( mapValue ) {
 												//Match, update name to the new value.
 												foundMap = mapValue;
@@ -5891,8 +5894,8 @@ if (jQuery) {
 								//Check for a star map match, but just hold on to it,
 								//if there is a shorter segment match later in a matching
 								//config, then favor over this star map.
-								if ( ! foundStarMap && starMap && starMap[nameSegment] ) {
-									foundStarMap = starMap[nameSegment];
+								if ( ! foundStarMap && starMap && starMap[ nameSegment ] ) {
+									foundStarMap = starMap[ nameSegment ];
 									starI = i;
 								}
 							}
@@ -5921,10 +5924,10 @@ if (jQuery) {
 							//If first arg is not require('string'), and there is only
 							//one arg, it is the array form without a callback. Insert
 							//a null so that the following concat is correct.
-							if ( typeof args[0] !== 'string' && args.length === 1 ) {
+							if ( typeof args[ 0 ] !== 'string' && args.length === 1 ) {
 								args.push( null );
 							}
-							return req.apply( undef, args.concat( [relName, forceSync] ) );
+							return req.apply( undef, args.concat( [ relName, forceSync ] ) );
 						};
 					}
 
@@ -5936,22 +5939,22 @@ if (jQuery) {
 
 					function makeLoad( depName ) {
 						return function ( value ) {
-							defined[depName] = value;
+							defined[ depName ] = value;
 						};
 					}
 
 					function callDep( name ) {
 						if ( hasProp( waiting, name ) ) {
-							var args = waiting[name];
-							delete waiting[name];
-							defining[name] = true;
+							var args = waiting[ name ];
+							delete waiting[ name ];
+							defining[ name ] = true;
 							main.apply( undef, args );
 						}
 
 						if ( ! hasProp( defined, name ) && ! hasProp( defining, name ) ) {
 							throw new Error( 'No ' + name );
 						}
-						return defined[name];
+						return defined[ name ];
 					}
 
 					//Turns a plugin!resource to [plugin, resource]
@@ -5963,7 +5966,7 @@ if (jQuery) {
 							prefix = name.substring( 0, index );
 							name = name.substring( index + 1, name.length );
 						}
-						return [prefix, name];
+						return [ prefix, name ];
 					}
 
 					/**
@@ -5972,9 +5975,9 @@ if (jQuery) {
 					 * too, as an optimization.
 					 */
 					makeMap = function ( name, relName ) {
-						var plugin, parts = splitPrefix( name ), prefix = parts[0];
+						var plugin, parts = splitPrefix( name ), prefix = parts[ 0 ];
 
-						name = parts[1];
+						name = parts[ 1 ];
 
 						if ( prefix ) {
 							prefix = normalize( prefix, relName );
@@ -5991,8 +5994,8 @@ if (jQuery) {
 						} else {
 							name = normalize( name, relName );
 							parts = splitPrefix( name );
-							prefix = parts[0];
-							name = parts[1];
+							prefix = parts[ 0 ];
+							name = parts[ 1 ];
 							if ( prefix ) {
 								plugin = callDep( prefix );
 							}
@@ -6007,7 +6010,7 @@ if (jQuery) {
 
 					function makeConfig( name ) {
 						return function () {
-							return (config && config.config && config.config[name]) || {};
+							return ( config && config.config && config.config[ name ] ) || {};
 						};
 					}
 
@@ -6015,17 +6018,17 @@ if (jQuery) {
 						require: function ( name ) {
 							return makeRequire( name );
 						}, exports: function ( name ) {
-							var e = defined[name];
+							var e = defined[ name ];
 							if ( typeof e !== 'undefined' ) {
 								return e;
 							} else {
-								return (defined[name] = {});
+								return ( defined[ name ] = {} );
 							}
 						}, module: function ( name ) {
 							return {
 								id: name,
 								uri: '',
-								exports: defined[name],
+								exports: defined[ name ],
 								config: makeConfig( name )
 							};
 						}
@@ -6046,54 +6049,54 @@ if (jQuery) {
 								'require', 'exports', 'module'
 							] : deps;
 							for ( i = 0; i < deps.length; i += 1 ) {
-								map = makeMap( deps[i], relName );
+								map = makeMap( deps[ i ], relName );
 								depName = map.f;
 
 								//Fast path CommonJS standard dependencies.
 								if ( depName === "require" ) {
-									args[i] = handlers.require( name );
+									args[ i ] = handlers.require( name );
 								} else if ( depName === "exports" ) {
 									//CommonJS module spec 1.1
-									args[i] = handlers.exports( name );
+									args[ i ] = handlers.exports( name );
 									usingExports = true;
 								} else if ( depName === "module" ) {
 									//CommonJS module spec 1.1
-									cjsModule = args[i] = handlers.module( name );
+									cjsModule = args[ i ] = handlers.module( name );
 								} else if ( hasProp( defined, depName ) || hasProp( waiting, depName ) || hasProp( defining, depName ) ) {
-									args[i] = callDep( depName );
+									args[ i ] = callDep( depName );
 								} else if ( map.p ) {
 									map.p.load( map.n, makeRequire( relName, true ), makeLoad( depName ), {} );
-									args[i] = defined[depName];
+									args[ i ] = defined[ depName ];
 								} else {
 									throw new Error( name + ' missing ' + depName );
 								}
 							}
 
-							ret = callback ? callback.apply( defined[name], args ) : undefined;
+							ret = callback ? callback.apply( defined[ name ], args ) : undefined;
 
 							if ( name ) {
 								//If setting exports via "module" is in play,
 								//favor that over return value and exports. After that,
 								//favor a non-undefined return value over exports use.
-								if ( cjsModule && cjsModule.exports !== undef && cjsModule.exports !== defined[name] ) {
-									defined[name] = cjsModule.exports;
+								if ( cjsModule && cjsModule.exports !== undef && cjsModule.exports !== defined[ name ] ) {
+									defined[ name ] = cjsModule.exports;
 								} else if ( ret !== undef || ! usingExports ) {
 									//Use the return value from the function.
-									defined[name] = ret;
+									defined[ name ] = ret;
 								}
 							}
 						} else if ( name ) {
 							//May just be an object definition for the module. Only
 							//worry about defining if have a module name.
-							defined[name] = callback;
+							defined[ name ] = callback;
 						}
 					};
 
 					requirejs = require = req = function ( deps, callback, relName, forceSync, alt ) {
 						if ( typeof deps === "string" ) {
-							if ( handlers[deps] ) {
+							if ( handlers[ deps ] ) {
 								//callback in this case is really relName
-								return handlers[deps]( callback );
+								return handlers[ deps ]( callback );
 							}
 							//Just return the module wanted. In this scenario, the
 							//deps arg is the module name, and second arg (if passed)
@@ -6123,7 +6126,7 @@ if (jQuery) {
 
 						//Support require(['a'])
 						callback = callback || function () {
-							};
+						};
 
 						//If relName is a function, it is an errback handler,
 						//so remove it.
@@ -6178,20 +6181,20 @@ if (jQuery) {
 						}
 
 						if ( ! hasProp( defined, name ) && ! hasProp( waiting, name ) ) {
-							waiting[name] = [name, deps, callback];
+							waiting[ name ] = [ name, deps, callback ];
 						}
 					};
 
 					define.amd = {
 						jQuery: true
 					};
-				}());
+				}() );
 
 				S2.requirejs = requirejs;
 				S2.require = require;
 				S2.define = define;
 			}
-		}());
+		}() );
 		S2.define( "almond", function () {
 		} );
 
@@ -6220,7 +6223,7 @@ if (jQuery) {
 
 				for ( var key in SuperClass ) {
 					if ( __hasProp.call( SuperClass, key ) ) {
-						ChildClass[key] = SuperClass[key];
+						ChildClass[ key ] = SuperClass[ key ];
 					}
 				}
 
@@ -6237,7 +6240,7 @@ if (jQuery) {
 				var methods = [];
 
 				for ( var methodName in proto ) {
-					var m = proto[methodName];
+					var m = proto[ methodName ];
 
 					if ( typeof m !== 'function' ) {
 						continue;
@@ -6282,9 +6285,9 @@ if (jQuery) {
 				DecoratedClass.prototype = new ctr();
 
 				for ( var m = 0; m < superMethods.length; m ++ ) {
-					var superMethod = superMethods[m];
+					var superMethod = superMethods[ m ];
 
-					DecoratedClass.prototype[superMethod] = SuperClass.prototype[superMethod];
+					DecoratedClass.prototype[ superMethod ] = SuperClass.prototype[ superMethod ];
 				}
 
 				var calledMethod = function ( methodName ) {
@@ -6293,10 +6296,10 @@ if (jQuery) {
 					};
 
 					if ( methodName in DecoratedClass.prototype ) {
-						originalMethod = DecoratedClass.prototype[methodName];
+						originalMethod = DecoratedClass.prototype[ methodName ];
 					}
 
-					var decoratedMethod = DecoratorClass.prototype[methodName];
+					var decoratedMethod = DecoratorClass.prototype[ methodName ];
 
 					return function () {
 						var unshift = Array.prototype.unshift;
@@ -6308,9 +6311,9 @@ if (jQuery) {
 				};
 
 				for ( var d = 0; d < decoratedMethods.length; d ++ ) {
-					var decoratedMethod = decoratedMethods[d];
+					var decoratedMethod = decoratedMethods[ d ];
 
-					DecoratedClass.prototype[decoratedMethod] = calledMethod( decoratedMethod );
+					DecoratedClass.prototype[ decoratedMethod ] = calledMethod( decoratedMethod );
 				}
 
 				return DecoratedClass;
@@ -6324,9 +6327,9 @@ if (jQuery) {
 				this.listeners = this.listeners || {};
 
 				if ( event in this.listeners ) {
-					this.listeners[event].push( callback );
+					this.listeners[ event ].push( callback );
 				} else {
-					this.listeners[event] = [callback];
+					this.listeners[ event ] = [ callback ];
 				}
 			};
 
@@ -6336,17 +6339,17 @@ if (jQuery) {
 				this.listeners = this.listeners || {};
 
 				if ( event in this.listeners ) {
-					this.invoke( this.listeners[event], slice.call( arguments, 1 ) );
+					this.invoke( this.listeners[ event ], slice.call( arguments, 1 ) );
 				}
 
 				if ( '*' in this.listeners ) {
-					this.invoke( this.listeners['*'], arguments );
+					this.invoke( this.listeners[ '*' ], arguments );
 				}
 			};
 
 			Observable.prototype.invoke = function ( listeners, params ) {
 				for ( var i = 0, len = listeners.length; i < len; i ++ ) {
-					listeners[i].apply( this, params );
+					listeners[ i ].apply( this, params );
 				}
 			};
 
@@ -6380,24 +6383,24 @@ if (jQuery) {
 					}
 
 					for ( var k = 0; k < keys.length; k ++ ) {
-						var key = keys[k];
+						var key = keys[ k ];
 
 						// Lowercase the first letter
 						// By default, dash-separated becomes camelCase
 						key = key.substring( 0, 1 ).toLowerCase() + key.substring( 1 );
 
-						if ( ! (key in dataLevel) ) {
-							dataLevel[key] = {};
+						if ( ! ( key in dataLevel ) ) {
+							dataLevel[ key ] = {};
 						}
 
 						if ( k == keys.length - 1 ) {
-							dataLevel[key] = data[originalKey];
+							dataLevel[ key ] = data[ originalKey ];
 						}
 
-						dataLevel = dataLevel[key];
+						dataLevel = dataLevel[ key ];
 					}
 
-					delete data[originalKey];
+					delete data[ originalKey ];
 				}
 
 				return data;
@@ -6415,7 +6418,7 @@ if (jQuery) {
 				var overflowY = el.style.overflowY;
 
 				//Check both x and y declarations
-				if ( overflowX === overflowY && (overflowY === 'hidden' || overflowY === 'visible') ) {
+				if ( overflowX === overflowY && ( overflowY === 'hidden' || overflowY === 'visible' ) ) {
 					return false;
 				}
 
@@ -6423,7 +6426,7 @@ if (jQuery) {
 					return true;
 				}
 
-				return ($el.innerHeight() < el.scrollHeight || $el.innerWidth() < el.scrollWidth);
+				return ( $el.innerHeight() < el.scrollHeight || $el.innerWidth() < el.scrollWidth );
 			};
 
 			Utils.escapeMarkup = function ( markup ) {
@@ -6443,7 +6446,7 @@ if (jQuery) {
 				}
 
 				return String( markup ).replace( /[&<>"'\/\\]/g, function ( match ) {
-					return replaceMap[match];
+					return replaceMap[ match ];
 				} );
 			};
 
@@ -6508,7 +6511,7 @@ if (jQuery) {
 
 				$message.append( escapeMarkup( message( params.args ) ) );
 
-				$message[0].className += ' select2-results__message';
+				$message[ 0 ].className += ' select2-results__message';
 
 				this.$results.append( $message );
 			};
@@ -6535,7 +6538,7 @@ if (jQuery) {
 				data.results = this.sort( data.results );
 
 				for ( var d = 0; d < data.results.length; d ++ ) {
-					var item = data.results[d];
+					var item = data.results[ d ];
 
 					var $option = this.option( item );
 
@@ -6565,7 +6568,7 @@ if (jQuery) {
 					} );
 
 					var $options = self.$results
-						.find( '.select2-results__option[aria-selected]' );
+					                   .find( '.select2-results__option[aria-selected]' );
 
 					$options.each( function () {
 						var $option = $( this );
@@ -6575,7 +6578,7 @@ if (jQuery) {
 						// id needs to be converted to a string when comparing
 						var id = '' + item.id;
 
-						if ( (item.element != null && item.element.selected) || (item.element == null && $.inArray( id, selectedIds ) > - 1) ) {
+						if ( ( item.element != null && item.element.selected ) || ( item.element == null && $.inArray( id, selectedIds ) > - 1 ) ) {
 							$option.attr( 'aria-selected', 'true' );
 						} else {
 							$option.attr( 'aria-selected', 'false' );
@@ -6623,12 +6626,12 @@ if (jQuery) {
 				};
 
 				if ( data.disabled ) {
-					delete attrs['aria-selected'];
-					attrs['aria-disabled'] = 'true';
+					delete attrs[ 'aria-selected' ];
+					attrs[ 'aria-disabled' ] = 'true';
 				}
 
 				if ( data.id == null ) {
-					delete attrs['aria-selected'];
+					delete attrs[ 'aria-selected' ];
 				}
 
 				if ( data._resultId != null ) {
@@ -6641,12 +6644,12 @@ if (jQuery) {
 
 				if ( data.children ) {
 					attrs.role = 'group';
-					attrs['aria-label'] = data.text;
-					delete attrs['aria-selected'];
+					attrs[ 'aria-label' ] = data.text;
+					delete attrs[ 'aria-selected' ];
 				}
 
 				for ( var attr in attrs ) {
-					var val = attrs[attr];
+					var val = attrs[ attr ];
 
 					option.setAttribute( attr, val );
 				}
@@ -6663,7 +6666,7 @@ if (jQuery) {
 					var $children = [];
 
 					for ( var c = 0; c < data.children.length; c ++ ) {
-						var child = data.children[c];
+						var child = data.children[ c ];
 
 						var $child = this.option( child );
 
@@ -6801,7 +6804,7 @@ if (jQuery) {
 
 					var currentOffset = self.$results.offset().top;
 					var nextTop = $next.offset().top;
-					var nextOffset = self.$results.scrollTop() + (nextTop - currentOffset);
+					var nextOffset = self.$results.scrollTop() + ( nextTop - currentOffset );
 
 					if ( nextIndex === 0 ) {
 						self.$results.scrollTop( 0 );
@@ -6896,7 +6899,7 @@ if (jQuery) {
 					var data = $( this ).data( 'data' );
 
 					self.getHighlightedResults()
-						.removeClass( 'select2-results__option--highlighted' );
+					    .removeClass( 'select2-results__option--highlighted' );
 
 					self.trigger( 'results:focus', {
 						data: data, element: $( this )
@@ -6906,7 +6909,7 @@ if (jQuery) {
 
 			Results.prototype.getHighlightedResults = function () {
 				var $highlighted = this.$results
-					.find( '.select2-results__option--highlighted' );
+				                       .find( '.select2-results__option--highlighted' );
 
 				return $highlighted;
 			};
@@ -6928,7 +6931,7 @@ if (jQuery) {
 
 				var currentOffset = this.$results.offset().top;
 				var nextTop = $highlighted.offset().top;
-				var nextOffset = this.$results.scrollTop() + (nextTop - currentOffset);
+				var nextOffset = this.$results.scrollTop() + ( nextTop - currentOffset );
 
 				var offsetDelta = nextTop - currentOffset;
 				nextOffset -= $highlighted.outerHeight( false ) * 2;
@@ -7080,7 +7083,7 @@ if (jQuery) {
 				// key is pressed, possibly along with others.
 				window.setTimeout( function () {
 					// Don't trigger `blur` if the focus is still in the selection
-					if ( (document.activeElement == self.$selection[0]) || ($.contains( self.$selection[0], document.activeElement )) ) {
+					if ( ( document.activeElement == self.$selection[ 0 ] ) || ( $.contains( self.$selection[ 0 ], document.activeElement ) ) ) {
 						return;
 					}
 
@@ -7101,7 +7104,7 @@ if (jQuery) {
 					$all.each( function () {
 						var $this = $( this );
 
-						if ( this == $select[0] ) {
+						if ( this == $select[ 0 ] ) {
 							return;
 						}
 
@@ -7206,7 +7209,7 @@ if (jQuery) {
 					return;
 				}
 
-				var selection = data[0];
+				var selection = data[ 0 ];
 
 				var $rendered = this.$selection.find( '.select2-selection__rendered' );
 				var formatted = this.display( selection, $rendered );
@@ -7292,7 +7295,7 @@ if (jQuery) {
 				var $selections = [];
 
 				for ( var d = 0; d < data.length; d ++ ) {
-					var selection = data[d];
+					var selection = data[ d ];
 
 					var $selection = this.selectionContainer();
 					var formatted = this.display( selection, $selection );
@@ -7337,14 +7340,14 @@ if (jQuery) {
 
 				$placeholder.html( this.display( placeholder ) );
 				$placeholder.addClass( 'select2-selection__placeholder' )
-					.removeClass( 'select2-selection__choice' );
+				            .removeClass( 'select2-selection__choice' );
 
 				return $placeholder;
 			};
 
 			Placeholder.prototype.update = function ( decorated, data ) {
 				var singlePlaceholder = (
-					data.length == 1 && data[0].id != this.placeholder.id
+					data.length == 1 && data[ 0 ].id != this.placeholder.id
 				);
 				var multipleSelections = data.length > 1;
 
@@ -7407,7 +7410,7 @@ if (jQuery) {
 
 				for ( var d = 0; d < data.length; d ++ ) {
 					var unselectData = {
-						data: data[d]
+						data: data[ d ]
 					};
 
 					// Trigger the `unselect` event, so people can prevent it from being
@@ -7523,7 +7526,7 @@ if (jQuery) {
 
 					if ( key === KEYS.BACKSPACE && self.$search.val() === '' ) {
 						var $previousChoice = self.$searchContainer
-							.prev( '.select2-selection__choice' );
+						                          .prev( '.select2-selection__choice' );
 
 						if ( $previousChoice.length > 0 ) {
 							var item = $previousChoice.data( 'data' );
@@ -7601,14 +7604,14 @@ if (jQuery) {
 			};
 
 			Search.prototype.update = function ( decorated, data ) {
-				var searchHadFocus = this.$search[0] == document.activeElement;
+				var searchHadFocus = this.$search[ 0 ] == document.activeElement;
 
 				this.$search.attr( 'placeholder', '' );
 
 				decorated.call( this, data );
 
 				this.$selection.find( '.select2-selection__rendered' )
-					.append( this.$searchContainer );
+				    .append( this.$searchContainer );
 
 				this.resizeSearch();
 				if ( searchHadFocus ) {
@@ -7649,7 +7652,7 @@ if (jQuery) {
 				} else {
 					var minimumWidth = this.$search.val().length + 1;
 
-					width = (minimumWidth * 0.75) + 'em';
+					width = ( minimumWidth * 0.75 ) + 'em';
 				}
 
 				this.$search.css( 'width', width );
@@ -7677,7 +7680,7 @@ if (jQuery) {
 					'unselecting'
 				];
 
-				var preventableEvents = ['opening', 'closing', 'selecting', 'unselecting'];
+				var preventableEvents = [ 'opening', 'closing', 'selecting', 'unselecting' ];
 
 				decorated.call( this, container, $container );
 
@@ -7721,7 +7724,7 @@ if (jQuery) {
 			};
 
 			Translation.prototype.get = function ( key ) {
-				return this.dict[key];
+				return this.dict[ key ];
 			};
 
 			Translation.prototype.extend = function ( translation ) {
@@ -7733,13 +7736,13 @@ if (jQuery) {
 			Translation._cache = {};
 
 			Translation.loadPath = function ( path ) {
-				if ( ! (path in Translation._cache) ) {
+				if ( ! ( path in Translation._cache ) ) {
 					var translations = require( path );
 
-					Translation._cache[path] = translations;
+					Translation._cache[ path ] = translations;
 				}
 
-				return new Translation( Translation._cache[path] );
+				return new Translation( Translation._cache[ path ] );
 			};
 
 			return Translation;
@@ -8677,11 +8680,11 @@ if (jQuery) {
 					this.current( function ( currentData ) {
 						var val = [];
 
-						data = [data];
+						data = [ data ];
 						data.push.apply( data, currentData );
 
 						for ( var d = 0; d < data.length; d ++ ) {
-							var id = data[d].id;
+							var id = data[ d ].id;
 
 							if ( $.inArray( id, val ) === - 1 ) {
 								val.push( id );
@@ -8720,7 +8723,7 @@ if (jQuery) {
 					var val = [];
 
 					for ( var d = 0; d < currentData.length; d ++ ) {
-						var id = currentData[d].id;
+						var id = currentData[ d ].id;
 
 						if ( id !== data.id && $.inArray( id, val ) === - 1 ) {
 							val.push( id );
@@ -8832,7 +8835,7 @@ if (jQuery) {
 			SelectAdapter.prototype.item = function ( $option ) {
 				var data = {};
 
-				data = $.data( $option[0], 'data' );
+				data = $.data( $option[ 0 ], 'data' );
 
 				if ( data != null ) {
 					return data;
@@ -8855,7 +8858,7 @@ if (jQuery) {
 					var children = [];
 
 					for ( var c = 0; c < $children.length; c ++ ) {
-						var $child = $( $children[c] );
+						var $child = $( $children[ c ] );
 
 						var child = this.item( $child );
 
@@ -8866,9 +8869,9 @@ if (jQuery) {
 				}
 
 				data = this._normalizeItem( data );
-				data.element = $option[0];
+				data.element = $option[ 0 ];
 
-				$.data( $option[0], 'data', data );
+				$.data( $option[ 0 ], 'data', data );
 
 				return data;
 			};
@@ -8957,7 +8960,7 @@ if (jQuery) {
 				}
 
 				for ( var d = 0; d < data.length; d ++ ) {
-					var item = this._normalizeItem( data[d] );
+					var item = this._normalizeItem( data[ d ] );
 
 					// Skip items which were pre-loaded, only merge the data
 					if ( $.inArray( item.id, existingIds ) >= 0 ) {
@@ -9110,7 +9113,7 @@ if (jQuery) {
 
 				if ( $.isArray( tags ) ) {
 					for ( var t = 0; t < tags.length; t ++ ) {
-						var tag = tags[t];
+						var tag = tags[ t ];
 						var item = this._normalizeItem( tag );
 
 						var $option = this.option( item );
@@ -9134,7 +9137,7 @@ if (jQuery) {
 					var data = obj.results;
 
 					for ( var i = 0; i < data.length; i ++ ) {
-						var option = data[i];
+						var option = data[ i ];
 
 						var checkChildren = (
 							option.children != null && ! wrapper( {
@@ -9166,7 +9169,7 @@ if (jQuery) {
 						var $option = self.option( tag );
 						$option.attr( 'data-select2-tag', true );
 
-						self.addOptions( [$option] );
+						self.addOptions( [ $option ] );
 
 						self.insertTag( data, tag );
 					}
@@ -9263,13 +9266,13 @@ if (jQuery) {
 				var i = 0;
 
 				var createTag = this.createTag || function ( params ) {
-						return {
-							id: params.term, text: params.term
-						};
+					return {
+						id: params.term, text: params.term
 					};
+				};
 
 				while ( i < term.length ) {
-					var termChar = term[i];
+					var termChar = term[ i ];
 
 					if ( $.inArray( termChar, separators ) === - 1 ) {
 						i ++;
@@ -9538,7 +9541,7 @@ if (jQuery) {
 				var modifiedData = data.slice( 0 );
 
 				for ( var d = data.length - 1; d >= 0; d -- ) {
-					var item = data[d];
+					var item = data[ d ];
 
 					if ( this.placeholder.id === item.id ) {
 						modifiedData.splice( d, 1 );
@@ -9590,7 +9593,7 @@ if (jQuery) {
 				} );
 
 				this.$results.on( 'scroll', function () {
-					var isLoadMoreVisible = $.contains( document.documentElement, self.$loadingMore[0] );
+					var isLoadMoreVisible = $.contains( document.documentElement, self.$loadingMore[ 0 ] );
 
 					if ( self.loading || ! isLoadMoreVisible ) {
 						return;
@@ -9775,8 +9778,8 @@ if (jQuery) {
 					top: $window.scrollTop(), bottom: $window.scrollTop() + $window.height()
 				};
 
-				var enoughRoomAbove = viewport.top < (offset.top - dropdown.height);
-				var enoughRoomBelow = viewport.bottom > (offset.bottom + dropdown.height);
+				var enoughRoomAbove = viewport.top < ( offset.top - dropdown.height );
+				var enoughRoomBelow = viewport.bottom > ( offset.bottom + dropdown.height );
 
 				var css = {
 					left: offset.left, top: container.bottom
@@ -9796,27 +9799,35 @@ if (jQuery) {
 				css.top -= parentOffset.top;
 				css.left -= parentOffset.left;
 
-				if ( ! isCurrentlyAbove && ! isCurrentlyBelow ) {
-					newDirection = 'below';
+
+				/**
+				 * Force dropdown open spot
+				 */
+				if ( this.options.get( 'dropdownPosition' ) === 'above' || this.options.get( 'dropdownPosition' ) === 'below' ) {
+					newDirection = this.options.get( 'dropdownPosition' );
+				} else {
+					if ( ! isCurrentlyAbove && ! isCurrentlyBelow ) {
+						newDirection = 'below';
+					}
+
+					if ( ! enoughRoomBelow && enoughRoomAbove && ! isCurrentlyAbove ) {
+						newDirection = 'above';
+					} else if ( ! enoughRoomAbove && enoughRoomBelow && isCurrentlyAbove ) {
+						newDirection = 'below';
+					}
 				}
 
-				if ( ! enoughRoomBelow && enoughRoomAbove && ! isCurrentlyAbove ) {
-					newDirection = 'above';
-				} else if ( ! enoughRoomAbove && enoughRoomBelow && isCurrentlyAbove ) {
-					newDirection = 'below';
-				}
-
-				if ( newDirection == 'above' || (isCurrentlyAbove && newDirection !== 'below') ) {
+				if ( newDirection == 'above' || ( isCurrentlyAbove && newDirection !== 'below' ) ) {
 					css.top = container.top - dropdown.height;
 				}
 
 				if ( newDirection != null ) {
 					this.$dropdown
-						.removeClass( 'select2-dropdown--below select2-dropdown--above' )
-						.addClass( 'select2-dropdown--' + newDirection );
+					    .removeClass( 'select2-dropdown--below select2-dropdown--above' )
+					    .addClass( 'select2-dropdown--' + newDirection );
 					this.$container
-						.removeClass( 'select2-container--below select2-container--above' )
-						.addClass( 'select2-container--' + newDirection );
+					    .removeClass( 'select2-container--below select2-container--above' )
+					    .addClass( 'select2-container--' + newDirection );
 				}
 
 				this.$dropdownContainer.css( css );
@@ -9850,7 +9861,7 @@ if (jQuery) {
 				var count = 0;
 
 				for ( var d = 0; d < data.length; d ++ ) {
-					var item = data[d];
+					var item = data[ d ];
 
 					if ( item.children ) {
 						count += countResults( item.children );
@@ -9908,7 +9919,7 @@ if (jQuery) {
 				var data = $highlightedResults.data( 'data' );
 
 				// Don't re-select already selected resulte
-				if ( (data.element != null && data.element.selected) || (data.element == null && data.selected) ) {
+				if ( ( data.element != null && data.element.selected ) || ( data.element == null && data.selected ) ) {
 					return;
 				}
 
@@ -10153,11 +10164,11 @@ if (jQuery) {
 					if ( options.language.indexOf( '-' ) > 0 ) {
 						// Extract the region information if it is included
 						var languageParts = options.language.split( '-' );
-						var baseLanguage = languageParts[0];
+						var baseLanguage = languageParts[ 0 ];
 
-						options.language = [options.language, baseLanguage];
+						options.language = [ options.language, baseLanguage ];
 					} else {
-						options.language = [options.language];
+						options.language = [ options.language ];
 					}
 				}
 
@@ -10168,7 +10179,7 @@ if (jQuery) {
 					var languageNames = options.language;
 
 					for ( var l = 0; l < languageNames.length; l ++ ) {
-						var name = languageNames[l];
+						var name = languageNames[ l ];
 						var language = {};
 
 						try {
@@ -10211,7 +10222,7 @@ if (jQuery) {
 				function stripDiacritics( text ) {
 					// Used 'uni range + named function' from http://jsperf.com/diacritics/18
 					function match( a ) {
-						return DIACRITICS[a] || a;
+						return DIACRITICS[ a ] || a;
 					}
 
 					return text.replace( /[^\u0000-\u007E]/g, match );
@@ -10231,7 +10242,7 @@ if (jQuery) {
 
 						// Check each child of the option
 						for ( var c = data.children.length - 1; c >= 0; c -- ) {
-							var child = data.children[c];
+							var child = data.children[ c ];
 
 							var matches = matcher( params, child );
 
@@ -10294,7 +10305,7 @@ if (jQuery) {
 				var camelKey = $.camelCase( key );
 
 				var data = {};
-				data[camelKey] = value;
+				data[ camelKey ] = value;
 
 				var convertedData = Utils._convertData( data );
 
@@ -10326,7 +10337,7 @@ if (jQuery) {
 			}
 
 			Options.prototype.fromElement = function ( $e ) {
-				var excludedData = ['select2'];
+				var excludedData = [ 'select2' ];
 
 				if ( this.options.multiple == null ) {
 					this.options.multiple = $e.prop( 'multiple' );
@@ -10379,8 +10390,8 @@ if (jQuery) {
 
 				// Prefer the element's `dataset` attribute if it exists
 				// jQuery 1.x does not correctly handle data attributes with multiple dashes
-				if ( $.fn.jquery && $.fn.jquery.substr( 0, 2 ) == '1.' && $e[0].dataset ) {
-					dataset = $.extend( true, {}, $e[0].dataset, $e.data() );
+				if ( $.fn.jquery && $.fn.jquery.substr( 0, 2 ) == '1.' && $e[ 0 ].dataset ) {
+					dataset = $.extend( true, {}, $e[ 0 ].dataset, $e.data() );
 				} else {
 					dataset = $e.data();
 				}
@@ -10394,10 +10405,10 @@ if (jQuery) {
 						continue;
 					}
 
-					if ( $.isPlainObject( this.options[key] ) ) {
-						$.extend( this.options[key], data[key] );
+					if ( $.isPlainObject( this.options[ key ] ) ) {
+						$.extend( this.options[ key ], data[ key ] );
 					} else {
-						this.options[key] = data[key];
+						this.options[ key ] = data[ key ];
 					}
 				}
 
@@ -10405,11 +10416,11 @@ if (jQuery) {
 			};
 
 			Options.prototype.get = function ( key ) {
-				return this.options[key];
+				return this.options[ key ];
 			};
 
 			Options.prototype.set = function ( key, val ) {
-				this.options[key] = val;
+				this.options[ key ] = val;
 			};
 
 			return Options;
@@ -10567,18 +10578,18 @@ if (jQuery) {
 				if ( method == 'style' ) {
 					var style = $element.attr( 'style' );
 
-					if ( typeof(style) !== 'string' ) {
+					if ( typeof ( style ) !== 'string' ) {
 						return null;
 					}
 
 					var attrs = style.split( ';' );
 
 					for ( var i = 0, l = attrs.length; i < l; i = i + 1 ) {
-						var attr = attrs[i].replace( /\s/g, '' );
+						var attr = attrs[ i ].replace( /\s/g, '' );
 						var matches = attr.match( WIDTH );
 
 						if ( matches !== null && matches.length >= 1 ) {
-							return matches[1];
+							return matches[ 1 ];
 						}
 					}
 
@@ -10605,7 +10616,7 @@ if (jQuery) {
 							data: data
 						} );
 					} );
-					self.$element.trigger('tvdclear');
+					self.$element.trigger( 'tvdclear' );
 				} ).off( 'tvderror' ).on( 'tvderror', function ( evt, error_message ) {
 					self.$element.addClass( 'tvd-invalid' );
 					self.$element.parent().find( 'label[for="' + self.$element.attr( 'id' ) + '"]' ).attr( 'data-error', error_message );
@@ -10617,8 +10628,8 @@ if (jQuery) {
 
 				this._sync = Utils.bind( this._syncAttributes, this );
 
-				if ( this.$element[0].attachEvent ) {
-					this.$element[0].attachEvent( 'onpropertychange', this._sync );
+				if ( this.$element[ 0 ].attachEvent ) {
+					this.$element[ 0 ].attachEvent( 'onpropertychange', this._sync );
 				}
 
 				var observer = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
@@ -10627,11 +10638,11 @@ if (jQuery) {
 					this._observer = new observer( function ( mutations ) {
 						$.each( mutations, self._sync );
 					} );
-					this._observer.observe( this.$element[0], {
+					this._observer.observe( this.$element[ 0 ], {
 						attributes: true, subtree: false
 					} );
-				} else if ( this.$element[0].addEventListener ) {
-					this.$element[0].addEventListener( 'DOMAttrModified', self._sync, false );
+				} else if ( this.$element[ 0 ].addEventListener ) {
+					this.$element[ 0 ].addEventListener( 'DOMAttrModified', self._sync, false );
 				}
 			};
 
@@ -10645,7 +10656,7 @@ if (jQuery) {
 
 			Select2.prototype._registerSelectionEvents = function () {
 				var self = this;
-				var nonRelayEvents = ['toggle', 'focus'];
+				var nonRelayEvents = [ 'toggle', 'focus' ];
 
 				this.selection.on( 'toggle', function () {
 					self.toggleDropdown();
@@ -10727,7 +10738,7 @@ if (jQuery) {
 					var key = evt.which;
 
 					if ( self.isOpen() ) {
-						if ( key === KEYS.ESC || key === KEYS.TAB || (key === KEYS.UP && evt.altKey) ) {
+						if ( key === KEYS.ESC || key === KEYS.TAB || ( key === KEYS.UP && evt.altKey ) ) {
 							self.close();
 
 							evt.preventDefault();
@@ -10735,7 +10746,7 @@ if (jQuery) {
 							self.trigger( 'results:select', {} );
 
 							evt.preventDefault();
-						} else if ( (key === KEYS.SPACE && evt.ctrlKey) ) {
+						} else if ( ( key === KEYS.SPACE && evt.ctrlKey ) ) {
 							self.trigger( 'results:toggle', {} );
 
 							evt.preventDefault();
@@ -10749,7 +10760,7 @@ if (jQuery) {
 							evt.preventDefault();
 						}
 					} else {
-						if ( key === KEYS.ENTER || key === KEYS.SPACE || (key === KEYS.DOWN && evt.altKey) ) {
+						if ( key === KEYS.ENTER || key === KEYS.SPACE || ( key === KEYS.DOWN && evt.altKey ) ) {
 							self.open();
 
 							evt.preventDefault();
@@ -10790,7 +10801,7 @@ if (jQuery) {
 				}
 
 				if ( name in preTriggerMap ) {
-					var preTriggerName = preTriggerMap[name];
+					var preTriggerName = preTriggerMap[ name ];
 					var preTriggerArgs = {
 						prevented: false, name: name, args: args
 					};
@@ -10859,10 +10870,10 @@ if (jQuery) {
 				}
 
 				if ( args == null || args.length === 0 ) {
-					args = [true];
+					args = [ true ];
 				}
 
-				var disabled = ! args[0];
+				var disabled = ! args[ 0 ];
 
 				this.$element.prop( 'disabled', disabled );
 			};
@@ -10890,7 +10901,7 @@ if (jQuery) {
 					return this.$element.val();
 				}
 
-				var newVal = args[0];
+				var newVal = args[ 0 ];
 
 				if ( $.isArray( newVal ) ) {
 					newVal = $.map( newVal, function ( obj ) {
@@ -10904,15 +10915,15 @@ if (jQuery) {
 			Select2.prototype.destroy = function () {
 				this.$container.remove();
 
-				if ( this.$element[0].detachEvent ) {
-					this.$element[0].detachEvent( 'onpropertychange', this._sync );
+				if ( this.$element[ 0 ].detachEvent ) {
+					this.$element[ 0 ].detachEvent( 'onpropertychange', this._sync );
 				}
 
 				if ( this._observer != null ) {
 					this._observer.disconnect();
 					this._observer = null;
-				} else if ( this.$element[0].removeEventListener ) {
-					this.$element[0]
+				} else if ( this.$element[ 0 ].removeEventListener ) {
+					this.$element[ 0 ]
 						.removeEventListener( 'DOMAttrModified', this._sync, false );
 				}
 
@@ -10967,7 +10978,7 @@ if (jQuery) {
 		], function ( $, _, Select2, Defaults ) {
 			if ( $.fn.select2 == null ) {
 				// All methods that should return the element
-				var thisMethods = ['open', 'close', 'destroy'];
+				var thisMethods = [ 'open', 'close', 'destroy' ];
 
 				$.fn.select2 = function ( options ) {
 					options = options || {};
@@ -10992,7 +11003,7 @@ if (jQuery) {
 
 							var args = Array.prototype.slice.call( arguments, 1 );
 
-							ret = instance[options].apply( instance, args );
+							ret = instance[ options ].apply( instance, args );
 						} );
 
 						// Check if we should be returning `this`
@@ -11018,7 +11029,7 @@ if (jQuery) {
 		return {
 			define: S2.define, require: S2.require
 		};
-	}());
+	}() );
 
 	// Autoload the jQuery bindings
 	// We know that all of the modules exist above this, so we're safe
@@ -11030,7 +11041,7 @@ if (jQuery) {
 	jQuery.fn.select2.amd = S2;
 	// Return the Select2 instance for anyone who is importing it.
 	return select2;
-} ));;  (function ($) {
+} ) );;  (function ($) {
   $.fn.collapsible = function(options) {
     var defaults = {
         accordion: undefined

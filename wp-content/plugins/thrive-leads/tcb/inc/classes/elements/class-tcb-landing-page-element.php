@@ -151,6 +151,8 @@ class TCB_Landing_page_Element extends TCB_Post_Element {
 			'lp-advanced'  => array(),
 		);
 
-		return array_merge( $this->post_components + $lp, $this->group_component() );
+		$lp_config = array_merge( $this->post_components + $lp, $this->group_component() );
+
+		return apply_filters( 'tcb_lp_element_extend_config', $lp_config ); /* filter the config in order to extend this in TTB */
 	}
 }

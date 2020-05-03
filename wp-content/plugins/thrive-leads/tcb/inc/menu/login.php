@@ -39,6 +39,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="tve-login-submit-option-control"></div>
 		</div>
 
+		<div class="tve-control tcb-icon-side-wrapper mt-10 tcb-login-align" data-key="Align" data-view="ButtonGroup"></div>
+		<div class="tve-control tcb-icon-side-wrapper mt-10" data-view="FormWidth"></div>
 		<hr>
 		<div class="tve-control" data-view="AddRemoveLabels"></div>
 		<div class="tve-control" data-view="RememberMe"></div>

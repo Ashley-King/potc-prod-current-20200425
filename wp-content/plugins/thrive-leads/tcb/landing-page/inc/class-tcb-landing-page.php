@@ -401,10 +401,6 @@ if ( ! class_exists( 'TCB_Landing_Page' ) ) {
 		 */
 		public function update_template_global_styles( $page_styles = array() ) {
 
-			if ( ! apply_filters( 'tcb_allow_landing_page_set_data', true, $this ) ) {
-				return;
-			}
-
 			if ( empty( $page_styles ) && ! empty( $this->cloud_template_data['page_styles'] ) ) {
 				$page_styles = $this->cloud_template_data['page_styles'];
 

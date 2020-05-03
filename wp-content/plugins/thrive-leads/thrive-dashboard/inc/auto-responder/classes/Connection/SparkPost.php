@@ -191,6 +191,28 @@ class Thrive_Dash_List_Connection_SparkPost extends Thrive_Dash_List_Connection_
 			return $e->getMessage();
 		}
 
+		if ( $data['send_confirmation'] ) {
+			try {
+				$confirmation = array(
+					'from'       => $domain,
+					'html'       => empty ( $data['confirmation_html'] ) ? '' : $data['confirmation_html'],
+					'text'       => '',
+					'subject'    => $data['confirmation_subject'],
+					'recipients' => array(
+						array(
+							'address' => array(
+								'email' => $data['sender_email'],
+							),
+						),
+					),
+				);
+
+				$sparkpost->transmission->send( $confirmation );
+			} catch ( Thrive_Dash_Api_SparkPost_Exception $e ) {
+				return $e->getMessage();
+			}
+		}
+
 		return true;
 	}
 

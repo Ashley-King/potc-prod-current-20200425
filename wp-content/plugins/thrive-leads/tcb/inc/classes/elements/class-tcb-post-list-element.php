@@ -245,7 +245,7 @@ class TCB_Post_List_Element extends TCB_Cloud_Template_Element_Abstract {
 						'config'  => array(
 							'name'      => __( 'Number of Items', 'thrive-cb' ),
 							'default'   => get_option( 'posts_per_page' ),
-							'maxlength' => 2,
+							'maxlength' => 4,
 							'min'       => 1,
 						),
 						'extends' => 'Input',

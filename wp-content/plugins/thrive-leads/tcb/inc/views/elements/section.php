@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<div class="thrv_wrapper thrv-page-section">
+<div class="thrv_wrapper thrv-page-section tve-height-update">
 	<div class="tve-page-section-out"></div>
 	<div class="tve-page-section-in tve_empty_dropzone"></div>
 </div>

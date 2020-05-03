@@ -705,17 +705,21 @@ abstract class Thrive_Dash_List_Connection_Abstract {
 				'id'          => 'mapping_url',
 				'placeholder' => __( 'URL', TVE_DASH_TRANSLATE_DOMAIN ),
 			),
-//			array(
-//				'id'          => 'mapping_radio',
-//				'placeholder' => __( 'Radio', TVE_DASH_TRANSLATE_DOMAIN ),
-//			),
 			array(
-				'id'          => 'mapping_hidden',
-				'placeholder' => __( 'Hidden', TVE_DASH_TRANSLATE_DOMAIN ),
+				'id'          => 'mapping_radio',
+				'placeholder' => __( 'Radio', TVE_DASH_TRANSLATE_DOMAIN ),
+			),
+			array(
+				'id'          => 'mapping_select',
+				'placeholder' => __( 'Dropdown', TVE_DASH_TRANSLATE_DOMAIN ),
 			),
 			array(
 				'id'          => 'mapping_textarea',
 				'placeholder' => __( 'Textarea', TVE_DASH_TRANSLATE_DOMAIN ),
+			),
+			array(
+				'id'          => 'mapping_hidden',
+				'placeholder' => __( 'Hidden', TVE_DASH_TRANSLATE_DOMAIN ),
 			),
 		);
 	}

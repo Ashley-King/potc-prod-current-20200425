@@ -65,7 +65,7 @@ class TCB_Logo {
 
 		/* get the src for each attachment ID */
 		foreach ( $active_logos as $key => $logo ) {
-			$active_logos[ $key ]['src'] = static::get_logo_srcset_or_src( $logo['id'], false );
+			$active_logos[ $key ]['src'] = static::get_src( $logo['id'] );
 		};
 
 		$data['logo'] = array(
@@ -85,11 +85,12 @@ class TCB_Logo {
 	 * Render the element. Inside the editor, render a simplified version without responsive stuff.
 	 * On the frontend, render a <source> tag for each logo chosen for a responsive device screen.
 	 *
-	 * @param $attr
+	 * @param array $attr
+	 * @param bool  $render_fallback
 	 *
 	 * @return string
 	 */
-	public static function render_logo( $attr = array() ) {
+	public static function render_logo( $attr = array(), $render_fallback = false ) {
 		/* if the desktop logo ID is not set, use id = 0 as default and set it in the attr */
 		if ( ! isset( $attr['data-id-d'] ) ) {
 			$attr['data-id-d'] = 0;
@@ -97,26 +98,32 @@ class TCB_Logo {
 		$desktop_id = (int) $attr['data-id-d'];
 
 		/* set the desktop source as a fallback; get only the src here, since this is an all-browser compatible version */
-		$fallback_source = static::get_logo_srcset_or_src( $desktop_id, false );
+		$fallback_data = static::get_attachment_data( $desktop_id );
 
 		$img_attr = array(
-			'src'     => $fallback_source,
-			'alt'     => empty( $attr['data-alt'] ) ? '' : $attr['data-alt'],
-			'loading' => 'lazy',
+			'src'    => $fallback_data['src'],
+			'height' => $fallback_data['height'],
+			'width'  => $fallback_data['width'],
+			'alt'    => empty( $attr['data-alt'] ) ? '' : $attr['data-alt'],
 		);
 
-		/* in the editor or when doing ajax ( when the logo is in a symbol ) or when doing rest ( when you add new headers/footers and start from cloud templates ), return the desktop src only */
-		if ( TCB_Utils::in_editor_render() || wp_doing_ajax() || TCB_Utils::is_rest() ) {
+		/* the placeholders shouldn't be lazy loaded because they're SVG sources */
+		if ( empty( $fallback_data['is_placeholder'] ) ) {
+			$img_attr['loading'] = 'lazy';
+		}
+
+		/* in the editor or when doing ajax ( when the logo is in a symbol ) or when doing rest ( when you add new headers/footers and start from cloud templates ) or when we set a flag, return the desktop src only */
+		if ( TCB_Utils::in_editor_render() || wp_doing_ajax() || TCB_Utils::is_rest() || $render_fallback ) {
 			$content = TCB_Utils::wrap_content( '', 'img', '', '', $img_attr );
 		} else {
-			/* if the fallback source is empty and we're outside the editor, return an empty string */
-			if ( empty( $fallback_source ) ) {
+			/* if the fallback data is empty and we're outside the editor, return an empty string ( this case happens when the logo was deleted ) */
+			if ( empty( $fallback_data['src'] ) ) {
 				$content = '';
 			} else {
 				$content = static::get_picture_element( $attr, $img_attr );
 			}
 		}
-		$tag      = apply_filters( 'tcb_logo_tag', 'a' );
+
 		$logo_url = apply_filters( 'tcb_logo_site_url', '' );
 
 		/* We have to process the shortcode here because we cannot send it as a param inside another shortcode ( logo ) */
@@ -129,7 +136,7 @@ class TCB_Logo {
 			$attr['href'] = $logo_url;
 		}
 
-		return TCB_Utils::wrap_content( $content, $tag, '', static::get_classes( $attr ), static::get_attr( $attr ) );
+		return TCB_Utils::wrap_content( $content, 'a', '', static::get_classes( $attr ), static::get_attr( $attr ) );
 	}
 
 	/**
@@ -147,10 +154,8 @@ class TCB_Logo {
 			if ( isset( $attr[ 'data-id-' . $device ] ) ) {
 				$id = (int) $attr[ 'data-id-' . $device ];
 
-				/* get the srcset, or, if it doesn't exist, get the source */
-				$srcset     = static::get_logo_srcset_or_src( $id );
 				$media_attr = array(
-					'srcset' => $srcset,
+					'srcset' => static::get_srcset( $id ),
 				);
 
 				/* add media rules to restrict where each source is displayed */
@@ -171,6 +176,7 @@ class TCB_Logo {
 				$picture_content .= TCB_Utils::wrap_content( '', 'source', '', '', $media_attr );
 			}
 		}
+
 		/* add the fallback img */
 		$picture_content .= TCB_Utils::wrap_content( '', 'img', '', '', $img_attr );
 
@@ -180,18 +186,45 @@ class TCB_Logo {
 	}
 
 	/**
-	 * @param $id
-	 * @param $get_srcset
+	 * Get all the attachment data for this logo ID. If the logo ID is not found or we don't have an attachment ID, return placeholder data instead.
 	 *
-	 * @return mixed|string
+	 * @param $id
+	 *
+	 * @return array
 	 */
-	public static function get_logo_srcset_or_src( $id, $get_srcset = true ) {
-		/* get the placeholder for this id ( it can differ depending on the ID : 0 and 1 have their own placeholder ) */
-		$placeholder = static::get_placeholder_src( $id );
+	public static function get_attachment_data( $id ) {
+		$attachment_id = static::get_attachment_id( $id );
 
-		$index = - 1;
+		if ( empty( $attachment_id ) ) {
+			/* get the placeholder for this id ( it can differ depending on the ID : 0 and 1 have their own placeholder ) */
+			$data = static::get_placeholder_data( $id );
+		} else {
+			$attachment_data = wp_get_attachment_image_src( $attachment_id, 'full' );
 
+			if ( empty( $attachment_data[0] ) ) {
+				$data = static::get_placeholder_data( $id );
+			} else {
+				$data = array(
+					'src'    => $attachment_data[0],
+					'width'  => $attachment_data[1],
+					'height' => $attachment_data[2],
+				);
+			}
+		}
+
+		return $data;
+	}
+
+	/**
+	 * For the given logo ID, look for the attachment ID and return it. If it's not found, return null.
+	 *
+	 * @param int $id
+	 *
+	 * @return mixed|null
+	 */
+	public static function get_attachment_id( $id ) {
 		$logos = static::get_logos();
+		$index = - 1;
 
 		/* look for the logo ID in the array of logo data */
 		foreach ( $logos as $key => $logo_data ) {
@@ -201,58 +234,98 @@ class TCB_Logo {
 			}
 		}
 
+		$attachment_id = null;
+
 		/* if the logo ID was not found, render the placeholder */
-		if ( $index === - 1 ) {
-			$src = $placeholder;
-		} else {
+		if ( $index !== - 1 ) {
 			/* if we found the key for the logo ID, get the src */
 			$logo_data = $logos[ $index ];
 
 			/* if the logo is active or it's light or dark, start looking for the image ID */
 			if ( $logo_data['active'] || $id === 0 || $id === 1 ) {
-				if ( empty( $logo_data['attachment_id'] ) ) {
-					$src = $placeholder;
-				} else {
+				if ( ! empty( $logo_data['attachment_id'] ) ) {
 					$attachment_id = $logo_data['attachment_id'];
-
-					/* get the full srcset so the browser can pick the best image size for the current screen */
-					if ( $get_srcset ) {
-						$srcset = wp_get_attachment_image_srcset( $attachment_id );
-					}
-
-					/* if srcset is empty (this happens for SVGs and for small images) or we don't want the srcset, return the src instead */
-					$src = empty( $srcset ) || ! $get_srcset ? TCB_Utils::get_image_src( $attachment_id ) : $srcset;
 				}
-			} else {
-				/* if the logo isn't light or dark and it's not active, render the placeholder */
-				$src = $placeholder;
 			}
 		}
 
-		return $src;
+		return $attachment_id;
 	}
 
 	/**
-	 * Return the placeholder according to the ID.
+	 * Get the image source for this logo ID. It can be a placeholder too
+	 *
+	 * @param $id
+	 *
+	 * @return mixed
+	 */
+	public static function get_src( $id ) {
+		$attachment_data = static::get_attachment_data( $id );
+
+		return $attachment_data['src'];
+	}
+
+	/**
+	 * Get the srcset attribute for this logo ID. If empty, return the normal source instead.
+	 *
+	 * @param $id
+	 *
+	 * @return bool|mixed|string
+	 */
+	public static function get_srcset( $id ) {
+		$attachment_id = static::get_attachment_id( $id );
+
+		if ( ! empty( $attachment_id ) ) {
+			/* get the full srcset so the browser can pick the best image size for the current screen */
+			$srcset = wp_get_attachment_image_srcset( $attachment_id );
+		}
+
+		if ( empty( $srcset ) ) {
+			/* if the srcset is empty (this happens for SVGs and for small images) or we don't want the srcset, get the src instead */
+			$srcset = static::get_src( $id );
+		}
+
+		return $srcset;
+	}
+
+	/**
+	 * Return the placeholder data according to the ID.
 	 * For id = 0 or 1, return the light/dark placeholder, for any other ID, return a 'logo has been deleted' placeholder.
 	 *
 	 * @param int $id
 	 *
-	 * @return string
+	 * @return array
 	 */
-	public static function get_placeholder_src( $id = 0 ) {
+	public static function get_placeholder_data( $id = 0 ) {
+		$data = array(
+			'height' => '',
+			'width'  => '',
+		);
 		if ( $id === 0 ) {
-			/* light logo placeholder */
-			$src = tve_editor_url( 'editor/css/images/logo_placeholder_dark.svg' );
+			$data['src'] = tve_editor_url( 'editor/css/images/logo_placeholder_dark.svg' );
 		} elseif ( $id === 1 ) {
-			/* dark logo placeholder */
-			$src = tve_editor_url( 'editor/css/images/logo_placeholder_light.svg' );
+			$data['src'] = tve_editor_url( 'editor/css/images/logo_placeholder_light.svg' );
 		} else {
 			/* If we're in the editor, render a <logo image deleted> image. On the frontend, leave it blank. */
-			$src = TCB_Utils::in_editor_render() ? tve_editor_url( static::DELETED_PLACEHOLDER_SRC ) : '';
+			$data['src'] = TCB_Utils::in_editor_render() ? tve_editor_url( static::DELETED_PLACEHOLDER_SRC ) : '';
 		}
 
-		return $src;
+		$data['is_placeholder'] = 1;
+
+		return $data;
+	}
+
+	/**
+	 * Get the src directly ( called from TTB )
+	 *
+	 * @param int $id
+	 *
+	 * @return mixed
+	 */
+	public static function get_placeholder_src( $id = 0 ) {
+		$data = static::get_placeholder_data( $id );
+
+		return $data['src'];
 	}
 
 	/**

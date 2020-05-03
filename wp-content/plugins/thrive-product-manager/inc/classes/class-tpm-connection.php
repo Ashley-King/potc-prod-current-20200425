@@ -252,6 +252,12 @@ class TPM_Connection {
 		$this->_data    = $data;
 		update_option( self::NAME, $data );
 
+		tpm_cron()->log( '_save_connection()' );
+
+		if ( ! tpm_cron()->schedule( $this->ttw_expiration ) ) {
+			add_filter( 'tpm_messages', array( tpm_cron(), 'push_message_event_unscheduled' ) );
+		}
+
 		return true;
 	}
 
@@ -300,6 +306,8 @@ class TPM_Connection {
 		TPM_Product_List::get_instance()->clear_cache();
 		TPM_License_Manager::get_instance()->clear_cache();
 
+		tpm_cron()->unschedule();
+
 		return delete_option( self::NAME );
 	}
 
@@ -328,7 +336,15 @@ class TPM_Connection {
 		return $date <= time();
 	}
 
+	/**
+	 * Does a request to TTW for a new token and saves it on connection
+	 * - sets a WP Cron
+	 *
+	 * @return bool
+	 */
 	public function refresh_token() {
+
+		tpm_cron()->log( 'refresh_token()' );
 
 		$user_id = $this->ttw_id;
 		if ( empty( $user_id ) ) {
@@ -345,10 +361,15 @@ class TPM_Connection {
 		$request = new TPM_Request( '/api/v1/public/refresh-tokens/user/' . $user_id, $params );
 		$request->set_header( 'Authorization', $ttw_salt );
 
+		tpm_cron()->log( var_export( $request, true ) );
+
 		$proxy_request = new TPM_Proxy_Request( $request );
 		$response      = $proxy_request->execute( '/tpm/proxy' );
 
 		$body = wp_remote_retrieve_body( $response );
+
+		tpm_cron()->log( var_export( $body, true ) );
+
 		if ( empty( $body ) ) {
 			return false;
 		}

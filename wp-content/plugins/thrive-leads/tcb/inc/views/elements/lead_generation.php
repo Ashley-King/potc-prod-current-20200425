@@ -15,13 +15,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<form action="#" method="post" novalidate="">
 			<div class="tve_lead_generated_inputs_container tve_clearfix">
 				<div class="tve_lg_input_container tve_lg_input">
-					<input type="text" data-field="name" name="name" placeholder="Name" data-placeholder="Name">
+					<input class="tcb-plain-text" type="text" data-field="name" name="name" placeholder="Name" data-placeholder="Name">
 				</div>
 				<div class="tve_lg_input_container tve_lg_input">
-					<input type="email" data-field="email" data-required="1" data-validation="email" name="email" placeholder="Email" data-placeholder="Email">
+					<input class="tcb-plain-text" type="email" data-field="email" data-required="1" data-validation="email" name="email" placeholder="Email" data-placeholder="Email">
 				</div>
 				<div class="tve_lg_input_container tve_submit_container tve_lg_submit">
-					<button type="submit"><?php echo __( 'Sign Up', 'thrive-cb' ); ?></button>
+					<button class="tcb-plain-text" type="submit"><?php echo __( 'Sign Up', 'thrive-cb' ); ?></button>
 				</div>
 			</div>
 			<input id="_submit_option" type="hidden" name="_submit_option" value="redirect">

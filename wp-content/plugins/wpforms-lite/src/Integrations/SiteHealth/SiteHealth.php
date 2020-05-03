@@ -12,7 +12,7 @@ use WPForms\Integrations\IntegrationInterface;
 class SiteHealth implements IntegrationInterface {
 
 	/**
-	 * Indicates if current integration is allowed to load.
+	 * Indicate if current integration is allowed to load.
 	 *
 	 * @since 1.5.5
 	 *
@@ -26,7 +26,7 @@ class SiteHealth implements IntegrationInterface {
 	}
 
 	/**
-	 * Loads an integration.
+	 * Load an integration.
 	 *
 	 * @since 1.5.5
 	 */

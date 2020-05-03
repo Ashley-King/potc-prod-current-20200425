@@ -42,7 +42,7 @@ class TCB_Icon_Element extends TCB_Element_Abstract {
 	 * @return string
 	 */
 	public function identifier() {
-		return '.thrv_icon:not(.tve_lg_input_container .thrv_icon)';
+		return '.thrv_icon:not(.tve_lg_input_container .thrv_icon, .tve-login-form-input .thrv_icon)';
 	}
 
 	/**

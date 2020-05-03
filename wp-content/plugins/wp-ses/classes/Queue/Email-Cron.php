@@ -54,7 +54,7 @@ class Email_Cron extends Cron {
 		$this->start_time = time();
 		$this->lock_worker();
 
-		update_site_option( 'wposes_last_cron_run', $this->start_time );
+		update_option( 'wposes_last_cron_run', $this->start_time );
 
 		while ( ! $this->time_exceeded() && ! $this->memory_exceeded() ) {
 			if ( ! $this->worker->process() ) {

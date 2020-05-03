@@ -17,6 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="dropdown-content">
 		<div class="tve-control" data-view="ShowLabel"></div>
+		<div class="tve-control" data-key="Required" data-view="Checkbox"></div>
 		<div class="tve-control hide-mobile hide-tablet" data-view="ColumnNumber"></div>
 		<div class="tve-control" data-view="VerticalSpace"></div>
 		<div class="tve-control hide-tablet hide-mobile" data-view="HorizontalSpace"></div>

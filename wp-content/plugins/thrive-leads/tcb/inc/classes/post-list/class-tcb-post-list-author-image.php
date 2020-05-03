@@ -61,7 +61,7 @@ class TCB_Post_List_Author_Image {
 			}
 
 			/* if we're in the editor, append a dynamic flag at the end so we can recognize that the URL is dynamic */
-			if ( TCB_Utils::in_editor_render() ) {
+			if ( TCB_Utils::in_editor_render( true ) ) {
 				$avatar_url = add_query_arg( array(
 					'dynamic_author' => 1,
 				), $avatar_url );

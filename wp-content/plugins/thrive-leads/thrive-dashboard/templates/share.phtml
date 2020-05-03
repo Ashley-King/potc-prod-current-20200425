@@ -5,7 +5,6 @@
 		<?php
 		$url = 'https://thrivethemes.com/';
 		$fb  = tve_dash_get_thrivethemes_shares( 'facebook' );
-		$gp  = tve_dash_get_thrivethemes_shares( 'google' );
 		?>
 
 		<span class="tvd-icon-heart tvd-share-icon"></span>
@@ -24,22 +23,10 @@
 				<span class="tvd-share-item">
 					<span class="tvd-share-count-icon"></span>
 					<span
-						class="tvd-share-count-text"><?php echo __( 'SHARE', TVE_DASH_TRANSLATE_DOMAIN ) ?></span>
+							class="tvd-share-count-text"><?php echo __( 'SHARE', TVE_DASH_TRANSLATE_DOMAIN ) ?></span>
 				</span>
 				<?php if ( ! empty( $fb ) ) : ?>
 					<span class="tvd-share-count"><?php echo $fb; ?></span>
-				<?php endif ?>
-			</a>
-			<a class="tvd-share tvd-share-google"
-			   href="https://plus.google.com/share?url=<?php echo $url; ?>"
-			   onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=500');return false;">
-				<span class="tvd-share-item">
-					<span class="tvd-share-count-icon"></span>
-					<span
-						class="tvd-share-count-text"><?php echo __( '+1', TVE_DASH_TRANSLATE_DOMAIN ) ?></span>
-				</span>
-				<?php if ( ! empty( $gp ) ) : ?>
-					<span class="tvd-share-count"><?php echo $gp; ?></span>
 				<?php endif ?>
 			</a>
 			<a class="tvd-share tvd-share-twitter"

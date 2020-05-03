@@ -217,6 +217,23 @@ class Thrive_Dash_List_Connection_SendGridEmail extends Thrive_Dash_List_Connect
 		} catch ( Exception $e ) {
 			return $e->getMessage();
 		}
+		/* Send confirmation email */
+		if ( $data['send_confirmation'] ) {
+			try {
+				$confirmation_email = new Thrive_Dash_Api_SendGridEmail_Email();
+				$confirmation_email
+					->addTo( array( $data['sender_email'] ) )
+					->setFrom( $from_email )
+					->setFromName( empty( $data['from_name'] ) ? '' : $data['from_name'] )
+					->setSubject( $data['confirmation_subject'] )
+					->setText( '' )
+					->setHtml( empty ( $data['confirmation_html'] ) ? '' : $data['confirmation_html'] );
+
+				$sg->send( $confirmation_email );
+			} catch ( Exception $e ) {
+				return $e->getMessage();
+			}
+		}
 
 		return true;
 	}

@@ -19,6 +19,9 @@ class TCB_Login_Element_Handler {
 
 		add_action( 'tcb_login_action_login', array( $this, 'action_login' ) );
 		add_action( 'tcb_login_action_recover_password', array( $this, 'action_recover_password' ) );
+		add_filter( 'tcb_dynamiclink_data', array( $this, 'dynamiclink_data' ), 100 );
+
+		add_shortcode( 'thrive_login_form_shortcode', array( $this, 'login_form_shortcode' ) );
 	}
 
 	/**
@@ -209,6 +212,73 @@ class TCB_Login_Element_Handler {
 		 * @return array
 		 */
 		return apply_filters( 'tcb_post_login_actions', $actions );
+	}
+
+	/**
+	 * @param array $data
+	 *
+	 * @return array
+	 */
+	public function dynamiclink_data( $data ) {
+
+		$data['Login Form'] = array(
+			'links'     => array(
+				0 => array(
+					'bk_to_login' => array(
+						'name' => 'Back to Login',
+						'url'  => '',
+						'show' => 1,
+						'id'   => 'bk_to_login',
+					),
+					'pass_reset'  => array(
+						'name' => 'Password Reset',
+						'url'  => '',
+						'show' => 1,
+						'id'   => 'forgot_password',
+					),
+					'logout'      => array(
+						'name' => 'Logout',
+						'url'  => wp_logout_url(),
+						'show' => 1,
+						'id'   => 'logout',
+					),
+					'login'       => array(
+						'name' => 'Log In',
+						'url'  => '',
+						'show' => 1,
+						'id'   => 'login',
+					),
+				),
+			),
+			'shortcode' => 'thrive_login_form_shortcode',
+		);
+
+		return $data;
+	}
+
+	/**
+	 * @param $args
+	 *
+	 * @return string
+	 */
+	public function login_form_shortcode( $args ) {
+
+		if ( ! isset( $args['id'] ) ) {
+
+			return '';
+		}
+
+		$data = '';
+
+		switch ( $args['id'] ) {
+			case 'logout':
+				$data = wp_logout_url();
+				break;
+			default;
+				break;
+		}
+
+		return $data;
 	}
 }
 

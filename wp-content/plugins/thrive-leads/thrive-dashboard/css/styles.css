@@ -4211,6 +4211,17 @@ html body #wpbody, html body .tvd-modal {
     #wpbody .tvd-card.tvd-green h1, .tvd-modal .tvd-card.tvd-green h1, #wpbody .tvd-card.tvd-green h2, .tvd-modal .tvd-card.tvd-green h2, #wpbody .tvd-card.tvd-green h3, .tvd-modal .tvd-card.tvd-green h3, #wpbody .tvd-card.tvd-green h4, .tvd-modal .tvd-card.tvd-green h4, #wpbody .tvd-card.tvd-green h5, .tvd-modal .tvd-card.tvd-green h5, #wpbody .tvd-card.tvd-green h6, .tvd-modal .tvd-card.tvd-green h6, #wpbody .tvd-card.tvd-orange h1, .tvd-modal .tvd-card.tvd-orange h1, #wpbody .tvd-card.tvd-orange h2, .tvd-modal .tvd-card.tvd-orange h2, #wpbody .tvd-card.tvd-orange h3, .tvd-modal .tvd-card.tvd-orange h3, #wpbody .tvd-card.tvd-orange h4, .tvd-modal .tvd-card.tvd-orange h4, #wpbody .tvd-card.tvd-orange h5, .tvd-modal .tvd-card.tvd-orange h5, #wpbody .tvd-card.tvd-orange h6, .tvd-modal .tvd-card.tvd-orange h6, #wpbody .tvd-card.tvd-red h1, .tvd-modal .tvd-card.tvd-red h1, #wpbody .tvd-card.tvd-red h2, .tvd-modal .tvd-card.tvd-red h2, #wpbody .tvd-card.tvd-red h3, .tvd-modal .tvd-card.tvd-red h3, #wpbody .tvd-card.tvd-red h4, .tvd-modal .tvd-card.tvd-red h4, #wpbody .tvd-card.tvd-red h5, .tvd-modal .tvd-card.tvd-red h5, #wpbody .tvd-card.tvd-red h6, .tvd-modal .tvd-card.tvd-red h6 {
       color: inherit; }
 
+.select2-dropdown .tvd-request-api {
+  text-align: center;
+  min-height: 24px;
+  padding: 6px; }
+  .select2-dropdown .tvd-request-api a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71; }
+    .select2-dropdown .tvd-request-api a:hover {
+      color: #039be5 !important; }
+
 .tvd-card-new {
   box-shadow: none !important;
   background: #eeeeee;
@@ -4239,6 +4250,11 @@ html body #wpbody, html body .tvd-modal {
     margin-top: 1.5rem; }
     .tvd-card-new h4.tvd-dark-text {
       color: #393939; }
+  .tvd-card-new a.tvd-request-api {
+    font-size: 13px;
+    color: #939393 !important; }
+    .tvd-card-new a.tvd-request-api:hover {
+      color: #039be5 !important; }
   #wpbody .tvd-card-new h4, .tvd-modal .tvd-card-new h4 {
     color: inherit;
     margin-top: 1.5rem; }

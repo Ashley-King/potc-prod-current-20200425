@@ -371,7 +371,7 @@ class DashboardWidget {
 	/**
 	 * Get entries count grouped by form.
 	 * Main point of entry to fetch form entry count data from DB.
-	 * Caches the result.
+	 * Cache the result.
 	 *
 	 * @since 1.5.0
 	 *

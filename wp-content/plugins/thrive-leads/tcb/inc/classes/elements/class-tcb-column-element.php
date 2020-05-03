@@ -62,6 +62,45 @@ class TCB_Column_Element extends TCB_Element_Abstract {
 	 */
 	public function own_components() {
 		return array(
+			'column'           => array(
+				'config' => array(
+					'VerticalPosition' => array(
+						'config'  => array(
+							'name'      => __( 'Vertical Position', 'thrive-cb' ),
+							'important' => true,
+							'buttons'   => array(
+								array(
+									'icon'    => 'none',
+									'default' => true,
+									'value'   => '',
+								),
+								array(
+									'icon'  => 'top',
+									'value' => 'flex-start',
+								),
+								array(
+									'icon'  => 'vertical',
+									'value' => 'center',
+								),
+								array(
+									'icon'  => 'bot',
+									'value' => 'flex-end',
+								),
+							),
+						),
+						'extends' => 'ButtonGroup',
+					),
+					'FixedWidth'       => array(
+						'config'  => array(
+							'name'    => '',
+							'label'   => __( 'Enable Fixed Width', 'thrive-cb' ),
+							'default' => true,
+							'info'    => true,
+						),
+						'extends' => 'Switch',
+					),
+				),
+			),
 			'responsive'       => array( 'hidden' => true ),
 			'styles-templates' => array( 'hidden' => true ),
 			'layout'           => array(

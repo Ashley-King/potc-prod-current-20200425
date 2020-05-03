@@ -1722,7 +1722,8 @@ function tve_enqueue_editor_scripts() {
 						'author'   => TCB_Post_List_Author_Image::get_default_url( get_the_ID() ),
 					),
 					'featured_image'                => array(
-						'default_sizes' => array_keys( TCB_Post_List_Featured_Image::filter_available_sizes() ),
+						'default_sizes'  => array_keys( TCB_Post_List_Featured_Image::filter_available_sizes() ),
+						'image_subsizes' => TCB_Post_List_Featured_Image::get_registered_image_subsizes(),
 					),
 					// this is to allow overriding the default save_post action ajax callback,
 					'tve_display_save_notification' => (int) get_option( 'tve_display_save_notification', 1 ),
@@ -2506,6 +2507,10 @@ function tve_do_wp_shortcodes( $content, $is_editor_page = false ) {
  * @return Boolean
  */
 function tve_post_is_landing_page( $id = 0 ) {
+
+	if ( empty( $id ) && ! is_singular() ) {
+		return false;
+	}
 
 	if ( empty( $id ) ) {
 		$id = get_the_ID();

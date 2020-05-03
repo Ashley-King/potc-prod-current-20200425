@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<?php echo __( 'Edit Tab Items', 'thrive-cb' ); ?>
 				</button>
 			</div>
-			<div class="tve-control" data-view="TabPalettes"></div>
+			<div class="tve-control hide-states" data-view="TabPalettes"></div>
 			<div class="tve-control hide-tablet hide-mobile" data-view="DefaultTab"></div>
 			<div class="tve-control hide-tablet hide-mobile hide-states" data-view="HoverEffect"></div>
 			<div class="tve-control hide-tablet hide-mobile" data-view="ContentAnimation"></div>

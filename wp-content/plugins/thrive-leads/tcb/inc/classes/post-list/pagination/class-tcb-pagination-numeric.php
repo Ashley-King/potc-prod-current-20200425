@@ -9,10 +9,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Silence is golden!
 }
 
+/**
+ * Class TCB_Pagination_Numeric
+ */
 class TCB_Pagination_Numeric extends TCB_Pagination {
 
-	const BUTTON_CLASS = 'tcb-pagination-button';
-	const PREV_NEXT_BUTTON_CLASS = 'tcb-pagination-prev-next-button';
+	const BUTTON_CLASS            = 'tcb-pagination-button';
+	const PREV_NEXT_BUTTON_CLASS  = 'tcb-pagination-prev-next-button';
 	const FIRST_LAST_BUTTON_CLASS = 'tcb-pagination-first-last-button';
 
 	private $default_attr = array(
@@ -38,17 +41,17 @@ class TCB_Pagination_Numeric extends TCB_Pagination {
 		}
 
 		if ( empty( $default_attr['hide_prev_next'] ) ) {
-			$content = static::get_button( 'prev' ) . $content . static::get_button( 'next' );
+			$content = $this->get_button( 'prev' ) . $content . $this->get_button( 'next' );
 		}
 
 		if ( empty( $default_attr['hide_first_last'] ) ) {
-			$content = static::get_button( 'first' ) . $content . static::get_button( 'last' );
+			$content = $this->get_button( 'first' ) . $content . $this->get_button( 'last' );
 		}
 
 		$content = TCB_Utils::wrap_content( $content, 'div', '', 'tcb-pagination-navigation-container ' . THRIVE_WRAPPER_CLASS );
 
 		if ( empty( $default_attr['hide_label'] ) ) {
-			$content = static::get_navigation_label() . $content;
+			$content = $this->get_navigation_label() . $content;
 		}
 
 		return $content;

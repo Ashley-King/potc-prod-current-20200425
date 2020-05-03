@@ -58,7 +58,7 @@ class TCB_Search_Form {
 	/**
 	 * Modify WP_Query before it asks the database what data to retrieve
 	 *
-	 * @param WP_Query Object $query
+	 * @param WP_Query $query
 	 *
 	 * @return void
 	 */
@@ -70,7 +70,7 @@ class TCB_Search_Form {
 		}
 
 		// IF main query and search page
-		if ( $query->is_main_query() && $query->is_search() && isset( $_GET, $_GET['tcb_sf_post_type'] ) ) {
+		if ( $query->is_main_query() && $query->is_search() && isset( $_GET['tcb_sf_post_type'] ) ) {
 
 			$post_types = $_GET['tcb_sf_post_type'];
 

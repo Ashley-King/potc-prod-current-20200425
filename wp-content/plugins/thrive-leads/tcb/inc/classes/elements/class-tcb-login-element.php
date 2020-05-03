@@ -69,16 +69,6 @@ class TCB_Login_Element extends TCB_Cloud_Template_Element_Abstract {
 		return tcb_template( 'elements/login.php', array(), true );
 	}
 
-
-	/**
-	 * Temporary hide login element.
-	 *
-	 * @return bool
-	 */
-	public function hide() {
-		return true;
-	}
-
 	/**
 	 * Component and control config
 	 *
@@ -94,7 +84,7 @@ class TCB_Login_Element extends TCB_Cloud_Template_Element_Abstract {
 							'label'   => __( 'Labels', 'thrive-cb' ),
 							'default' => true,
 						),
-						'css_suffix' => ' .tcb-label',
+						'css_suffix' => ' .tcb-removable-label',
 						'css_prefix' => '',
 						'extends'    => 'Switch',
 					),
@@ -117,6 +107,47 @@ class TCB_Login_Element extends TCB_Cloud_Template_Element_Abstract {
 						'css_suffix' => ' .tcb-lost-password-link',
 						'css_prefix' => '',
 						'extends'    => 'Switch',
+					),
+					'Align'          => array(
+						'config' => array(
+							'name'       => __( 'Size and Alignment', 'thrive-cb' ),
+							'full-width' => true,
+							'buttons' => array(
+								array(
+									'icon'    => 'a_left',
+									'value'   => 'left',
+									'tooltip' => __( 'Align Left', 'thrive-cb' ),
+								),
+								array(
+									'icon'    => 'a_center',
+									'value'   => 'center',
+									'default' => true,
+									'tooltip' => __( 'Align Center', 'thrive-cb' ),
+								),
+								array(
+									'icon'    => 'a_right',
+									'value'   => 'right',
+									'tooltip' => __( 'Align Right', 'thrive-cb' ),
+								),
+								array(
+									'text'    => 'FULL',
+									'value'   => 'full',
+									'tooltip' => __( 'Full Width', 'thrive-cb' ),
+								),
+							),
+						),
+						'extends' => 'ButtonGroup',
+					),
+					'FormWidth'    => array(
+						'config'  => array(
+							'default' => '400',
+							'min'     => '10',
+							'max'     => '1080',
+							'label'   => __( 'Form width', 'thrive-cb' ),
+							'um'      => array( '%', 'px' ),
+							'css'     => 'max-width',
+						),
+						'extends' => 'Slider',
 					),
 				),
 			),
@@ -149,39 +180,63 @@ class TCB_Login_Element extends TCB_Cloud_Template_Element_Abstract {
 				),
 				array(
 					'value'    => 'all_inputs',
-					'selector' => '.tve-form-input',
+					'selector' => '.tve-login-form-input',
 					'name'     => __( 'Grouped Inputs', 'thrive-cb' ),
 					'singular' => __( '-- Input %s', 'thrive-cb' ),
 				),
 				array(
 					'value'    => 'all_labels',
-					'selector' => '.tve-login-form-item label',
+					'selector' => '.tve-login-form-item .tcb-label',
 					'name'     => __( 'Grouped Labels', 'thrive-cb' ),
 					'singular' => __( '-- Label %s', 'thrive-cb' ),
 				),
 				array(
 					'value'    => 'all_submit_buttons',
-					'selector' => '.tve-form-submit',
+					'selector' => '.tar-login-elem-button',
 					'name'     => __( 'Submit Buttons', 'thrive-cb' ),
 					'singular' => __( '-- Label %s', 'thrive-cb' ),
 				),
 				array(
-					'value'    => 'all_back_buttons',
-					'selector' => '.tcb-go-back',
-					'name'     => __( 'Go Back Buttons', 'thrive-cb' ),
-					'singular' => __( '-- Label %s', 'thrive-cb' ),
+					'value'    => 'all_form_link',
+					'selector' => '.tar-login-elem-link',
+					'name'     => __( 'Form Links', 'thrive-cb' ),
+					'singular' => __( '-- Link %s', 'thrive-cb' ),
 				),
 				array(
-					'value'    => 'all_back_icons',
-					'selector' => '.tcb-go-back .thrv_icon',
-					'name'     => __( 'Go Back Icon', 'thrive-cb' ),
-					'singular' => __( '-- Label %s', 'thrive-cb' ),
+					'value'    => 'all_form_link_text',
+					'selector' => '.tar-login-elem-link .tve-dynamic-link',
+					'name'     => __( 'Form Links Texts', 'thrive-cb' ),
+					'singular' => __( '-- Text %s', 'thrive-cb' ),
 				),
 				array(
-					'value'    => 'all_back_primary_text',
-					'selector' => '.tcb-go-back .thrv-inline-text',
-					'name'     => __( 'Go Back Text', 'thrive-cb' ),
-					'singular' => __( '-- Label %s', 'thrive-cb' ),
+					'value'    => 'all_form_titles',
+					'selector' => '.thrv-form-title',
+					'name'     => __( 'Form Title', 'thrive-cb' ),
+					'singular' => __( '-- Title %s', 'thrive-cb' ),
+				),
+				array(
+					'value'    => 'all_form_info',
+					'selector' => '.thrv-form-info',
+					'name'     => __( 'Form Texts', 'thrive-cb' ),
+					'singular' => __( '-- Text %s', 'thrive-cb' ),
+				),
+				array(
+					'value'    => 'all_submit_texts',
+					'selector' => '.tar-login-submit  .tcb-button-text',
+					'name'     => __( 'Submit Button Text', 'thrive-cb' ),
+					'singular' => __( '-- Submit Text %s', 'thrive-cb' ),
+				),
+				array(
+					'value'    => 'all_inputs_icons',
+					'selector' => '.tve-login-form-input .thrv_icon',
+					'name'     => __( 'Input Icons', 'thrive-cb' ),
+					'singular' => __( '-- Input Icon %s', 'thrive-cb' ),
+				),
+				array(
+					'value'    => 'all_states',
+					'selector' => '.tve-form-state',
+					'name'     => __( 'Form States', 'thrive-cb' ),
+					'singular' => __( '-- Form State %s', 'thrive-cb' ),
 				),
 			),
 		);

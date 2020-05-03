@@ -6,7 +6,7 @@ var $target = jQuery( this ),
 	$element = $target,
 	sameImage = ( config.url && $element.attr( 'src' ) && $element.attr( 'src' ) === config.url ) || ( config.id && $element.attr( 'data-id' ) && $element.attr( 'data-id' ) == config.id );
 /* If it is the same img but set from Anim&Action work like Open full size image on click*/
-if ( ! sameImage || (sameImage && config.sizeChanged)) {
+if ( ! sameImage || ( sameImage && config.sizeChanged ) ) {
 	if ( config.id ) {
 		$element = jQuery( "#tcb-image-zoom-" + config.id + " img" )
 	} else if ( $element.find( "img" ).length ) {
@@ -33,8 +33,8 @@ if ( typeof img_size === 'undefined' ) {
 	                     } ).removeAttr( "width height" );
 	$clone.appendTo( "body" );
 	$clone.on( 'load', function () {
-		const height = parseFloat( $element.attr( 'height' ) || $element.height()),
-			width = parseFloat( $element.attr( 'width' ) || $element.width() );
+		const height = parseFloat( $element.attr( 'data-init-height' ) ) || parseFloat( $element.attr( 'height' ) || $element.height() ),
+			width = parseFloat( $element.attr( 'data-init-width' ) ) || parseFloat( $element.attr( 'width' ) || $element.width() );
 		img_size = {
 			"originalWidth": width,
 			"width": width,

@@ -1,0 +1,2064 @@
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .vscode/settings.json
+	new file:   package-lock.json
+	modified:   wp-admin/about.php
+	modified:   wp-admin/css/about-rtl.css
+	modified:   wp-admin/css/about-rtl.min.css
+	modified:   wp-admin/css/about.css
+	modified:   wp-admin/css/about.min.css
+	modified:   wp-admin/css/edit-rtl.css
+	modified:   wp-admin/css/edit-rtl.min.css
+	modified:   wp-admin/css/edit.css
+	modified:   wp-admin/css/edit.min.css
+	modified:   wp-admin/freedoms.php
+	modified:   wp-admin/images/w-logo-blue.png
+	modified:   wp-admin/includes/deprecated.php
+	modified:   wp-config.php
+	modified:   wp-content/languages/admin-es_ES.mo
+	modified:   wp-content/languages/admin-es_ES.po
+	modified:   wp-content/languages/es_ES-0ce75ad2f775d1cac9696967d484808c.json
+	modified:   wp-content/languages/es_ES-1a0cd6a7128913b15c1a10dd68951869.json
+	modified:   wp-content/languages/es_ES-1bba9045bb07c89671c88a3f328548e8.json
+	modified:   wp-content/languages/es_ES-28b3c3d595952907e08d98287077426c.json
+	modified:   wp-content/languages/es_ES-2c5d274ea625dd91556554ad82901529.json
+	modified:   wp-content/languages/es_ES-4a38fe1c0c45989e44682ba6109d9f46.json
+	modified:   wp-content/languages/es_ES-68f2cec7514bf8563c723a4d675fcfe6.json
+	modified:   wp-content/languages/es_ES-7f13c36c641b114bf18cd0bcc9ecc7e0.json
+	modified:   wp-content/languages/es_ES-803bf1ce2131e13efc590c1bc47851fc.json
+	modified:   wp-content/languages/es_ES-81c889563f09dd13de1701135dc62941.json
+	modified:   wp-content/languages/es_ES-8860e58c20c6a2ab5876a0f07be43bd9.json
+	modified:   wp-content/languages/es_ES-947c76bb5095da30e16668eec15406b2.json
+	modified:   wp-content/languages/es_ES-a25d1cc7bf7ca0b4e114f6bea64943f4.json
+	modified:   wp-content/languages/es_ES-bf0f094965d3d4a95b47babcb35fc136.json
+	modified:   wp-content/languages/es_ES-daeb084aab42199d26393a56c3465bc0.json
+	modified:   wp-content/languages/es_ES-e2791ba830489d23043be8650a22a22b.json
+	modified:   wp-content/languages/es_ES-f8f49d9fc4a9cf7d78ec99285417bd9c.json
+	modified:   wp-content/languages/es_ES.mo
+	modified:   wp-content/languages/es_ES.po
+	deleted:    wp-content/languages/plugins/mailoptin-fr_FR.mo
+	deleted:    wp-content/languages/plugins/mailoptin-fr_FR.po
+	modified:   wp-content/languages/plugins/wpforms-lite-es_ES.mo
+	modified:   wp-content/languages/plugins/wpforms-lite-es_ES.po
+	deleted:    wp-content/languages/themes/twentynineteen-de_DE.mo
+	deleted:    wp-content/languages/themes/twentynineteen-de_DE.po
+	deleted:    wp-content/languages/themes/twentynineteen-es_ES.mo
+	deleted:    wp-content/languages/themes/twentynineteen-es_ES.po
+	deleted:    wp-content/languages/themes/twentynineteen-fr_FR.mo
+	deleted:    wp-content/languages/themes/twentynineteen-fr_FR.po
+	deleted:    wp-content/languages/themes/twentyseventeen-de_DE.mo
+	deleted:    wp-content/languages/themes/twentyseventeen-de_DE.po
+	deleted:    wp-content/languages/themes/twentyseventeen-es_ES.mo
+	deleted:    wp-content/languages/themes/twentyseventeen-es_ES.po
+	deleted:    wp-content/languages/themes/twentyseventeen-fr_FR.mo
+	deleted:    wp-content/languages/themes/twentyseventeen-fr_FR.po
+	deleted:    wp-content/languages/themes/twentytwenty-de_DE.mo
+	deleted:    wp-content/languages/themes/twentytwenty-de_DE.po
+	deleted:    wp-content/languages/themes/twentytwenty-es_ES.mo
+	deleted:    wp-content/languages/themes/twentytwenty-es_ES.po
+	deleted:    wp-content/languages/themes/twentytwenty-fr_FR.mo
+	deleted:    wp-content/languages/themes/twentytwenty-fr_FR.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/acf.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-dark.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-field-group.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-global.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-input.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/font/LICENSE.txt
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/font/README.txt
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/font/acf.eot
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/font/acf.svg
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/font/acf.ttf
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/font/acf.woff
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/font/acf.woff2
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/font/config.json
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/images/acf-logo.png
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/images/spinner.gif
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/images/spinner@2x.gif
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-bg_highlight-soft_0_ffffff_1x100.png
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-icons_444444_256x240.png
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-icons_DDDDDD_256x240.png
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-icons_ffffff_256x240.png
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2-spinner.gif
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2.png
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2x2.png
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.full.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.full.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-field-group.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-field-group.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-input.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-input.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-field-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-field-group-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-form-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-helper-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-hook-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-input-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-meta-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-post-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-user-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-utility-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/acf-value-functions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/admin-field-group.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/admin-field-groups.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/admin-notices.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/admin-tools.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/admin-upgrade.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/admin.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/tools/class-acf-admin-tool-export.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/tools/class-acf-admin-tool-import.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/tools/class-acf-admin-tool.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/field-group-field-conditional-logic.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/field-group-field.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/field-group-fields.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/field-group-locations.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/field-group-options.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/html-admin-page-upgrade-network.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/html-admin-page-upgrade.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/html-admin-tools.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/html-location-group.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/html-location-rule.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/html-notice-upgrade.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/admin/views/settings-info.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-check-screen.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-query-users.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-query.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-upgrade.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-user-setting.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/api/api-term.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/assets.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/class-acf-data.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/compatibility.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/deprecated.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-accordion.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-button-group.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-checkbox.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-color_picker.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-date_picker.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-date_time_picker.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-email.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-file.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-google-map.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-group.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-image.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-link.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-message.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-number.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-oembed.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-output.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-page_link.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-password.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-post_object.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-radio.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-range.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-relationship.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-select.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-separator.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-tab.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-taxonomy.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-text.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-textarea.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-time_picker.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-true_false.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-url.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-user.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field-wysiwyg.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/fields/class-acf-field.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-attachment.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-comment.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-customizer.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-front.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-gutenberg.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-nav-menu.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-post.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-taxonomy.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-user.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/forms/form-widget.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/json.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/l10n.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/local-fields.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/local-meta.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-attachment.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-comment.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-current-user-role.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-current-user.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-nav-menu-item.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-nav-menu.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-parent.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-template.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-type.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-category.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-format.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-status.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-taxonomy.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-template.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-type.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-taxonomy.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-user-form.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-user-role.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-widget.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/loop.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/media.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/revisions.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/third-party.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/updates.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/upgrades.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/validation.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/walkers/class-acf-walker-nav-menu-edit.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/walkers/class-acf-walker-taxonomy-field.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/includes/wpml.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ar.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ar.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-bg_BG.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-bg_BG.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ca.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ca.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-cs_CZ.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-cs_CZ.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-de_CH.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-de_CH.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-de_DE.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-de_DE.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-de_DE_formal.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-de_DE_formal.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-es_ES.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-es_ES.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-fa_IR.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-fa_IR.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-fi.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-fi.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-fr_CA.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-fr_CA.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-fr_FR.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-fr_FR.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-he_IL.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-he_IL.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-hr_HR.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-hr_HR.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-hu_HU.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-hu_HU.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-id_ID.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-id_ID.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-it_IT.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-it_IT.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ja.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ja.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-nb_NO.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-nb_NO.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-nl_NL.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-nl_NL.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-pl_PL.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-pl_PL.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-pt_BR.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-pt_BR.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-pt_PT.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-pt_PT.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ro_RO.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ro_RO.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ru_RU.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-ru_RU.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-sk_SK.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-sk_SK.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-sv_SE.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-sv_SE.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-tr_TR.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-tr_TR.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-uk.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-uk.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-zh_CN.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-zh_CN.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-zh_TW.mo
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf-zh_TW.po
+	new file:   wp-content/plugins/advanced-custom-fields-pro/lang/acf.pot
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/acf-pro.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/admin/admin-options-page.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/admin/admin-updates.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/admin/views/html-options-page.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/admin/views/html-settings-updates.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/assets/css/acf-pro-field-group.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/assets/css/acf-pro-input.css
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/assets/js/acf-pro-blocks.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/assets/js/acf-pro-field-group.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/assets/js/acf-pro-field-group.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/assets/js/acf-pro-input.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/assets/js/acf-pro-input.min.js
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/fields/class-acf-field-clone.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/fields/class-acf-field-flexible-content.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/fields/class-acf-field-gallery.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/fields/class-acf-field-repeater.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/locations/class-acf-location-block.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/locations/class-acf-location-options-page.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/options-page.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/pro/updates.php
+	new file:   wp-content/plugins/advanced-custom-fields-pro/readme.txt
+	modified:   wp-content/plugins/all-in-one-wp-migration/all-in-one-wp-migration.php
+	modified:   wp-content/plugins/all-in-one-wp-migration/constants.php
+	modified:   wp-content/plugins/all-in-one-wp-migration/functions.php
+	modified:   wp-content/plugins/all-in-one-wp-migration/lib/model/class-ai1wm-extensions.php
+	modified:   wp-content/plugins/all-in-one-wp-migration/lib/model/import/class-ai1wm-import-database.php
+	modified:   wp-content/plugins/all-in-one-wp-migration/lib/model/import/class-ai1wm-import-done.php
+	modified:   wp-content/plugins/all-in-one-wp-migration/lib/vendor/servmask/database/class-ai1wm-database.php
+	new file:   wp-content/plugins/all-in-one-wp-migration/lib/view/import/done.php
+	new file:   wp-content/plugins/all-in-one-wp-migration/lib/view/import/oxygen.php
+	modified:   wp-content/plugins/all-in-one-wp-migration/readme.txt
+	modified:   wp-content/plugins/autodescription/autodescription.php
+	modified:   wp-content/plugins/autodescription/bootstrap/upgrade.php
+	modified:   wp-content/plugins/autodescription/inc/classes/admin-init.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/builders/scripts.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/builders/seobar-page.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/builders/seobar-term.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/builders/seobar.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/cache.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/core.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/debug.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/deprecated.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/detect.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/generate-description.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/generate-image.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/generate-title.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/generate-url.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/interpreters/seobar.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/post-data.class.php
+	modified:   wp-content/plugins/autodescription/inc/classes/query.class.php
+	modified:   wp-content/plugins/autodescription/inc/compat/plugin-bbpress.php
+	modified:   wp-content/plugins/autodescription/inc/compat/plugin-woocommerce.php
+	modified:   wp-content/plugins/autodescription/inc/views/admin/metaboxes/robots-metabox.php
+	modified:   wp-content/plugins/autodescription/inc/views/admin/metaboxes/social-metabox.php
+	modified:   wp-content/plugins/autodescription/inc/views/admin/metaboxes/title-metabox.php
+	modified:   wp-content/plugins/autodescription/inc/views/admin/seo-settings-columns.php
+	modified:   wp-content/plugins/autodescription/inc/views/debug/output.php
+	modified:   wp-content/plugins/autodescription/inc/views/sitemap/xml-sitemap.php
+	modified:   wp-content/plugins/autodescription/language/autodescription.pot
+	modified:   wp-content/plugins/autodescription/lib/js/settings.js
+	modified:   wp-content/plugins/autodescription/lib/js/settings.min.js
+	modified:   wp-content/plugins/autodescription/lib/js/title.js
+	modified:   wp-content/plugins/autodescription/lib/js/title.min.js
+	modified:   wp-content/plugins/autodescription/readme.txt
+	new file:   wp-content/plugins/classic-editor/LICENSE.md
+	new file:   wp-content/plugins/classic-editor/classic-editor.php
+	new file:   wp-content/plugins/classic-editor/js/block-editor-plugin.js
+	new file:   wp-content/plugins/classic-editor/readme.txt
+	deleted:    wp-content/plugins/mailoptin/languages/mailoptin.pot
+	deleted:    wp-content/plugins/mailoptin/mailoptin.php
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/.gitignore
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/.travis.yml
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/README.md
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/bin/install-wp-tests.sh
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/composer.json
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/phpunit.xml.dist
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/src/AdvanceAnalytics.php
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/src/AnalyticsRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/src/Charts.php
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/src/Cron.php
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/src/SettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/tests/AnalyticsRepositoryTest.php
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/tests/ChartsTest.php
+	deleted:    wp-content/plugins/mailoptin/src/advanceanalytics/tests/bootstrap.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/.gitignore
+	deleted:    wp-content/plugins/mailoptin/src/authifly/Aweber.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/CampaignMonitor.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/ConstantContact.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/Facebook.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/Hubspot.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/OAuthCredentialStorage.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/VerticalResponse.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/Zoho.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/composer.json
+	deleted:    wp-content/plugins/mailoptin/src/authifly/index.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/phpunit.xml
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Adapter/AbstractAdapter.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Adapter/AdapterInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Adapter/DataStoreTrait.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Adapter/OAuth1.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Adapter/OAuth2.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Authifly.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Data/Collection.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Data/Parser.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/AuthorizationDeniedException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/BadMethodCallException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/Exception.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/ExceptionInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/HttpClientFailureException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/HttpRequestFailedException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/InvalidAccessTokenException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/InvalidApplicationCredentialsException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/InvalidArgumentException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/InvalidAuthorizationCodeException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/InvalidAuthorizationStateException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/InvalidOauthTokenException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/InvalidOpenidIdentifierException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/NotImplementedException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/RuntimeException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/UnexpectedApiResponseException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Exception/UnexpectedValueException.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/HttpClient/Curl.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/HttpClient/Guzzle.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/HttpClient/HttpClientInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/HttpClient/Util.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/HttpClient/WPHttp.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Logger/Logger.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Logger/LoggerInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Logger/Psr3LoggerWrapper.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Storage/Session.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Storage/StorageInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Thirdparty/OAuth/OAuthConsumer.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Thirdparty/OAuth/OAuthRequest.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Thirdparty/OAuth/OAuthSignatureMethod.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Thirdparty/OAuth/OAuthSignatureMethodHMACSHA1.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Thirdparty/OAuth/OAuthUtil.php
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/Thirdparty/OAuth/README.md
+	deleted:    wp-content/plugins/mailoptin/src/authifly/src/index.html
+	deleted:    wp-content/plugins/mailoptin/src/connections/.gitignore
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/LICENSE
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Account.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/ActiveCampaign.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Auth.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Automation.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Campaign.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Connector.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Contact.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Deal.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Design.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Form.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Group.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/List.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Message.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Organization.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Segment.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Settings.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Subscriber.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Tag.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Tracking.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/User.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/Webhook.class.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/config.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/APIClass/includes/exceptions/RequestException.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/AbstractActiveCampaignConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ActiveCampaignConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/AweberConnect/AbstractAweberConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/AweberConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/AweberConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/AweberConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/AweberConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/AweberConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CampaignMonitorConnect/AbstractCampaignMonitorConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CampaignMonitorConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CampaignMonitorConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CampaignMonitorConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CampaignMonitorConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CampaignMonitorConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertFoxConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertFoxConnect/AbstractConvertFoxConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertFoxConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertFoxConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertFoxConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertFoxConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertKitConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertKitConnect/AbstractConvertKitConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertKitConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertKitConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertKitConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ConvertKitConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CtctConnect/AbstractCtctConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CtctConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CtctConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CtctConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CtctConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/CtctConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/DripConnect/AbstractDripConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/DripConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/DripConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/DripConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/DripConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ElementorConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ElementorConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ElementorConnect/CustomSelect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ElementorConnect/Elementor.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ElementorConnect/Init.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ElementorConnect/assets/elementor.js
+	deleted:    wp-content/plugins/mailoptin/src/connections/ElementorConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmailOctopusConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmailOctopusConnect/AbstractEmailOctopusConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmailOctopusConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmailOctopusConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmailOctopusConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmailOctopusConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmmaConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmmaConnect/AbstractEmmaConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmmaConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmmaConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmmaConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/EmmaConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/FacebookCustomAudienceConnect/AbstractFacebookCustomAudienceConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/FacebookCustomAudienceConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/FacebookCustomAudienceConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/FacebookCustomAudienceConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/FacebookCustomAudienceConnect/create-audience-tmpl.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/FacebookCustomAudienceConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GEMConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GEMConnect/AbstractGEMConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GEMConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GEMConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GEMConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GEMConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GetResponseConnect/AbstractGetResponseConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GetResponseConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GetResponseConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GetResponseConnect/GetResponseAPI3.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GetResponseConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GetResponseConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GetResponseConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/GoogleAnalytics.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/HubspotConnect/AbstractHubspotConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/HubspotConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/HubspotConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/HubspotConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/HubspotConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/Init.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/KlaviyoConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/KlaviyoConnect/AbstractKlaviyoConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/KlaviyoConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/KlaviyoConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/KlaviyoConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/KlaviyoConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/KlaviyoConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/LeadBankConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/LeadBankConnect/WP_Leadbank_Mail_BG_Process.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/LeadBankConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/AbstractMailChimpConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/assets/emailcustomizer.js
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/assets/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/assets/mailchimp.js
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailChimpConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailPoetConnect/AbstractMailPoetConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailPoetConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailPoetConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailPoetConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailPoetConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Api/Campaigns.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Api/Fields.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Api/Groups.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Api/Settings.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Api/Stats.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Api/Subscribers.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Common/ApiAbstract.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Common/ApiConstants.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Common/Collection.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Common/RestClient.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/Exceptions/MailerLiteSdkException.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/APIClass/MailerLite.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/AbstractMailerliteConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailerliteConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailjetConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailjetConnect/AbstractMailjetConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailjetConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailjetConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailjetConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailjetConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailjetConnect/confirm-email-tmpl.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailjetConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailsterConnect/AbstractMailsterConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailsterConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailsterConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailsterConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MailsterConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MoosendConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MoosendConnect/AbstractMoosendConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MoosendConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MoosendConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MoosendConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MoosendConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/MoosendConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/OntraportConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/OntraportConnect/AbstractOntraportConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/OntraportConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/OntraportConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/OntraportConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/OntraportConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/PolylangConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/PolylangConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/PolylangConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/RegisteredUsersConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/RegisteredUsersConnect/WP_Mail_BG_Process.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/RegisteredUsersConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendinblueConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendinblueConnect/AbstractSendinblueConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendinblueConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendinblueConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendinblueConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendinblueConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendinblueConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendlaneConnect/APIClass.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendlaneConnect/AbstractSendlaneConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendlaneConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendlaneConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendlaneConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendlaneConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendyConnect/AbstractSendyConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendyConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendyConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendyConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendyConnect/SendyPHP.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendyConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/SendyConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/VerticalResponseConnect/AbstractVerticalResponseConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/VerticalResponseConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/VerticalResponseConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/VerticalResponseConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/VerticalResponseConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/VerticalResponseConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/WPFormsConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/WPFormsConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/WPFormsConnect/MailOptin.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/WPFormsConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/WPMLConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/WPMLConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/WPMLConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCRMConnect/AbstractZohoCRMConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCRMConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCRMConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCRMConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCRMConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCampaignsConnect/AbstractZohoCampaignsConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCampaignsConnect/Connect.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCampaignsConnect/ConnectSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCampaignsConnect/SendCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCampaignsConnect/Subscription.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/ZohoCampaignsConnect/index.php
+	deleted:    wp-content/plugins/mailoptin/src/connections/composer.json
+	deleted:    wp-content/plugins/mailoptin/src/connections/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/.gitignore
+	deleted:    wp-content/plugins/mailoptin/src/core/.travis.yml
+	deleted:    wp-content/plugins/mailoptin/src/core/README.md
+	deleted:    wp-content/plugins/mailoptin/src/core/bin/install-wp-tests.sh
+	deleted:    wp-content/plugins/mailoptin/src/core/composer.json
+	deleted:    wp-content/plugins/mailoptin/src/core/gulpfile.js
+	deleted:    wp-content/plugins/mailoptin/src/core/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/package.json
+	deleted:    wp-content/plugins/mailoptin/src/core/phpunit.xml.dist
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/AdminNotices.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/ControlsHelpers.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/AbstractElement.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Customizer_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/Button.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/Divider.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/ElementInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/Image.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/Init.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/Posts.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/SettingsFields.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/Spacer.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Elements/Text.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/EmailContentBuilder/Misc.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/LICENSE.txt
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Ace_Editor_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Autocomplete_Input_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Button_Set_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Chosen_Select_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Chosen_Single_Select_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Controls_Tab_Toggle.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Custom_Content.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Custom_Input_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Date_Picker_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_EA_CPT_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_EA_CPT_Control_Trait.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Email_Schedule_Time_Fields_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Fields_Repeater_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Font_Size_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Font_Stack_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Google_Font_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Integration_Repeater_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_MO_Color_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Multiple_Checkbox.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Range_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Range_Value_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Single_Select_With_Group_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Submit_Button_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Tagit_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Tinymce_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Tinymce_Expanded_Editor.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_Toggle_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_View_Tags_Shortcode_Content.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/WP_Customize_X_Page_Views_Control.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/google-web-fonts.txt
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomControls/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/CustomizerTrait.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/AbstractCustomizer.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/Customizer.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/CustomizerControls.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/CustomizerSettings.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/EC_Customizer_Setting.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/EmailCampaignFactory.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/NewPublishPostTemplatePreview.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/NewsletterTemplatePreview.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/PostsEmailDigestTemplatePreview.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/SolitaryDummyContent.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/email-campaign-preview.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/EmailCampaign/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/OptinForm/AbstractCustomizer.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/OptinForm/Customizer.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/OptinForm/CustomizerControls.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/OptinForm/CustomizerSettings.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/OptinForm/OptinFormFactory.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/OptinForm/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/OptinForm/optin-form-preview.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/UpsellCustomizerSection.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/Customizer/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/AbstractSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/AddEmailCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/AddNewEmail.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/AddNewsletter.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/AddOptinCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/AdvanceAnalytics.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/CampaignLog.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/Campaign_Log_List.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/CloneEmailCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/CloneOptinCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/Connections.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/ConversionExport.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/EmailCampaigns.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/Email_Campaign_List.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/LeadBank.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/Newsletter.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/Newsletter_List.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/OptinCampaign_List.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/OptinCampaigns.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/PreviewCampaignLog.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/ProUpgrade.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/Settings.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/SplitTestOptinCampaign.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/include.preview-campaign-log.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/SettingsPage/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Admin/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/AjaxHandler.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Base.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Connections/AbstractConnect.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Connections/ConnectionFactory.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Connections/ConnectionInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Connections/error-html-tmpl.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Connections/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Core.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Cron.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/DBUpdates.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/AbstractTemplate.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/AbstractTriggers.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/Misc.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/NewPublishPost/NewPublishPost.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/NewPublishPost/Templates/Lucid.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/NewPublishPost/Templatify.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/NewPublishPost/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/Newsletter/AbstractTemplate.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/Newsletter/Newsletter.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/Newsletter/Templates/Lucid.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/Newsletter/Templatify.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/Newsletter/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/PostsEmailDigest/AbstractTemplate.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/PostsEmailDigest/PostsEmailDigest.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/PostsEmailDigest/Templates/Lucid.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/PostsEmailDigest/Templatify.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/PostsEmailDigest/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/Shortcodes.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/TemplateInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/TemplateTrait.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/TemplatifyInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/TriggerInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/VideoToImageLink.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/EmailCampaigns/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Functions/countries.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Functions/custom-settings-api.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Functions/functions.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Functions/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Functions/php-html-css-js-minifier.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Logging/CampaignLog.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Logging/CampaignLogInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Logging/CampaignLogPersistence.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Logging/CampaignLogRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Logging/PersistenceInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Logging/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/AbstractOptinForm.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/AbstractOptinTheme.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/ConversionDataBuilder.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/FrontEndOutput.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/InPost.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Inpost/BareMetal.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Inpost/Columbine.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Inpost/Elegance.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Inpost/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Lightbox/BareMetal.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Lightbox/Elegance.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Lightbox/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/OptinFormInterface.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/PageTargetingRuleTrait.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/QueryStringTargetingRuleTrait.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Recaptcha.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Shortcodes.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Sidebar/Gridgum.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Sidebar/Lupin.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/Sidebar/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/SidebarWidgets.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/UserTargetingRuleTrait.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/OptinForms/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/PluginSettings/Connections.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/PluginSettings/Settings.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/PluginSettings/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/RegisterActivation/Base.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/RegisterActivation/CreateDBTables.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/RegisterActivation/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/RegisterScripts.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/AbstractCampaignLogMeta.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/AbstractRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/ConnectionsRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/EmailCampaignMeta.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/EmailCampaignRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/EmailTemplatesRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/OptinCampaignMeta.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/OptinCampaignStat.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/OptinCampaignsRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/OptinConversionsRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/OptinThemesRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/StateRepository.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/Repositories/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/chosen/chosen-sprite.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/chosen/chosen-sprite@2x.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/chosen/chosen.jquery.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/chosen/chosen.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/chosen/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/admin/admin.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/admin/customizer-stylesheet.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/admin/fancybox.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/admin/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/animate.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/animate.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/pikaday.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/css/pikaday.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/admin-icon.svg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/advanceanalytics.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/close@2x.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-builder-elements/button.svg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-builder-elements/default-image.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-builder-elements/divider.svg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-builder-elements/image.svg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-builder-elements/posts.svg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-builder-elements/spacer.svg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-builder-elements/text.svg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-templates/code-your-own.jpg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-templates/default-feature-img.jpg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-templates/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/email-templates/lucid.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/leadbankscreenshot.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/lockicon.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/logo-mailoptin.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/mailoptin-blue.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/mailoptin-white.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/mo-optin-brand.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/mo-pro-upgrade.jpg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/mo.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/alyssum/alyssum-inpost-sidebar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/alyssum/alyssum-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/alyssum/alyssum-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/alyssum/custom-arrow.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/alyssum/intro-icon.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/bannino/bannino-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/bannino/bannino-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/bannino/close.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/bannino/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/bannino/optin-image.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/baremetal-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/baremetal-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/boldy-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/boldy-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/boldy-sidebar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/boldy-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/columbine-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/dahlia-bar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/daisy-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/dashdot-bar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/elegance-close.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/elegance-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/elegance-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/gridgum-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/gridgum-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/gridgum-sidebar-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/letterbox-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/letterbox-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/letterbox-sidebar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/letterbox-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/liatris/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/liatris/liatris-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/liatris/liatris-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/liatris/liatris-sidebar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/liatris/liatris-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/liatris/profile.jpg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/lupin-sidebar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/mimosa-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/muscari-bar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/primrose-sidebar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/quince/bg-gradient.jpg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/quince/envelope.svg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/quince/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/quince/quince-inpost-sidebar-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/quince/quince-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/rescript-inpost.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/rescript-lightbox.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/rescript-sidebar.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/rescript-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/scilla/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/scilla/scilla-sidebar-slidein.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/scilla/style-2.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/optin-themes/solidago-optin.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/premium-theme.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/profilepress-ad.jpg
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/spinner.gif
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/video-placeholder.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/wpforms-mo.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/images/youtube-play-button-overlay.png
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/ab-test.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/admin-script.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/email-template-customizer.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/fancybox-init.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/new-email-campaign.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/new-optin-campaign.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/optin-block.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/optin-customizer.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/optin-type-selection.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/admin/send-test-email.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ace.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ext-searchbox.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ext-settings_menu.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ext-spellcheck.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ext-split.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ext-static_highlight.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ext-statusbar.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ext-textarea.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/ext-whitespace.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/keybinding-emacs.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/keybinding-vim.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/mode-css.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/mode-html.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/mode-javascript.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/mode-json.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/theme-monokai.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/worker-css.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/worker-html.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/worker-javascript.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/worker-json.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-editor/worker-php.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ace-init.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/autocomplete-init.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/buttonset-control/buttonset.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/buttonset-control/buttonset.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/buttonset-control/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/chosen-single.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/chosen.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/contextual-customizer-controls.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/contextual-email-customizer-controls.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/customizer-toast-notifications.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/bootstrap-datetimepicker.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/bootstrap-datetimepicker.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/bootstrap.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/bootstrap.css.map
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/bootstrap.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/bootstrap.min.css.map
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/bootstrap.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/collapse.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-control/transition.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/datetime-init.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/ea-cpt-settings-control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/email-automation-code-editor.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/email-content-control/control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/email-content-control/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/email-content-control/style.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/fetch-customizer-connect-list.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/fields-control/control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/fields-control/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/fields-control/style.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/font-size-control/control.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/font-size-control/control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/integration-control/control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/integration-control/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/integration-control/map-custom-field.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/integration-control/style.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/mo-wp-editor.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/multiple-checkbox.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/newsletter-code-editor.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/newsletter-tinymce-editor.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/range-control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/range-value-control/customizer-range-value-control.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/range-value-control/customizer-range-value-control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/range-value-control/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/select2/select2.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/select2/select2.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tab-toggle/control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tab-toggle/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tagit/tag-it.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tagit/tagit-init.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tagit/tagit.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tagit/tagit.ui-zendesk.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tinymce-control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tinymce-expanded-editor/control.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tinymce-expanded-editor/control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/tinymce-expanded-editor/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/toggle-control/customizer-toggle-control.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/toggle-control/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/toggle-control/license.txt
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/customizer-controls/toggle-control/pure-css-togle-buttons.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/mailoptin.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/mobile-detect.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/almond.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/js.cookie.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/mailoptin.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/main.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/mc-groups-validation.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/moExitIntent.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/moModal.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/moScrollTrigger.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/moment.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/pikaday.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/recaptcha.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/require.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/js/src/showads.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/toastr/toastr-init.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/toastr/toastr.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/toastr/toastr.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/tooltipster/borderless.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/tooltipster/bundle.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/tooltipster/bundle.min.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/tooltipster/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/tooltipster/init.js
+	deleted:    wp-content/plugins/mailoptin/src/core/src/assets/tooltipster/light.min.css
+	deleted:    wp-content/plugins/mailoptin/src/core/src/index.php
+	deleted:    wp-content/plugins/mailoptin/src/core/tests/Connections/AbstractConnectTest.php
+	deleted:    wp-content/plugins/mailoptin/src/core/tests/Repositories/AbstractCampaignLogMetaTest.php
+	deleted:    wp-content/plugins/mailoptin/src/core/tests/Repositories/EmailNotificationRepositoryTest.php
+	deleted:    wp-content/plugins/mailoptin/src/core/tests/Repositories/OptinThemesRepositoryTest.php
+	deleted:    wp-content/plugins/mailoptin/src/core/tests/Triggers/NewPublishPostTest.php
+	deleted:    wp-content/plugins/mailoptin/src/core/tests/bootstrap.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/.gitignore
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/composer.json
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/AdblockDetector.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/AfterConversion.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/AutoResponder.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/CustomCSS.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/DeviceTargeting.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/DisplayEffects.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/DisplayRules.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/EDD_SL_Plugin_Updater.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/GoogleAnalytics.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/LeadBank/LeadBank.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/LeadBank/Leads.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/LeadBank/Leads_List.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/LeadBank/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/Libsodium.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/LibsodiumSettingsPage.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/LicenseControl.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/NewVsReturningVisitors.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/OptinSchedule.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/Polylang.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Bar/Dahlia.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Bar/Dashdot.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Bar/Muscari.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Bar/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/Alyssum.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/Bannino.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/Boldy.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/Gridgum.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/LetterBox.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/Liatris.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/Quince.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/Rescript.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/Solidago.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Inpost/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Alyssum.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Bannino.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Boldy.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Daisy.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Gridgum.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/LetterBox.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Liatris.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Quince.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Rescript.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/Solidago.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Lightbox/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/Alyssum.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/Boldy.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/LetterBox.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/Liatris.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/Primrose.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/Quince.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/Rescript.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/Scilla.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/Solidago.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Sidebar/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Alyssum.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Boldy.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Gridgum.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/LetterBox.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Liatris.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Mimosa.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Quince.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Rescript.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Scilla.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/Solidago.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/Slidein/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/OptinForms/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/PremiumTemplates.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/optin/boldy-img.png
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/optin/bookcover.png
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/optin/close.png
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/optin/gridgum-img.png
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/optin/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/optin/letterbox-icon.png
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/optin/primrose-bg.jpg
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/assets/optin/rescript-img.jpg
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/PremiumTemplates/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/ReferrerDetection.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/WPML.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/WooCommerceTargeting.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/autoresponder-config.js
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/blank.gif
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/fancybox_loading.gif
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/fancybox_loading@2x.gif
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/fancybox_overlay.png
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/fancybox_sprite.png
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/fancybox_sprite@2x.png
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/index.php
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/jquery.fancybox.css
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/jquery.fancybox.js
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/jquery.fancybox.min.css
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/jquery.fancybox.min.js
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/fancybox/jquery.fancybox.pack.js
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/assets/js/admin/highcharts.js
+	deleted:    wp-content/plugins/mailoptin/src/libsodium/src/index.php
+	deleted:    wp-content/plugins/mailoptin/uninstall.php
+	deleted:    wp-content/plugins/mailoptin/vendor/a5hleyrich/wp-background-processing/.gitignore
+	deleted:    wp-content/plugins/mailoptin/vendor/a5hleyrich/wp-background-processing/classes/wp-async-request.php
+	deleted:    wp-content/plugins/mailoptin/vendor/a5hleyrich/wp-background-processing/classes/wp-background-process.php
+	deleted:    wp-content/plugins/mailoptin/vendor/a5hleyrich/wp-background-processing/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/a5hleyrich/wp-background-processing/license.txt
+	deleted:    wp-content/plugins/mailoptin/vendor/a5hleyrich/wp-background-processing/wp-background-processing.php
+	deleted:    wp-content/plugins/mailoptin/vendor/autoload.php
+	deleted:    wp-content/plugins/mailoptin/vendor/barryvdh/composer-cleanup-plugin
+	deleted:    wp-content/plugins/mailoptin/vendor/bin/upgrade-carbon
+	deleted:    wp-content/plugins/mailoptin/vendor/collizo4sky/persist-admin-notices-dismissal/CHANGES.md
+	deleted:    wp-content/plugins/mailoptin/vendor/collizo4sky/persist-admin-notices-dismissal/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/collizo4sky/persist-admin-notices-dismissal/dismiss-notice.js
+	deleted:    wp-content/plugins/mailoptin/vendor/collizo4sky/persist-admin-notices-dismissal/persist-admin-notices-dismissal.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/ClassLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/autoload_classmap.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/autoload_files.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/autoload_namespaces.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/autoload_psr4.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/autoload_real.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/autoload_static.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installed.json
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/AglInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/AimeosInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/AsgardInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/AttogramInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/BonefishInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/CakePHPInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ChefInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/CiviCrmInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ClanCatsFrameworkInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/CockpitInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/CodeIgniterInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/Concrete5Installer.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/CraftInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/CroogoInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/DecibelInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/DframeInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/DokuWikiInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/DolibarrInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/DrupalInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ElggInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/EliasisInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ExpressionEngineInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/EzPlatformInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/FuelInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/FuelphpInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/GravInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/HuradInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ImageCMSInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/Installer.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ItopInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/JoomlaInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/KanboardInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/KirbyInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/KnownInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/KodiCMSInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/KohanaInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/LanManagementSystemInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/LaravelInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/LavaLiteInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/LithiumInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MODULEWorkInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MODXEvoInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MagentoInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MajimaInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MakoInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MantisBTInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MauticInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MayaInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MediaWikiInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MicroweberInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ModxInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/MoodleInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/OctoberInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/OntoWikiInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/OsclassInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/OxidInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PPIInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PhiftyInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PhpBBInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PimcoreInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PiwikInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PlentymarketsInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/Plugin.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PortoInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PrestashopInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PuppetInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/PxcmsInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/RadPHPInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ReIndexInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/Redaxo5Installer.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/RedaxoInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/RoundcubeInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/SMFInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ShopwareInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/SilverStripeInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/SiteDirectInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/SyDESInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/SyliusInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/Symfony1Installer.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/TYPO3CmsInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/TYPO3FlowInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/TaoInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/TheliaInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/TuskInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/UserFrostingInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/VanillaInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/VgmcpInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/WHMCSInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/WolfCMSInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/WordPressInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/YawikInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ZendInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/Composer/Installers/ZikulaInstaller.php
+	deleted:    wp-content/plugins/mailoptin/vendor/composer/installers/src/bootstrap.php
+	deleted:    wp-content/plugins/mailoptin/vendor/drewm/drip/.gitignore
+	deleted:    wp-content/plugins/mailoptin/vendor/drewm/drip/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/drewm/drip/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/drewm/drip/src/Batch.php
+	deleted:    wp-content/plugins/mailoptin/vendor/drewm/drip/src/Dataset.php
+	deleted:    wp-content/plugins/mailoptin/vendor/drewm/drip/src/Drip.php
+	deleted:    wp-content/plugins/mailoptin/vendor/drewm/drip/src/Response.php
+	deleted:    wp-content/plugins/mailoptin/vendor/kylekatarnls/update-helper/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/kylekatarnls/update-helper/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/kylekatarnls/update-helper/src/UpdateHelper/ComposerPlugin.php
+	deleted:    wp-content/plugins/mailoptin/vendor/kylekatarnls/update-helper/src/UpdateHelper/NotUpdateInterfaceInstanceException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelperInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/AbstractCsv.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Config/Controls.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Config/Output.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Exception/InvalidRowException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Modifier/MapIterator.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Modifier/QueryFilter.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Modifier/RowFilter.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Modifier/StreamFilter.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Plugin/ColumnConsistencyValidator.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Plugin/ForbiddenNullValuesValidator.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Plugin/SkipNullValuesFormatter.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Reader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/league/csv/src/Writer.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/bin/upgrade-carbon
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/bin/upgrade-carbon.bat
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Carbon.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/CarbonInterval.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/CarbonPeriod.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/af.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ar.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ar_Shakl.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/az.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/bg.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/bn.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/bs_BA.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ca.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/cs.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/cy.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/da.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/de.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/dv_MV.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/el.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/en.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/eo.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/es.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/et.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/eu.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/fa.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/fi.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/fo.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/fr.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/gl.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/gu.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/he.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/hi.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/hr.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/hu.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/hy.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/id.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/is.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/it.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ja.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ka.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/kk.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/km.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ko.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/lt.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/lv.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/mk.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/mn.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ms.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/my.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ne.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/nl.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/no.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/oc.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/pl.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ps.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/pt.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/pt_BR.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ro.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ru.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sh.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sk.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sl.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sq.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sr.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sr_Cyrl.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sr_Cyrl_ME.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sr_Latn_ME.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sr_ME.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sv.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/sw.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/th.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/tr.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/uk.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/ur.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/uz.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/vi.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/zh.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Lang/zh_TW.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Translator.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/Carbon/Upgrade.php
+	deleted:    wp-content/plugins/mailoptin/vendor/nesbot/carbon/src/JsonSerializable.php
+	deleted:    wp-content/plugins/mailoptin/vendor/pelago/emogrifier/.gitignore
+	deleted:    wp-content/plugins/mailoptin/vendor/pelago/emogrifier/Classes/Emogrifier.php
+	deleted:    wp-content/plugins/mailoptin/vendor/pelago/emogrifier/Configuration/PhpCodeSniffer/Standards/Emogrifier/ruleset.xml
+	deleted:    wp-content/plugins/mailoptin/vendor/pelago/emogrifier/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/pelago/emogrifier/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/.editorconfig
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/.gitignore
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/LICENSE.md
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/composer.lock
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/convert.php
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/html2text.php
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/src/Html2Text.php
+	deleted:    wp-content/plugins/mailoptin/vendor/soundasleep/html2text/src/Html2TextException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/polyfill-mbstring/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/polyfill-mbstring/Mbstring.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/polyfill-mbstring/README.md
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/polyfill-mbstring/bootstrap.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/polyfill-mbstring/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/.gitignore
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Catalogue/AbstractOperation.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Catalogue/MergeOperation.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Catalogue/OperationInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Catalogue/TargetOperation.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Command/XliffLintCommand.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/DataCollector/TranslationDataCollector.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/DataCollectorTranslator.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/DependencyInjection/TranslationDumperPass.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/DependencyInjection/TranslationExtractorPass.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/DependencyInjection/TranslatorPass.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/CsvFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/DumperInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/FileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/IcuResFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/IniFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/JsonFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/MoFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/PhpFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/PoFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/QtFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/XliffFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Dumper/YamlFileDumper.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Exception/ExceptionInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Exception/InvalidArgumentException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Exception/InvalidResourceException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Exception/LogicException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Exception/NotFoundResourceException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Exception/RuntimeException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Extractor/AbstractFileExtractor.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Extractor/ChainExtractor.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Extractor/ExtractorInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Extractor/PhpExtractor.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Extractor/PhpStringTokenParser.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Formatter/ChoiceMessageFormatterInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Formatter/MessageFormatter.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Formatter/MessageFormatterInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/IdentityTranslator.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Interval.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/LICENSE
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/ArrayLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/CsvFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/FileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/IcuDatFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/IcuResFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/IniFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/JsonFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/LoaderInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/MoFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/PhpFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/PoFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/QtFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/XliffFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/YamlFileLoader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/schema/dic/xliff-core/xliff-core-1.2-strict.xsd
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/schema/dic/xliff-core/xliff-core-2.0.xsd
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Loader/schema/dic/xliff-core/xml.xsd
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/LoggingTranslator.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/MessageCatalogue.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/MessageCatalogueInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/MessageSelector.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/MetadataAwareInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/PluralizationRules.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Reader/TranslationReader.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Reader/TranslationReaderInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Resources/bin/translation-status.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Resources/schemas/xliff-core-1.2-strict.xsd
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Translator.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/TranslatorBagInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/TranslatorInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Util/ArrayConverter.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Writer/TranslationWriter.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/Writer/TranslationWriterInterface.php
+	deleted:    wp-content/plugins/mailoptin/vendor/symfony/translation/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/.gitignore
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/composer.json
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/Mailchimp.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/MailchimpAPIException.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/MailchimpAutomations.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/MailchimpCampaigns.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/MailchimpConnectedSites.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/MailchimpEcommerce.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/MailchimpLists.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/MailchimpReports.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/MailchimpTemplates.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/http/MailchimpCurlHttpClient.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/http/MailchimpGuzzleHttpClient.php
+	deleted:    wp-content/plugins/mailoptin/vendor/thinkshout/mailchimp-api-php/src/http/MailchimpHttpClientInterface.php
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/_init.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/assets/assets.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/assets/models.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/assets/routes.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/assets/views.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/contacts/contacts.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/contacts/routes.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/contacts/views.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/dashboard.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/inconclusive_tests.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/models.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/reporting/charts.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/reporting/models.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/reporting/reporting.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/reporting/routes.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/reporting/views.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/routes.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/timepicker.js
+	modified:   wp-content/plugins/thrive-leads/admin/js-min/views.js
+	modified:   wp-content/plugins/thrive-leads/inc/constants.php
+	modified:   wp-content/plugins/thrive-leads/js/editor.min.js
+	modified:   wp-content/plugins/thrive-leads/js/frontend.min.js
+	modified:   wp-content/plugins/thrive-leads/js/tcb-editor.min.js
+	modified:   wp-content/plugins/thrive-leads/js/tl-editor.min.js
+	modified:   wp-content/plugins/thrive-leads/tcb/admin/assets/js/tcb-admin.min.js
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/css/editor/style.css
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/css/fonts/control-panel.svg
+	new file:   wp-content/plugins/thrive-leads/tcb/editor/css/images/login_default.png
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/css/main/style.css
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/css/thrive_classy.css
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/css/thrive_flat.css
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/css/thrive_minimal.css
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/js/dist/admin.min.js
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/js/dist/editor.min.js
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/js/dist/froala.min.js
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/js/dist/frontend.min.js
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/js/dist/gutenberg.min.js
+	modified:   wp-content/plugins/thrive-leads/tcb/editor/js/dist/main.min.js
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/backbone/cloud-templates/item.phtml
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/backbone/controls/lead-generation/lg-input.phtml
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/backbone/controls/lead-generation/lg-radio.phtml
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/backbone/controls/lead-generation/lg-select.phtml
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/backbone/controls/lead-generation/lg-textarea.phtml
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/backbone/controls/lead-generation/select-style-picker.phtml
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/backbone/controls/tooltip/fixed-column-tooltip.phtml
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/backbone/inline/shortcodes/popup-custom-input.phtml
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/backbone/landing-pages/lp-template.phtml
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/backbone/lead-generation/apis/email-extra/settings.phtml
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/class-tcb-login-element-handler.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/class-tcb-search-form.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/class-tcb-utils.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-column-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-columns-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-form-icon-element.php
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-form-state-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-icon-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-image-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-landing-page-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-lead-generation-input-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-lead-generation-radio-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-lead-generation-radio-option-element.php
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-lead-generation-select-dropdown-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-lead-generation-select-element.php
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-lead-generation-select-option-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-login-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-login-form-element.php
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-login-form-input-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/elements/class-tcb-post-list-element.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/logo/class-tcb-logo.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/post-list/class-tcb-post-list-author-image.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/post-list/class-tcb-post-list-featured-image.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/post-list/class-tcb-post-list-shortcodes.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/classes/post-list/pagination/class-tcb-pagination-numeric.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/functions.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/i18n.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/button.php
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/menu/column.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/contentbox.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/lead_generation_radio.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/lead_generation_radio_option.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/lead_generation_select.php
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/menu/lead_generation_select_option.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/login.php
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/menu/login_form_input.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/menu.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/tabs.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/menu/toggle.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/views/actions/image-zoom.js.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/views/elements/lead_generation.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/views/elements/login.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/views/elements/section.php
+	new file:   wp-content/plugins/thrive-leads/tcb/inc/views/modals/email-settings.php
+	modified:   wp-content/plugins/thrive-leads/tcb/inc/views/post-list-sub-elements/post-title.php
+	modified:   wp-content/plugins/thrive-leads/tcb/landing-page/inc/class-tcb-landing-page.php
+	modified:   wp-content/plugins/thrive-leads/tcb/landing-page/layout.php
+	modified:   wp-content/plugins/thrive-leads/tcb/languages/thrive-cb.po
+	modified:   wp-content/plugins/thrive-leads/tcb/version.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/css/styles.css
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/access-manager/includes/assets/js/admin.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/Abstract.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/Awsses.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/CampaignMonitorEmail.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/Email.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/MailRelayEmail.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/Mailgun.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/Mandrill.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/Postmark.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/SendGridEmail.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/SendinblueEmail.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/classes/Connection/SparkPost.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/views/admin-list.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/views/includes/email.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/views/js/admin-global.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/views/js/admin-global.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-inbox/assets/dist/admin.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-manager/assets/js/admin/backbone.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/script-manager/assets/js/dist/admin.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/smart-site/assets/admin/js/dist/admin.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/smart-site/classes/class-tvd-global-shortcodes.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/inc/smart-site/classes/class-tvd-smart-shortcodes.php
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/frontend.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/global.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/hammer.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/leanmodal.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/select2.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/toasts.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/tooltip.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/tve-dash.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/tve-dash.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/velocity.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/js/util/jquery.zclip.1.1.1/jquery.zclip.min.js
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/templates/share.phtml
+	modified:   wp-content/plugins/thrive-leads/thrive-dashboard/version.php
+	modified:   wp-content/plugins/thrive-leads/thrive-leads.php
+	modified:   wp-content/plugins/thrive-product-manager/css/tpm-admin.css
+	modified:   wp-content/plugins/thrive-product-manager/inc/classes/class-tpm-admin.php
+	modified:   wp-content/plugins/thrive-product-manager/inc/classes/class-tpm-connection.php
+	new file:   wp-content/plugins/thrive-product-manager/inc/classes/class-tpm-cron.php
+	modified:   wp-content/plugins/thrive-product-manager/inc/templates/debugger.phtml
+	modified:   wp-content/plugins/thrive-product-manager/js/dist/tpm-admin.min.js
+	modified:   wp-content/plugins/thrive-product-manager/thrive-product-manager.php
+	modified:   wp-content/plugins/wp-crontrol/css/wp-crontrol.css
+	modified:   wp-content/plugins/wp-crontrol/js/wp-crontrol.js
+	modified:   wp-content/plugins/wp-crontrol/readme.md
+	modified:   wp-content/plugins/wp-crontrol/src/event-list-table.php
+	modified:   wp-content/plugins/wp-crontrol/src/event.php
+	modified:   wp-content/plugins/wp-crontrol/src/schedule-list-table.php
+	modified:   wp-content/plugins/wp-crontrol/wp-crontrol.php
+	modified:   wp-content/plugins/wp-ses/classes/Email-Log.php
+	modified:   wp-content/plugins/wp-ses/classes/Queue/Email-Cron.php
+	modified:   wp-content/plugins/wp-ses/classes/Queue/Queue-Status.php
+	modified:   wp-content/plugins/wp-ses/classes/SES-API.php
+	modified:   wp-content/plugins/wp-ses/readme.txt
+	modified:   wp-content/plugins/wp-ses/view/health-report/upgrade.php
+	modified:   wp-content/plugins/wp-ses/wp-ses.php
+	new file:   wp-content/plugins/wpforms-lite/assets/css/admin-bar.css
+	new file:   wp-content/plugins/wpforms-lite/assets/css/admin-bar.min.css
+	new file:   wp-content/plugins/wpforms-lite/assets/css/admin-global.css
+	renamed:    wp-content/plugins/mailoptin/src/advanceanalytics/src/index.php -> wp-content/plugins/wpforms-lite/assets/css/admin-global.min.css
+	new file:   wp-content/plugins/wpforms-lite/assets/css/admin-notifications.css
+	new file:   wp-content/plugins/wpforms-lite/assets/css/admin-notifications.min.css
+	modified:   wp-content/plugins/wpforms-lite/assets/css/admin.css
+	modified:   wp-content/plugins/wpforms-lite/assets/css/admin.min.css
+	modified:   wp-content/plugins/wpforms-lite/assets/css/builder.css
+	modified:   wp-content/plugins/wpforms-lite/assets/css/builder.min.css
+	modified:   wp-content/plugins/wpforms-lite/assets/css/flatpickr.min.css
+	modified:   wp-content/plugins/wpforms-lite/assets/css/wpforms-base.css
+	new file:   wp-content/plugins/wpforms-lite/assets/css/wpforms-base.min.css
+	modified:   wp-content/plugins/wpforms-lite/assets/css/wpforms-full.css
+	new file:   wp-content/plugins/wpforms-lite/assets/images/times-solid-white.svg
+	modified:   wp-content/plugins/wpforms-lite/assets/js/admin-builder.js
+	new file:   wp-content/plugins/wpforms-lite/assets/js/admin-notifications.js
+	new file:   wp-content/plugins/wpforms-lite/assets/js/admin-notifications.min.js
+	modified:   wp-content/plugins/wpforms-lite/assets/js/admin-utils.js
+	modified:   wp-content/plugins/wpforms-lite/assets/js/admin.js
+	modified:   wp-content/plugins/wpforms-lite/assets/js/admin.min.js
+	modified:   wp-content/plugins/wpforms-lite/assets/js/components/admin/gutenberg/formselector.js
+	modified:   wp-content/plugins/wpforms-lite/assets/js/components/admin/gutenberg/formselector.min.js
+	modified:   wp-content/plugins/wpforms-lite/assets/js/flatpickr.min.js
+	new file:   wp-content/plugins/wpforms-lite/assets/js/integrations/wpforms-elementor.js
+	new file:   wp-content/plugins/wpforms-lite/assets/js/integrations/wpforms-elementor.min.js
+	modified:   wp-content/plugins/wpforms-lite/assets/js/wpforms.js
+	modified:   wp-content/plugins/wpforms-lite/changelog.txt
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/admin.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/builder/class-builder.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/builder/functions.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/builder/panels/class-base.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/builder/panels/class-fields.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/builder/panels/class-payments.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/builder/panels/class-providers.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/builder/panels/class-settings.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/builder/panels/class-setup.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/class-settings.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/overview/class-overview-table.php
+	modified:   wp-content/plugins/wpforms-lite/includes/admin/overview/class-overview.php
+	modified:   wp-content/plugins/wpforms-lite/includes/class-conditional-logic-core.php
+	modified:   wp-content/plugins/wpforms-lite/includes/class-form.php
+	modified:   wp-content/plugins/wpforms-lite/includes/class-frontend.php
+	modified:   wp-content/plugins/wpforms-lite/includes/class-install.php
+	modified:   wp-content/plugins/wpforms-lite/includes/class-logging.php
+	modified:   wp-content/plugins/wpforms-lite/includes/class-process.php
+	modified:   wp-content/plugins/wpforms-lite/includes/class-smart-tags.php
+	modified:   wp-content/plugins/wpforms-lite/includes/class-widget.php
+	modified:   wp-content/plugins/wpforms-lite/includes/emails/class-emails.php
+	modified:   wp-content/plugins/wpforms-lite/includes/fields/class-base.php
+	modified:   wp-content/plugins/wpforms-lite/includes/fields/class-checkbox.php
+	modified:   wp-content/plugins/wpforms-lite/includes/fields/class-email.php
+	modified:   wp-content/plugins/wpforms-lite/includes/fields/class-gdpr-checkbox.php
+	modified:   wp-content/plugins/wpforms-lite/includes/fields/class-number-slider.php
+	modified:   wp-content/plugins/wpforms-lite/includes/fields/class-radio.php
+	modified:   wp-content/plugins/wpforms-lite/includes/functions.php
+	modified:   wp-content/plugins/wpforms-lite/includes/integrations.php
+	modified:   wp-content/plugins/wpforms-lite/includes/providers/class-base.php
+	modified:   wp-content/plugins/wpforms-lite/includes/templates/class-base.php
+	modified:   wp-content/plugins/wpforms-lite/includes/templates/class-subscribe.php
+	modified:   wp-content/plugins/wpforms-lite/languages/wpforms-lite.pot
+	modified:   wp-content/plugins/wpforms-lite/readme.txt
+	new file:   wp-content/plugins/wpforms-lite/src/Admin/AdminBarMenu.php
+	modified:   wp-content/plugins/wpforms-lite/src/Admin/Challenge.php
+	new file:   wp-content/plugins/wpforms-lite/src/Admin/Notifications.php
+	modified:   wp-content/plugins/wpforms-lite/src/Emails/Mailer.php
+	modified:   wp-content/plugins/wpforms-lite/src/Forms/Preview.php
+	modified:   wp-content/plugins/wpforms-lite/src/Helpers/Chain.php
+	modified:   wp-content/plugins/wpforms-lite/src/Helpers/PluginSilentUpgrader.php
+	modified:   wp-content/plugins/wpforms-lite/src/Helpers/Templates.php
+	new file:   wp-content/plugins/wpforms-lite/src/Integrations/Elementor/Elementor.php
+	modified:   wp-content/plugins/wpforms-lite/src/Integrations/Gutenberg/FormSelector.php
+	modified:   wp-content/plugins/wpforms-lite/src/Integrations/IntegrationInterface.php
+	modified:   wp-content/plugins/wpforms-lite/src/Integrations/Loader.php
+	modified:   wp-content/plugins/wpforms-lite/src/Integrations/SiteHealth/SiteHealth.php
+	modified:   wp-content/plugins/wpforms-lite/src/Integrations/WPMailSMTP/Notifications.php
+	modified:   wp-content/plugins/wpforms-lite/src/Lite/Admin/Builder/Education.php
+	modified:   wp-content/plugins/wpforms-lite/src/Lite/Admin/Connect.php
+	modified:   wp-content/plugins/wpforms-lite/src/Lite/Admin/DashboardWidget.php
+	modified:   wp-content/plugins/wpforms-lite/src/Lite/Admin/Settings/Education.php
+	modified:   wp-content/plugins/wpforms-lite/src/Lite/Reports/EntriesCount.php
+	modified:   wp-content/plugins/wpforms-lite/src/Loader.php
+	modified:   wp-content/plugins/wpforms-lite/src/Migrations.php
+	modified:   wp-content/plugins/wpforms-lite/src/Providers/Provider/Settings/FormBuilder.php
+	modified:   wp-content/plugins/wpforms-lite/src/Tasks/Tasks.php
+	modified:   wp-content/plugins/wpforms-lite/src/WPForms.php
+	modified:   wp-content/plugins/wpforms-lite/vendor/woocommerce/action-scheduler/action-scheduler.php
+	modified:   wp-content/plugins/wpforms-lite/wpforms.php
+	deleted:    wp-content/themes/potc.zip
+	modified:   wp-content/themes/potc/functions.php
+	deleted:    wp-content/themes/potc/images/therapist-group-compressed.png
+	deleted:    wp-content/themes/potc/js/add-eo.php
+	modified:   wp-content/themes/potc/js/custom.js
+	deleted:    wp-content/themes/potc/js/eo-submit.js
+	modified:   wp-content/themes/potc/sass/_globals.scss
+	new file:   wp-content/themes/potc/sass/shortcodes/_checklist-optin.scss
+	deleted:    wp-content/themes/potc/sass/shortcodes/_in-post-optin.scss
+	deleted:    wp-content/themes/potc/scripts/add-eo.php
+	modified:   wp-content/themes/potc/style.css
+	modified:   wp-content/themes/potc/style.css.map
+	modified:   wp-content/themes/potc/style.scss
+	new file:   wp-content/themes/potc/template-parts/checklist-optin.php
+	deleted:    wp-content/themes/potc/template-parts/in-post-optin.php
+	deleted:    wp-content/themes/twentynineteen/404.php
+	deleted:    wp-content/themes/twentynineteen/archive.php
+	deleted:    wp-content/themes/twentynineteen/classes/class-twentynineteen-svg-icons.php
+	deleted:    wp-content/themes/twentynineteen/classes/class-twentynineteen-walker-comment.php
+	deleted:    wp-content/themes/twentynineteen/comments.php
+	deleted:    wp-content/themes/twentynineteen/fonts/NonBreakingSpaceOverride.woff
+	deleted:    wp-content/themes/twentynineteen/fonts/NonBreakingSpaceOverride.woff2
+	deleted:    wp-content/themes/twentynineteen/footer.php
+	deleted:    wp-content/themes/twentynineteen/functions.php
+	deleted:    wp-content/themes/twentynineteen/header.php
+	deleted:    wp-content/themes/twentynineteen/image.php
+	deleted:    wp-content/themes/twentynineteen/inc/back-compat.php
+	deleted:    wp-content/themes/twentynineteen/inc/color-patterns.php
+	deleted:    wp-content/themes/twentynineteen/inc/customizer.php
+	deleted:    wp-content/themes/twentynineteen/inc/helper-functions.php
+	deleted:    wp-content/themes/twentynineteen/inc/icon-functions.php
+	deleted:    wp-content/themes/twentynineteen/inc/template-functions.php
+	deleted:    wp-content/themes/twentynineteen/inc/template-tags.php
+	deleted:    wp-content/themes/twentynineteen/index.php
+	deleted:    wp-content/themes/twentynineteen/js/customize-controls.js
+	deleted:    wp-content/themes/twentynineteen/js/customize-preview.js
+	deleted:    wp-content/themes/twentynineteen/js/priority-menu.js
+	deleted:    wp-content/themes/twentynineteen/js/skip-link-focus-fix.js
+	deleted:    wp-content/themes/twentynineteen/js/touch-keyboard-navigation.js
+	deleted:    wp-content/themes/twentynineteen/package-lock.json
+	deleted:    wp-content/themes/twentynineteen/package.json
+	deleted:    wp-content/themes/twentynineteen/page.php
+	deleted:    wp-content/themes/twentynineteen/postcss.config.js
+	deleted:    wp-content/themes/twentynineteen/print.css
+	deleted:    wp-content/themes/twentynineteen/print.scss
+	deleted:    wp-content/themes/twentynineteen/readme.txt
+	deleted:    wp-content/themes/twentynineteen/sass/_normalize.scss
+	deleted:    wp-content/themes/twentynineteen/sass/blocks/_blocks.scss
+	deleted:    wp-content/themes/twentynineteen/sass/elements/_elements.scss
+	deleted:    wp-content/themes/twentynineteen/sass/elements/_lists.scss
+	deleted:    wp-content/themes/twentynineteen/sass/elements/_tables.scss
+	deleted:    wp-content/themes/twentynineteen/sass/forms/_buttons.scss
+	deleted:    wp-content/themes/twentynineteen/sass/forms/_fields.scss
+	deleted:    wp-content/themes/twentynineteen/sass/forms/_forms.scss
+	deleted:    wp-content/themes/twentynineteen/sass/layout/_layout.scss
+	deleted:    wp-content/themes/twentynineteen/sass/media/_captions.scss
+	deleted:    wp-content/themes/twentynineteen/sass/media/_galleries.scss
+	deleted:    wp-content/themes/twentynineteen/sass/media/_media.scss
+	deleted:    wp-content/themes/twentynineteen/sass/mixins/_mixins-master.scss
+	deleted:    wp-content/themes/twentynineteen/sass/mixins/_utilities.scss
+	deleted:    wp-content/themes/twentynineteen/sass/modules/_accessibility.scss
+	deleted:    wp-content/themes/twentynineteen/sass/modules/_alignments.scss
+	deleted:    wp-content/themes/twentynineteen/sass/modules/_clearings.scss
+	deleted:    wp-content/themes/twentynineteen/sass/navigation/_links.scss
+	deleted:    wp-content/themes/twentynineteen/sass/navigation/_menu-footer-navigation.scss
+	deleted:    wp-content/themes/twentynineteen/sass/navigation/_menu-main-navigation.scss
+	deleted:    wp-content/themes/twentynineteen/sass/navigation/_menu-social-navigation.scss
+	deleted:    wp-content/themes/twentynineteen/sass/navigation/_navigation.scss
+	deleted:    wp-content/themes/twentynineteen/sass/navigation/_next-previous.scss
+	deleted:    wp-content/themes/twentynineteen/sass/site/_site.scss
+	deleted:    wp-content/themes/twentynineteen/sass/site/footer/_site-footer.scss
+	deleted:    wp-content/themes/twentynineteen/sass/site/header/_site-featured-image.scss
+	deleted:    wp-content/themes/twentynineteen/sass/site/header/_site-header.scss
+	deleted:    wp-content/themes/twentynineteen/sass/site/primary/_archives.scss
+	deleted:    wp-content/themes/twentynineteen/sass/site/primary/_comments.scss
+	deleted:    wp-content/themes/twentynineteen/sass/site/primary/_posts-and-pages.scss
+	deleted:    wp-content/themes/twentynineteen/sass/site/secondary/_widgets.scss
+	deleted:    wp-content/themes/twentynineteen/sass/typography/_copy.scss
+	deleted:    wp-content/themes/twentynineteen/sass/typography/_headings.scss
+	deleted:    wp-content/themes/twentynineteen/sass/typography/_typography.scss
+	deleted:    wp-content/themes/twentynineteen/sass/variables-site/_colors.scss
+	deleted:    wp-content/themes/twentynineteen/sass/variables-site/_columns.scss
+	deleted:    wp-content/themes/twentynineteen/sass/variables-site/_fonts.scss
+	deleted:    wp-content/themes/twentynineteen/sass/variables-site/_structure.scss
+	deleted:    wp-content/themes/twentynineteen/sass/variables-site/_transitions.scss
+	deleted:    wp-content/themes/twentynineteen/sass/variables-site/_variables-site.scss
+	deleted:    wp-content/themes/twentynineteen/screenshot.png
+	deleted:    wp-content/themes/twentynineteen/search.php
+	deleted:    wp-content/themes/twentynineteen/single.php
+	deleted:    wp-content/themes/twentynineteen/style-editor-customizer.css
+	deleted:    wp-content/themes/twentynineteen/style-editor-customizer.scss
+	deleted:    wp-content/themes/twentynineteen/style-editor.css
+	deleted:    wp-content/themes/twentynineteen/style-editor.scss
+	deleted:    wp-content/themes/twentynineteen/style-rtl.css
+	deleted:    wp-content/themes/twentynineteen/style.css
+	deleted:    wp-content/themes/twentynineteen/style.scss
+	deleted:    wp-content/themes/twentynineteen/template-parts/content/content-excerpt.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/content/content-none.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/content/content-page.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/content/content-single.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/content/content.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/footer/footer-widgets.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/header/entry-header.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/header/site-branding.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/post/author-bio.php
+	deleted:    wp-content/themes/twentynineteen/template-parts/post/discussion-meta.php
+	deleted:    wp-content/themes/twentyseventeen/404.php
+	deleted:    wp-content/themes/twentyseventeen/archive.php
+	deleted:    wp-content/themes/twentyseventeen/assets/css/blocks.css
+	deleted:    wp-content/themes/twentyseventeen/assets/css/colors-dark.css
+	deleted:    wp-content/themes/twentyseventeen/assets/css/editor-blocks.css
+	deleted:    wp-content/themes/twentyseventeen/assets/css/editor-style.css
+	deleted:    wp-content/themes/twentyseventeen/assets/css/ie8.css
+	deleted:    wp-content/themes/twentyseventeen/assets/css/ie9.css
+	deleted:    wp-content/themes/twentyseventeen/assets/images/coffee.jpg
+	deleted:    wp-content/themes/twentyseventeen/assets/images/espresso.jpg
+	deleted:    wp-content/themes/twentyseventeen/assets/images/header.jpg
+	deleted:    wp-content/themes/twentyseventeen/assets/images/sandwich.jpg
+	deleted:    wp-content/themes/twentyseventeen/assets/images/svg-icons.svg
+	deleted:    wp-content/themes/twentyseventeen/assets/js/customize-controls.js
+	deleted:    wp-content/themes/twentyseventeen/assets/js/customize-preview.js
+	deleted:    wp-content/themes/twentyseventeen/assets/js/global.js
+	deleted:    wp-content/themes/twentyseventeen/assets/js/html5.js
+	deleted:    wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js
+	deleted:    wp-content/themes/twentyseventeen/assets/js/navigation.js
+	deleted:    wp-content/themes/twentyseventeen/assets/js/skip-link-focus-fix.js
+	deleted:    wp-content/themes/twentyseventeen/comments.php
+	deleted:    wp-content/themes/twentyseventeen/footer.php
+	deleted:    wp-content/themes/twentyseventeen/front-page.php
+	deleted:    wp-content/themes/twentyseventeen/functions.php
+	deleted:    wp-content/themes/twentyseventeen/header.php
+	deleted:    wp-content/themes/twentyseventeen/inc/back-compat.php
+	deleted:    wp-content/themes/twentyseventeen/inc/color-patterns.php
+	deleted:    wp-content/themes/twentyseventeen/inc/custom-header.php
+	deleted:    wp-content/themes/twentyseventeen/inc/customizer.php
+	deleted:    wp-content/themes/twentyseventeen/inc/icon-functions.php
+	deleted:    wp-content/themes/twentyseventeen/inc/template-functions.php
+	deleted:    wp-content/themes/twentyseventeen/inc/template-tags.php
+	deleted:    wp-content/themes/twentyseventeen/index.php
+	deleted:    wp-content/themes/twentyseventeen/page.php
+	deleted:    wp-content/themes/twentyseventeen/readme.txt
+	deleted:    wp-content/themes/twentyseventeen/rtl.css
+	deleted:    wp-content/themes/twentyseventeen/screenshot.png
+	deleted:    wp-content/themes/twentyseventeen/search.php
+	deleted:    wp-content/themes/twentyseventeen/searchform.php
+	deleted:    wp-content/themes/twentyseventeen/sidebar.php
+	deleted:    wp-content/themes/twentyseventeen/single.php
+	deleted:    wp-content/themes/twentyseventeen/style.css
+	deleted:    wp-content/themes/twentyseventeen/template-parts/footer/footer-widgets.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/footer/site-info.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/header/header-image.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/header/site-branding.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/navigation/navigation-top.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/page/content-front-page-panels.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/page/content-front-page.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/page/content-page.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/post/content-audio.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/post/content-excerpt.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/post/content-gallery.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/post/content-image.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/post/content-none.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/post/content-video.php
+	deleted:    wp-content/themes/twentyseventeen/template-parts/post/content.php
+	deleted:    wp-content/themes/twentytwenty/.stylelintrc.json
+	deleted:    wp-content/themes/twentytwenty/404.php
+	deleted:    wp-content/themes/twentytwenty/assets/css/editor-style-block-rtl.css
+	deleted:    wp-content/themes/twentytwenty/assets/css/editor-style-block.css
+	deleted:    wp-content/themes/twentytwenty/assets/css/editor-style-classic-rtl.css
+	deleted:    wp-content/themes/twentytwenty/assets/css/editor-style-classic.css
+	deleted:    wp-content/themes/twentytwenty/assets/fonts/inter/Inter-italic-var.woff2
+	deleted:    wp-content/themes/twentytwenty/assets/fonts/inter/Inter-upright-var.woff2
+	deleted:    wp-content/themes/twentytwenty/assets/images/2020-landscape-1.png
+	deleted:    wp-content/themes/twentytwenty/assets/images/2020-landscape-2.png
+	deleted:    wp-content/themes/twentytwenty/assets/images/2020-square-1.png
+	deleted:    wp-content/themes/twentytwenty/assets/images/2020-square-2.png
+	deleted:    wp-content/themes/twentytwenty/assets/images/2020-three-quarters-1.png
+	deleted:    wp-content/themes/twentytwenty/assets/images/2020-three-quarters-2.png
+	deleted:    wp-content/themes/twentytwenty/assets/images/2020-three-quarters-3.png
+	deleted:    wp-content/themes/twentytwenty/assets/images/2020-three-quarters-4.png
+	deleted:    wp-content/themes/twentytwenty/assets/js/color-calculations.js
+	deleted:    wp-content/themes/twentytwenty/assets/js/customize-controls.js
+	deleted:    wp-content/themes/twentytwenty/assets/js/customize-preview.js
+	deleted:    wp-content/themes/twentytwenty/assets/js/customize.js
+	deleted:    wp-content/themes/twentytwenty/assets/js/editor-script-block.js
+	deleted:    wp-content/themes/twentytwenty/assets/js/index.js
+	deleted:    wp-content/themes/twentytwenty/assets/js/skip-link-focus-fix.js
+	deleted:    wp-content/themes/twentytwenty/classes/class-twentytwenty-customize.php
+	deleted:    wp-content/themes/twentytwenty/classes/class-twentytwenty-non-latin-languages.php
+	deleted:    wp-content/themes/twentytwenty/classes/class-twentytwenty-script-loader.php
+	deleted:    wp-content/themes/twentytwenty/classes/class-twentytwenty-separator-control.php
+	deleted:    wp-content/themes/twentytwenty/classes/class-twentytwenty-svg-icons.php
+	deleted:    wp-content/themes/twentytwenty/classes/class-twentytwenty-walker-comment.php
+	deleted:    wp-content/themes/twentytwenty/classes/class-twentytwenty-walker-page.php
+	deleted:    wp-content/themes/twentytwenty/comments.php
+	deleted:    wp-content/themes/twentytwenty/footer.php
+	deleted:    wp-content/themes/twentytwenty/functions.php
+	deleted:    wp-content/themes/twentytwenty/header.php
+	deleted:    wp-content/themes/twentytwenty/inc/custom-css.php
+	deleted:    wp-content/themes/twentytwenty/inc/starter-content.php
+	deleted:    wp-content/themes/twentytwenty/inc/svg-icons.php
+	deleted:    wp-content/themes/twentytwenty/inc/template-tags.php
+	deleted:    wp-content/themes/twentytwenty/index.php
+	deleted:    wp-content/themes/twentytwenty/package-lock.json
+	deleted:    wp-content/themes/twentytwenty/package.json
+	deleted:    wp-content/themes/twentytwenty/print.css
+	deleted:    wp-content/themes/twentytwenty/readme.txt
+	deleted:    wp-content/themes/twentytwenty/screenshot.png
+	deleted:    wp-content/themes/twentytwenty/searchform.php
+	deleted:    wp-content/themes/twentytwenty/singular.php
+	deleted:    wp-content/themes/twentytwenty/style-rtl.css
+	deleted:    wp-content/themes/twentytwenty/style.css
+	deleted:    wp-content/themes/twentytwenty/template-parts/content-cover.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/content.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/entry-author-bio.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/entry-header.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/featured-image.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/footer-menus-widgets.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/modal-menu.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/modal-search.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/navigation.php
+	deleted:    wp-content/themes/twentytwenty/template-parts/pagination.php
+	deleted:    wp-content/themes/twentytwenty/templates/template-cover.php
+	deleted:    wp-content/themes/twentytwenty/templates/template-full-width.php
+	new file:   wp-content/uploads/2020/01/1200x900-1-1024x768.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-1200x533.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-1200x832.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-150x150.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-260x195.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-300x225.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-350x263.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-550x413.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-768x576.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-800x600.png
+	new file:   wp-content/uploads/2020/01/1200x900-1-80x80.png
+	new file:   wp-content/uploads/2020/01/1200x900-1.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-1024x217.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-150x150.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-260x195.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-300x64.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-350x259.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-550x259.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-768x163.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-800x259.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3-80x80.png
+	new file:   wp-content/uploads/2020/01/cropped-logo-green1-3.png
+	modified:   wp-includes/assets/script-loader-packages.php
+	modified:   wp-includes/blocks/rss.php
+	modified:   wp-includes/blocks/search.php
+	modified:   wp-includes/class-wp-customize-manager.php
+	modified:   wp-includes/class-wp-object-cache.php
+	modified:   wp-includes/class-wp-query.php
+	modified:   wp-includes/css/dist/block-directory/style-rtl.css
+	modified:   wp-includes/css/dist/block-directory/style.css
+	modified:   wp-includes/css/dist/block-editor/style-rtl.css
+	modified:   wp-includes/css/dist/block-editor/style.css
+	modified:   wp-includes/css/dist/block-library/editor-rtl.css
+	modified:   wp-includes/css/dist/block-library/editor.css
+	modified:   wp-includes/css/dist/block-library/style-rtl.css
+	modified:   wp-includes/css/dist/block-library/style-rtl.min.css
+	modified:   wp-includes/css/dist/block-library/style.css
+	modified:   wp-includes/css/dist/block-library/style.min.css
+	modified:   wp-includes/css/dist/block-library/theme-rtl.css
+	modified:   wp-includes/css/dist/block-library/theme.css
+	modified:   wp-includes/css/dist/edit-post/style-rtl.css
+	modified:   wp-includes/css/dist/edit-post/style.css
+	modified:   wp-includes/css/dist/editor/editor-styles-rtl.css
+	modified:   wp-includes/css/dist/editor/editor-styles.css
+	modified:   wp-includes/css/dist/editor/style-rtl.css
+	modified:   wp-includes/css/dist/editor/style.css
+	modified:   wp-includes/css/dist/format-library/style-rtl.css
+	modified:   wp-includes/css/dist/format-library/style.css
+	modified:   wp-includes/css/media-views-rtl.css
+	modified:   wp-includes/css/media-views-rtl.min.css
+	modified:   wp-includes/css/media-views.css
+	modified:   wp-includes/css/media-views.min.css
+	modified:   wp-includes/deprecated.php
+	modified:   wp-includes/formatting.php
+	modified:   wp-includes/js/dist/block-editor.js
+	modified:   wp-includes/js/dist/block-editor.min.js
+	modified:   wp-includes/js/dist/block-library.js
+	modified:   wp-includes/js/dist/block-library.min.js
+	modified:   wp-includes/post.php
+	modified:   wp-includes/rest-api/endpoints/class-wp-rest-controller.php
+	modified:   wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php
+	modified:   wp-includes/taxonomy.php
+	modified:   wp-includes/user.php
+	modified:   wp-includes/version.php
+	modified:   wp-mail.php
+	modified:   wp-settings.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	status.txt
+

@@ -12,21 +12,39 @@ class TPM_Admin {
 
 	private function __construct() {
 
-		add_action( 'admin_init', function () {
+		/**
+		 * update tpm_version option
+		 */
+		add_action(
+			'admin_init',
+			function () {
 
-			/**
-			 * On each TPM update clear cache
-			 * - clear cache each time user updates TPM
-			 */
-			if ( $this->check_plugin_version( Thrive_Product_Manager::V ) ) {
-				$this->clear_all_cache();
-				update_option( 'tpm_version', Thrive_Product_Manager::V );
+				/**
+				 * On each TPM update clear cache
+				 * - clear cache each time user updates TPM
+				 */
+				if ( $this->check_plugin_version( Thrive_Product_Manager::V ) ) {
+					$this->clear_all_cache();
+					update_option( 'tpm_version', Thrive_Product_Manager::V );
+				}
 			}
-		} );
+		);
 
-		add_action( 'admin_init', static function () {
-			register_deactivation_hook( __FILE__, array( TPM_Admin::get_instance(), 'delete_tpm_version' ) );
-		} );
+		/**
+		 * delete tpm_version from DB
+		 */
+		add_action(
+			'admin_init',
+			static function () {
+				register_deactivation_hook(
+					WP_PLUGIN_DIR . '/thrive-product-manager/thrive-product-manager.php',
+					array(
+						TPM_Admin::get_instance(),
+						'delete_tpm_version',
+					)
+				);
+			}
+		);
 	}
 
 	/**
@@ -74,4 +92,6 @@ class TPM_Admin {
 	}
 }
 
-return TPM_Admin::get_instance();
+if ( is_admin() ) {
+	return TPM_Admin::get_instance();
+}

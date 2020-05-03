@@ -4,7 +4,7 @@ Tags: amazon ses,smtp,email delivery,gmail smtp,newsletter
 Requires at least: 5.0
 Tested up to: 5.4
 Requires PHP: 5.5+
-Stable tag: 1.4
+Stable tag: 1.4.1
 
 Fix your email delivery problems by sending your WordPress emails through Amazon SES's powerful email sending infrastructure.
 
@@ -177,6 +177,15 @@ Please double check the credentials match up with the credentials you received w
 4. Activity tab
 
 == Changelog ==
+
+= 1.4.1 - 2020-04-27 =
+* New: Added London, central Canada, and São Paulo as available regions
+* New: Added 7 day log duration
+* New: Added `wposes_send_cron_error_email` filter for disabling cron error emails
+* Improvement: Reduce interval between cron health checks to reduce false-positives
+* Bug fix: Cron health check not working properly on multisite installs
+* Bug fix: Cron health check email being sent twice in some situations
+* Bug fix: Cron health check still runs when sending via SES is disabled
 
 = 1.4 - 2020-03-11 =
 * New: Added email queue to handle bulk email sending

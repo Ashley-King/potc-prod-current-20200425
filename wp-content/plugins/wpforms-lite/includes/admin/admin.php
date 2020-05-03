@@ -50,7 +50,6 @@ function wpforms_admin_styles() {
 		WPFORMS_VERSION
 	);
 }
-
 add_action( 'admin_enqueue_scripts', 'wpforms_admin_styles' );
 
 /**
@@ -226,7 +225,7 @@ function wpforms_admin_body_class( $classes ) {
 add_filter( 'admin_body_class', 'wpforms_admin_body_class', 10, 1 );
 
 /**
- * Outputs the WPForms admin header.
+ * Output the WPForms admin header.
  *
  * @since 1.3.9
  */

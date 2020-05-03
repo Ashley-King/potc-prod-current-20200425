@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<i></i>
 		</div>
 		<div class="dropdown-content">
-			<div class="tve-control gl-st-button-toggle-1" data-view="ButtonPalettes"></div>
+			<div class="tve-control gl-st-button-toggle-1 hide-states" data-view="ButtonPalettes"></div>
 			<div class="tve-master-color">
 				<div class="tve-control gl-st-button-toggle-1" data-view="MasterColor"></div>
 				<div class="master_color_warning global-edit-warning tcb-hide">

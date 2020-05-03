@@ -24,10 +24,12 @@
 	<ul>
 		<li>
 			<b>TTW URL</b>:
-			<a href="<?php echo Thrive_Product_Manager::get_ttw_url() ?>" target="_blank"><?php echo Thrive_Product_Manager::get_ttw_url() ?></a>
+			<a href="<?php echo Thrive_Product_Manager::get_ttw_url() ?>"
+			   target="_blank"><?php echo Thrive_Product_Manager::get_ttw_url() ?></a>
 		</li>
 		<li>
-			<b>TTW Licenses</b>: <?php echo var_export( TPM_License_Manager::get_instance()->get_ttw_license_instances(), true ); ?>
+			<b>TTW
+				Licenses</b>: <?php echo var_export( TPM_License_Manager::get_instance()->get_ttw_license_instances(), true ); ?>
 		</li>
 		<li>
 			<b>CONNECTED</b>
@@ -50,6 +52,10 @@
 		</li>
 		<li>
 			<b>TPM Token</b> <?php echo get_option( 'tpm_token', 'not_set' ) ?>
+		</li>
+		<li>
+			<b>Cron Refresh Token Scheduled on</b>:
+			<?php echo date( 'Y-m-d H:i:s', wp_next_scheduled( TPM_Cron::CRON_HOOK_NAME ) ); ?>
 		</li>
 	</ul>
 <?php endif; ?>

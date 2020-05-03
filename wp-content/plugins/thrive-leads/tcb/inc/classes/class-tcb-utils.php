@@ -88,6 +88,7 @@ class TCB_Utils {
 
 	/**
 	 * Get the image source for the id.
+	 * This is used in TTB, don't delete it
 	 *
 	 * @param        $image_id
 	 * @param string $size

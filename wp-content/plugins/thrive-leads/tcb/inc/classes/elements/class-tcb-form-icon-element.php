@@ -29,7 +29,7 @@ class TCB_Form_Icon_Element extends TCB_Icon_Element {
 	 * @return string
 	 */
 	public function identifier() {
-		return '.tve_lg_input_container .thrv_icon';
+		return '.tve_lg_input_container .thrv_icon, .tve-login-form-input .thrv_icon';
 	}
 
 	/**

@@ -63,7 +63,7 @@ class TCB_Login_Form_Element extends TCB_Element_Abstract {
 				'config' => array(
 					'FieldsControl' => array(
 						'config' => array(
-							'sortable'      => true,
+							'sortable'      => false,
 							'settings_icon' => 'edit',
 						),
 					),

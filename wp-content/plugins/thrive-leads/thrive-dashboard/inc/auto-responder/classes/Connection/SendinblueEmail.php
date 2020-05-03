@@ -196,9 +196,9 @@ class Thrive_Dash_List_Connection_SendinblueEmail extends Thrive_Dash_List_Conne
 
 		try {
 			$options = array(
-				"to"      => $to,
-				"from"    => array( $from_email, ! empty( $data['from_name'] ) ? '"' . $data['from_name'] . '"' : "" ),
-				"subject" => $data['subject'],
+				'to'      => $to,
+				'from'    => array( $from_email, ! empty( $data['from_name'] ) ? '"' . $data['from_name'] . '"' : "" ),
+				'subject' => $data['subject'],
 				'html'    => empty ( $data['html_content'] ) ? '' : $data['html_content'],
 				'replyto' => array( empty ( $data['reply_to'] ) ? '' : $data['reply_to'], "" ),
 				'text'    => empty ( $data['text_content'] ) ? '' : $data['text_content'],
@@ -207,6 +207,23 @@ class Thrive_Dash_List_Connection_SendinblueEmail extends Thrive_Dash_List_Conne
 		} catch ( Exception $e ) {
 			return $e->getMessage();
 		}
+
+		/* Send confirmation email */
+		if ( $data['send_confirmation'] ) {
+			try {
+				$options = array(
+					'to'      => array( $data['sender_email'] => '' ),
+					'from'    => array( $from_email, ! empty( $data['from_name'] ) ? '"' . $data['from_name'] . '"' : "" ),
+					'subject' => $data['confirmation_subject'],
+					'html'    => empty ( $data['confirmation_html'] ) ? '' : $data['confirmation_html'],
+					'text'    => '',
+				);
+				$sendinblue->send_email( $options );
+			} catch ( Exception $e ) {
+				return $e->getMessage();
+			}
+		}
+
 
 		return true;
 	}

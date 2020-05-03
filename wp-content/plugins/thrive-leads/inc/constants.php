@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'TVE_LEADS_TEST_DATA', false );
 
-define( 'TVE_LEADS_VERSION', '2.2.13.2' );
+define( 'TVE_LEADS_VERSION', '2.2.14.1' );
 
 define( 'TVE_LEADS_DB_VERSION', '1.22' );
 

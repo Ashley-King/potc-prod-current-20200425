@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<i></i>
 		</div>
 		<div class="dropdown-content">
-			<div class="tve-control" data-view="ContentPalettes"></div>
+			<div class="tve-control hide-states" data-view="ContentPalettes"></div>
 			<div class="tve-control" data-view="BoxWidth"></div>
 			<div class="tve-control" data-view="BoxHeight"></div>
 			<hr>

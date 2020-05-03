@@ -2,8 +2,8 @@
 Contributors: wpforms, jaredatch, smub, slaFFik
 Tags: contact form, contact form plugin, forms, form builder, custom form, contact button, contact me, custom contact form, form manager, form, forms builder, forms creator, captcha, recaptcha, Akismet, email form, web form, feedback form, payment form, survey form, donation form, email submit form, message form, mailchimp, mailchimp form, aweber, aweber form, paypal, paypal form, stripe, stripe form, getresponse, getresponse form, email subscription, contact form widget, user registration form, wordpress registration, wordpress login form, feedback
 Requires at least: 4.9
-Tested up to: 5.3
-Stable tag: 1.5.9.5
+Tested up to: 5.4
+Stable tag: 1.6.0.1
 Requires PHP: 5.5
 License: GNU General Public License v2.0 or later
 
@@ -400,6 +400,22 @@ Thank you
 Syed Balkhi
 
 == Changelog ==
+
+= 1.6.0.1 =
+- Added: Admin bar menu item.
+- Added: Form Builder alert when using browser "Back" button if form contains unsaved changes.
+- Added: Settings > Emails: "Optimize Email Sending" option which enables sending emails asynchronously.
+- Changed: Async form notification emails are now off by default.
+- Changed: Number Slider field display improvements on small devices.
+- Fixed: Error if there are some plugins or themes add `widget_title` filter.
+- Fixed: Choice Images not displaying in form notifications if no label is set.
+- Fixed: Form Builder "drag zone" not available when all fields are deleted.
+- Fixed: Empty `div` appended to end of form display.
+- Fixed: Block alignment issues (WordPress 5.4+).
+- Fixed: Form Builder field option panel is not available if field is placed before the last form field.
+- Fixed: Fallback population for fields with choices (checkbox, radio etc) when special characters are used.
+- Fixed: Integrity of decoded data with additional sanitizing.
+- Fixed: Compatibility issues with Elementor.
 
 = 1.5.9.5 =
 - Fixed: do not try to process entries in Lite.

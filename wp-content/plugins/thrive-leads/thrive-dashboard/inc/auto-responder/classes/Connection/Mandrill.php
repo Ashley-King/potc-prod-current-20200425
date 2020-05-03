@@ -322,6 +322,39 @@ class Thrive_Dash_List_Connection_Mandrill extends Thrive_Dash_List_Connection_A
 			return $e->getMessage();
 		}
 
+		if ( $data['send_confirmation'] ) {
+
+			try {
+
+				$message = array(
+					'html'           => empty ( $data['confirmation_html'] ) ? '' : $data['confirmation_html'],
+					'text'           => '',
+					'subject'        => $data['confirmation_subject'],
+					'from_email'     => $from_email,
+					'from_name'      => ! empty( $data['from_name'] ) ? $data['from_name'] : '',
+					'to'             => array(
+						array(
+							'email' => $data['sender_email'],
+							'name'  => '',
+							'type'  => 'to',
+						),
+					),
+					'headers'        => array( 'Reply-To' => '' ),
+					'merge'          => true,
+					'merge_language' => 'mailchimp',
+				);
+
+				$async   = false;
+				$ip_pool = 'Main Pool';
+
+				$mandrill->messages->send( $message, $async, $ip_pool );
+
+			} catch ( Exception $e ) {
+				return $e->getMessage();
+			}
+		}
+
+
 		return true;
 	}
 

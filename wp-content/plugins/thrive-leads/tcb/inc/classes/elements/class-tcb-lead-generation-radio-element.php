@@ -48,6 +48,13 @@ class TCB_Lead_Generation_Radio_Element extends TCB_Element_Abstract {
 						),
 						'extends' => 'Switch',
 					),
+					'Required'        => array(
+						'config'  => array(
+							'default' => false,
+							'label'   => __( 'Required field' ),
+						),
+						'extends' => 'Switch',
+					),
 					'ColumnNumber'    => array(
 						'to'      => '.tve-radio-grid',
 						'config'  => array(
@@ -97,17 +104,7 @@ class TCB_Lead_Generation_Radio_Element extends TCB_Element_Abstract {
 				),
 			),
 			'typography'            => array(
-				'disabled_controls' => array( 'TextAlign' ),
-				'config'            => array(
-					'FontSize'      => $controls_default_config,
-					'FontColor'     => $controls_default_config,
-					'FontFace'      => $controls_default_config,
-					'LetterSpacing' => $controls_default_config,
-					'LineHeight'    => $controls_default_config,
-					'TextAlign'     => $controls_default_config,
-					'TextStyle'     => $controls_default_config,
-					'TextTransform' => $controls_default_config,
-				),
+				'hidden' => true,
 			),
 			'layout'                => array(
 				'disabled_controls' => array(

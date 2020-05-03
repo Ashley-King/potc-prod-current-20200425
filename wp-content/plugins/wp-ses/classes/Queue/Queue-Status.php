@@ -47,7 +47,7 @@ class Queue_Status {
 	 * @return int
 	 */
 	public function get_last_cron_check() {
-		return (int) get_site_option( 'wposes_last_cron_check', 0 );
+		return (int) get_option( 'wposes_last_cron_check', 0 );
 	}
 
 	/**
@@ -57,7 +57,7 @@ class Queue_Status {
 	 * @return int
 	 */
 	public function get_last_cron_run() {
-		return (int) get_site_option( 'wposes_last_cron_run', 0 );
+		return (int) get_option( 'wposes_last_cron_run', 0 );
 	}
 
 	/**
@@ -107,10 +107,39 @@ class Queue_Status {
 	}
 
 	/**
+	 * Should the status check even be running?
+	 *
+	 * @return bool
+	 */
+	public function should_check_status() {
+		// If the site isn't configured to send email, definitely not.
+		if ( ! $this->wp_offload_ses->settings->get_setting( 'send-via-ses', false ) ) {
+			return false;
+		}
+
+		if ( is_multisite() ) {
+			$subsite_settings_enabled = (bool) $this->wp_offload_ses->settings->get_setting( 'enable-subsite-settings', false );
+
+			// If subsite settings are disabled, all emails are sent on the back of the main site cron.
+			if ( ! $subsite_settings_enabled && ! is_main_site() ) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	/**
 	 * Makes sure the cron is running, raises an alert
 	 * if not.
 	 */
 	public function check_status() {
+		if ( get_transient( 'wposes_doing_cron_check' ) || ! $this->should_check_status() ) {
+			return false;
+		}
+
+		set_transient( 'wposes_doing_cron_check', true );
+
 		$last_check = $this->get_last_cron_check();
 		$time_since = 0;
 
@@ -121,13 +150,13 @@ class Queue_Status {
 		/**
 		 * The minimum time in between cron checks.
 		 *
-		 * @param int $time The time in seconds, an hour by default.
+		 * @param int $time The time in seconds, six hours by default.
 		 *
 		 * @return int $time The time in seconds.
 		 */
-		$check_interval = apply_filters( 'wposes_cron_check_interval', 3600 );
+		$check_interval = apply_filters( 'wposes_cron_check_interval', 6 * HOUR_IN_SECONDS );
 
-		// If there hasn't been a check, or if it's been over an hour since the last check...
+		// If there hasn't been a check, or if it's been over six hours since the last check...
 		if ( ! $last_check || $time_since >= (int) $check_interval ) {
 			$last_run = $this->get_last_cron_run();
 
@@ -140,13 +169,15 @@ class Queue_Status {
 				$this->maybe_send_cron_error_email();
 			} elseif ( $last_run ) {
 				// It is running normally as far as we can tell.
-				delete_site_option( 'wposes_cron_error_email' );
+				delete_option( 'wposes_cron_error_email' );
 				$this->wp_offload_ses->get_notices()->remove_notice_by_id( 'wposes_cron_error' );
 			}
 
 			// Update the last check so we know we don't need to check again.
-			update_site_option( 'wposes_last_cron_check', time() );
+			update_option( 'wposes_last_cron_check', time() );
 		}
+
+		delete_transient( 'wposes_doing_cron_check' );
 	}
 
 	/**
@@ -182,7 +213,8 @@ class Queue_Status {
 				'only_show_to_user'     => false,
 				'flash'                 => false,
 				'remove_on_dismiss'     => true,
-				'custom_id'             => 'wposes_cron_error'
+				'custom_id'             => 'wposes_cron_error',
+				'subsite'               => true,
 			)
 		);
 	}
@@ -193,11 +225,21 @@ class Queue_Status {
 	 * @return bool
 	 */
 	public function maybe_send_cron_error_email() {
-		if ( get_site_option( 'wposes_cron_error_email' ) ) {
+		/**
+		 * Filter to disable the cron error email. Useful on development sites
+		 * where a dedicated server cron isn't necessary.
+		 *
+		 * @param bool $send_email If the email should be sent.
+		 *
+		 * @return bool
+		 */
+		$send_email = apply_filters( 'wposes_send_cron_error_email', true );
+
+		if ( ! $send_email || get_option( 'wposes_cron_error_email' ) ) {
 			return false;
 		}
 
-		$url     = Utils::reduce_url( get_site_option( 'siteurl' ) );
+		$url     = Utils::reduce_url( get_option( 'siteurl' ) );
 		$url     = str_replace( '//', '', $url );
 		$to      = get_site_option( 'admin_email' );
 		$subject = __( 'WP Offload SES - Cron not running', 'wp-offload-ses' );
@@ -241,7 +283,7 @@ class Queue_Status {
 		}
 
 		// Make sure we don't keep sending these out.
-		update_site_option( 'wposes_cron_error_email', true );
+		update_option( 'wposes_cron_error_email', true );
 
 		if ( ! $result ) {
 			return false;

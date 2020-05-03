@@ -20,9 +20,8 @@
   position: fixed;
   transform: translate(-50%, 0);
   transition: all .7s ease-in-out;
-  white-space: nowrap;
   text-align: left;
-  z-index: 5;
+  z-index: 11;
   font-size: 13px;
   color: #50565f;
   min-height: 70px;
@@ -187,7 +186,8 @@ body .tpm-modal {
   padding: 5px 10px;
   pointer-events: none;
   text-align: center;
-  white-space: nowrap; }
+  max-width: 300px;
+  width: max-content; }
 
 .dash-tooltip[data-tooltip-position='bottom']:before, .dash-tooltip[data-tooltip-position='bottom']:after {
   left: 50%;
@@ -537,6 +537,11 @@ body .tpm-modal {
     #tpm-themes-list .tpm-product-elem.ttb-skin {
       padding: 0;
       width: 164px; }
+      #tpm-plugins-list .tpm-product-elem.ttb-skin.not-purchased .bottom-bar,
+      #tpm-skins-list .tpm-product-elem.ttb-skin.not-purchased .bottom-bar,
+      #tpm-themes-list .tpm-product-elem.ttb-skin.not-purchased .bottom-bar {
+        padding: 0;
+        text-align: center; }
       #tpm-plugins-list .tpm-product-elem.ttb-skin .tpm-img-container,
       #tpm-skins-list .tpm-product-elem.ttb-skin .tpm-img-container,
       #tpm-themes-list .tpm-product-elem.ttb-skin .tpm-img-container {

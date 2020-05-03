@@ -38,12 +38,11 @@
 					<td width="30" style="width: 30px;"></td>
 					<td width="285" bgcolor="#f2f2f2" style="background-color: #f2f2f2; padding: 15px; width: 285px;" valign="top">
 						<h4 style="font-size: 16px; font-weight: normal; margin: 0;"><?php _e( 'Get 20% Off!', 'wp-offload-ses' ); ?></h4>
-						<p style="font-size: 13px;"><?php _e( 'Click below to get 20% off WP Offload SES and gain access to pro features.', 'wp-offload-ses' ); ?></p>
+						<p style="font-size: 13px;"><?php _e( 'Click below to get 20% off your first year of WP Offload SES and gain access to pro features.', 'wp-offload-ses' ); ?></p>
 						<?php
 						$upgrade_url = $this->dbrains_url(
 							'/wp-offload-ses/',
 							array(
-								'coupon'       => 'OSES20UPGRADE',
 								'utm_campaign' => 'WP+Offload+SES+20+Percent',
 								'utm_source'   => 'Email+health+report',
 								'utm_medium'   => 'email',

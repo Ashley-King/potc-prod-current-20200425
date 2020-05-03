@@ -123,7 +123,7 @@ namespace WPForms {
 		 *
 		 * @since 1.3.9
 		 *
-		 * @var boolean
+		 * @var bool
 		 */
 		public $pro = false;
 
@@ -145,8 +145,8 @@ namespace WPForms {
 		/**
 		 * Main WPForms Instance.
 		 *
-		 * Insures that only one instance of WPForms exists in memory at any one
-		 * time. Also prevents needing to define globals all over the place.
+		 * Only one instance of WPForms exists in memory at any one time.
+		 * Also prevent the need to define globals all over the place.
 		 *
 		 * @since 1.0.0
 		 *
@@ -197,7 +197,7 @@ namespace WPForms {
 		}
 
 		/**
-		 * Loads the plugin language files.
+		 * Load the plugin language files.
 		 *
 		 * @since 1.0.0
 		 * @since 1.5.0 Load only the lite translation.
@@ -400,7 +400,7 @@ namespace WPForms {
 		 *
 		 * @param string $name Class name or an alias.
 		 *
-		 * @return mixed|null
+		 * @return mixed|\stdClass
 		 */
 		public function get( $name ) {
 
@@ -408,7 +408,7 @@ namespace WPForms {
 				return $this->registry[ $name ];
 			}
 
-			return null;
+			return new \stdClass();
 		}
 	}
 }
