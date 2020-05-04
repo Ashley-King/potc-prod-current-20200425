@@ -1,12 +1,13 @@
 .no-image-optin__section {
-
+    background-color: $medium-green;
+        padding: 20px;
+        margin-bottom: 20px;
     .no-image-optin__form {
         width: 80%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        background-color: $medium-green;
-        padding: 20px;
+        
         align-items: center;
         justify-content: center;
 
