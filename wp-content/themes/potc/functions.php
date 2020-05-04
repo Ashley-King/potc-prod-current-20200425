@@ -115,7 +115,7 @@ function home_quote( $attr ) {
 }
 add_shortcode( 'insert-home-quote', 'home_quote' );	
 
-//add in-post optin shortcode
+//add checklist optin shortcode
 function checklist_optin( $attr ) { 
 	 
 	ob_start();
@@ -123,6 +123,15 @@ function checklist_optin( $attr ) {
     return ob_get_clean(); 
 }
 add_shortcode( 'checklist-optin', 'checklist_optin' );
+
+//add no-image optin shortcode
+function no_image_optin( $attr ) { 
+	 
+	ob_start();
+    get_template_part('template-parts/no-image-optin');
+    return ob_get_clean(); 
+}
+add_shortcode( 'no-image-optin', 'no_image_optin' );
 
 
 //add options page
