@@ -15,18 +15,21 @@
                     Checklist</span> for FREE. Unsubscribe easily anytime.</h3>
         </div><!-- home__hero__form__text--top -->
         <div class="home__hero__form__form">
-            <form id="1xq8nm" class="sendfox-form" action="https://sendfox.com/form/10zgnm/1xq8nm" method="post"
-                data-async="true"><input name="first_name" required="" type="text" placeholder="First Name" />
+            <!-- <form id="1xq8nm" class="sendfox-form" action="https://sendfox.com/form/10zgnm/1xq8nm" method="post"
+                data-async="true"> -->
+                <form id="1xq8nm"   method="post"
+                >
+                <input name="first_name" required="" type="text" placeholder="First Name" />
 
                 <input name="email" required="" type="email" placeholder="Email" />
 
                 <!-- no botz please -->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input tabindex="-1"
                         autocomplete="off" name="a_password" type="text" value="" /></div>
-                <button type="submit">Sign Me Up!</button>
+                <button class="form-submit" type="submit">Sign Me Up!</button>
 
             </form>
-            <script src="https://sendfox.com/js/form.js"></script>
+            <!-- <script src="https://sendfox.com/js/form.js"></script> -->
         </div><!-- home__hero__form__form -->
         <!-- <div class="home__hero__form__text--bottom">
            
