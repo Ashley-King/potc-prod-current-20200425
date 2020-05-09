@@ -23,7 +23,7 @@ curl_setopt_array($curl, array(
   CURLOPT_POSTFIELDS => $subscriber,
   CURLOPT_HTTPHEADER => array(
     "content-type: application/json",
-    "x-mailerlite-apikey: 9d1ccc3d5aeeab47125cf7f2fe048c3c"
+    "x-mailerlite-apikey: 9d1ccc3d5aeeab47125cf7f2fe048c3"
   ),
 ));
 
