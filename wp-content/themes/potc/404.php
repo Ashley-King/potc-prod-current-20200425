@@ -72,7 +72,7 @@ function genesis_404() {
 		[
 			'open'    => '<div %s>',
 			'close'   => '</div>',
-			'content' => do_shortcode('[styled-eo-form classes="bg-white" title="Need New Ideas?<span class=\'white-space\'> We\'ve Got \'Em.</span>" subtext="Give us a try. You can easily<span class=\'white-space\'> unsubscribe anytime.</span>"]'),
+			'content' => do_shortcode('[no-image-optin]'),
             'context' => 'signup-form',
 		]
 	);

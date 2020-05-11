@@ -158,7 +158,7 @@ add_action( 'genesis_before_entry_content', 'mai_do_entry_featured_image' );
 function add_checklist(){
 	echo do_shortcode('[checklist-optin]');
 }
-if(!is_front_page() && !is_page('thank-you')){
+if(!is_front_page() && !is_page('thank-you') && !is_404()){
 	add_action('genesis_before_footer', 'add_checklist');
 }
 //put shorcode in blog 

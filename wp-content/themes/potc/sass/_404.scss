@@ -17,23 +17,13 @@ body.error404 {
 } */
 
 
-.error404 .nav-header a{
+.error404 .site-header .nav-header .menu-item a{
 	color: #fff;
-}
-.error404 .nav-header .current-menu-item > a
- {
-	color: #fff;
-	display: inline-block;
-	border-bottom: 1px solid #fff;
-    transition: $main-transition;
-	
-}
-.error404 .nav-header .current-menu-item > a:hover{
-    border-bottom-color: $dark-green;
 }
 
-.error404 .nav-header a:hover{
-    color: $dark-green;
+
+.error404 .site-header .nav-header .menu-item  a:hover{
+    color: $medium-green;
 }
 .error404 .mai-bars {
     color: #fff;
@@ -77,9 +67,9 @@ body.error404 {
     text-decoration:underline !important;
     transition: $main-transition;
 }
-.error404 .entry-content p > span a:hover{
+.error404 .entry-content p > a:hover{
     color: $orange;
-    text-decoration:none !important;
+    text-decoration:underline !important;
     
     
 }
