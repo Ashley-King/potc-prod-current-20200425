@@ -2,20 +2,22 @@
 # This file is distributed under the same license as the Plugins - All-in-One WP Migration - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-02 13:43:24+0000\n"
+"PO-Revision-Date: 2020-05-08 14:29:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - All-in-One WP Migration - Stable (latest release)\n"
 
-#: lib/model/export/class-ai1wm-export-media.php:119
+#: lib/model/export/class-ai1wm-export-media.php:84
+#: lib/model/export/class-ai1wm-export-media.php:127
 msgid "Archiving %d media files...<br />%d%% complete"
 msgstr "Archivage de %d fichiers médias…<br />%d%% terminé(s)"
 
-#: lib/model/export/class-ai1wm-export-content.php:119
+#: lib/model/export/class-ai1wm-export-content.php:84
+#: lib/model/export/class-ai1wm-export-content.php:127
 msgid "Archiving %d content files...<br />%d%% complete"
 msgstr "Archivage de %d fichiers de contenus…<br />%d%% terminé(s)"
 
@@ -61,7 +63,7 @@ msgstr "%s n’est pas la dernière version. Vous devez mettre à jour l’exten
 msgid "Your backup is from a PHP 5 but the site that you are importing to is PHP 7. This could cause the import to fail. Technical details: https://help.servmask.com/knowledgebase/migrate-wordpress-from-php-5-to-php-7/"
 msgstr "La version de PHP de la sauvegarde est PHP5, mais le site sur lequel vous l’importez fonctionne avec PHP7. Cela peut causer l’échec de l’import. Détails techniques : https://help.servmask.com/knowledgebase/migrate-wordpress-from-php-5-to-php-7/ (en anglais)"
 
-#: lib/view/backups/index.php:51 lib/view/backups/backups-list.php:46
+#: lib/view/backups/backups-list.php:46 lib/view/backups/index.php:51
 msgid "Refreshing backup list..."
 msgstr "Rafraîchissement de la liste des sauvegardes&hellip;"
 
@@ -96,10 +98,6 @@ msgstr "Restaurer la sauvgarde"
 #: lib/view/backups/backups-list.php:92
 msgid "Download backup"
 msgstr "Télécharger la sauvegarde"
-
-#: lib/model/import/class-ai1wm-import-done.php:250
-msgid "» <a class=\"ai1wm-no-underline\" href=\"%s\" target=\"_blank\">Save permalinks structure</a>.</strong> (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>.</strong> (opens a new window)"
-msgstr "» <a class=\"ai1wm-no-underline\" href=\"%s\" target=\"_blank\">Enregistrer la structure des permaliens</a>.</strong> (s’ouvre dans une nouvelle fenêtre)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Donner votre avis sur l’extension</a>.</strong> (s’ouvre dans une nouvelle fenêtre)"
 
 #: lib/controller/class-ai1wm-main-controller.php:867
 #: lib/controller/class-ai1wm-main-controller.php:1049
@@ -176,12 +174,12 @@ msgstr "WordPress multisite est pris en charge par notre extension All-in-One WP
 msgid "All-in-One WP Migration is not able to create <strong>%s</strong> folder. You will need to create this folder and grant it read/write/execute permissions (0777) for the All-in-One WP Migration plugin to function properly."
 msgstr "All-in-One WP Migration ne peut pas créer le dossier <strong>%s</strong>. Vous devrez créer ce dossier et lui donner les droits de lecture/écriture/exécution (0777) pour que l’extension All in One WP Migration fonctionne correctement."
 
-#: lib/view/main/storage-index-php-notice.php:35
-#: lib/view/main/wordpress-htaccess-notice.php:35
+#: lib/view/main/backups-index-html-notice.php:35
 #: lib/view/main/backups-htaccess-notice.php:35
 #: lib/view/main/storage-index-html-notice.php:35
 #: lib/view/main/backups-index-php-notice.php:35
-#: lib/view/main/backups-index-html-notice.php:35
+#: lib/view/main/storage-index-php-notice.php:35
+#: lib/view/main/wordpress-htaccess-notice.php:35
 #: lib/view/main/backups-webconfig-notice.php:35
 msgid "All-in-One WP Migration is not able to create <strong>%s</strong> file. Try to change permissions of the parent folder or send us an email at <a href=\"mailto:support@servmask.com\">support@servmask.com</a> for assistance."
 msgstr "All-in-One WP Migration ne peut pas créer le fichier <strong>%s</strong>. Essayez de changer les droits du dossier parent ou envoyez-nous un e-mail à <a href=\"mailto:support@servmask.com\">support@servmask.com</a> pour obtenir de l’aide."
@@ -290,7 +288,7 @@ msgstr "Impossible de localiser le chemin de l’archive. <a href=\"https://help
 msgid "Invalid archive path. <a href=\"https://help.servmask.com/knowledgebase/invalid-archive-path/\" target=\"_blank\">Technical details</a>"
 msgstr "Chemin de l’archive non valide. <a href=\"https://help.servmask.com/knowledgebase/invalid-archive-path/\" target=\"_blank\">Détails techniques (en anglais)</a>"
 
-#: functions.php:1396
+#: functions.php:1408
 msgid "Unable to open %s with mode %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a>"
 msgstr "Impossible d’ouvrir %s avec le mode %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Détails techniques (en anglais)</a>"
 
@@ -299,7 +297,7 @@ msgstr "Impossible d’ouvrir %s avec le mode %s. <a href=\"https://help.servmas
 msgid "You are about to stop exporting your website, are you sure?"
 msgstr "Vous êtes sur le point d’arrêter l’export de votre site, confirmez-vous cette action ?"
 
-#: functions.php:1419
+#: functions.php:1431
 msgid "Out of disk space. Unable to write to: %s. <a href=\"https://help.servmask.com/knowledgebase/out-of-disk-space/\" target=\"_blank\">Technical details</a>"
 msgstr "Espace disque saturé. Impossible d’écrire sur :%s. <a href=\"https://help.servmask.com/knowledgebase/out-of-disk-space/\" target=\"_blank\">Détails techniques (en anglais)</a>"
 
@@ -342,26 +340,21 @@ msgstr "Impossible de commencer l’import. Veuillez recharger la page et réess
 msgid "Unable to confirm the import. Refresh the page and try again"
 msgstr "Impossible de confirmer l’import. Veuillez recharger la page et réessayer."
 
-#: functions.php:1572
+#: functions.php:1584
 msgid "Unable to authenticate the secret key. <a href=\"https://help.servmask.com/knowledgebase/invalid-secret-key/\" target=\"_blank\">Technical details</a>"
 msgstr "Impossible d’authentifier la clé secrète. <a href=\"https://help.servmask.com/knowledgebase/invalid-secret-key/\" target=\"_blank\">Détails techniques (en anglais)</a>"
 
-#: functions.php:1455
+#: functions.php:1467
 msgid "Unable to seek to offset %d on %s. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Technical details</a>"
 msgstr "Impossible de chercher à décaler %d sur %s. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Détails techniques (en anglais)</a>"
 
-#: functions.php:1438
+#: functions.php:1450
 msgid "Unable to read file: %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a>"
 msgstr "Impossible de lire le fichier : %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Détails techniques (en anglais)</a>"
 
-#: functions.php:1415
+#: functions.php:1427
 msgid "Unable to write to: %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a>"
 msgstr "Impossible d’écrire sur : %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Détails techniques (en anglais)</a>"
-
-#: lib/controller/class-ai1wm-main-controller.php:872
-#: lib/controller/class-ai1wm-main-controller.php:1055
-msgid "Please do not close this browser window or your import will fail"
-msgstr "Veuillez ne pas fermer cette fenêtre de navigateur ou votre import échouera "
 
 #: lib/controller/class-ai1wm-main-controller.php:865
 #: lib/controller/class-ai1wm-main-controller.php:1048
@@ -395,13 +388,18 @@ msgstr "Veuillez patienter, nous arrêtons l’export…"
 msgid "Unable to stop the export. Refresh the page and try again"
 msgstr "Impossible d’arrêter l’export. Veuillez recharger la page et réessayer."
 
-#: functions.php:1472
+#: functions.php:1484
 msgid "Unable to get current pointer position of %s. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Technical details</a>"
 msgstr "Impossible d’obtenir la position actuelle du pointeur de %s. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Détails techniques (en anglais).</a>"
 
 #: lib/controller/class-ai1wm-main-controller.php:1116
 msgid "Your purchase ID is invalid, please <a href=\"mailto:support@servmask.com\">contact us</a>"
 msgstr "Votre ID d’achat est non valide, veuillez <a href=\"mailto:support@servmask.com\">nous contacter</a>"
+
+#: lib/controller/class-ai1wm-main-controller.php:872
+#: lib/controller/class-ai1wm-main-controller.php:1055
+msgid "Please do not close this browser window or your import will fail"
+msgstr "Veuillez ne pas fermer cette fenêtre de navigateur sinon votre import échouera "
 
 #: lib/model/export/class-ai1wm-export-config-file.php:73
 msgid "Done archiving configuration file."
@@ -420,7 +418,7 @@ msgstr "Préparation des fichiers de configuration terminée."
 msgid "Archiving configuration file...<br />%d%% complete"
 msgstr "Archivage des fichiers de configuration…<br />%d%% terminé"
 
-#: lib/view/common/report-problem.php:46 lib/view/common/leave-feedback.php:59
+#: lib/view/common/leave-feedback.php:59 lib/view/common/report-problem.php:46
 msgid "I agree that by filling in the contact form with my data, I authorize All-in-One WP Migration to use my <strong>email</strong> to reply to my requests for information. <a href=\"https://www.iubenda.com/privacy-policy/946881\" target=\"_blank\">Privacy policy</a>"
 msgstr "J’accepte qu’en remplissant le formulaire de contact avec mes données, j’autorise All-in-One WP Migration a utiliser mon <strong>e-mail</strong> pour répondre à mes demandes. <a href=\"https://www.iubenda.com/privacy-policy/946881\" target=\"_blank\">Politique de confidentialité</a>."
 
@@ -447,7 +445,7 @@ msgid "Archiving database...<br />%d%% complete"
 msgstr "Archivage de la base de données...<br />%d%% terminé"
 
 #: lib/model/import/class-ai1wm-import-database.php:78
-#: lib/model/import/class-ai1wm-import-database.php:989
+#: lib/model/import/class-ai1wm-import-database.php:992
 msgid "Restoring database...<br />%d%% complete"
 msgstr "Restauration de la base de données en cours...<br />%d%% terminé"
 
@@ -464,7 +462,7 @@ msgstr "Mensuellement"
 msgid "Weekly"
 msgstr "Hebdomadaire"
 
-#: lib/model/import/class-ai1wm-import-database.php:969
+#: lib/model/import/class-ai1wm-import-database.php:972
 msgid "Done restoring database."
 msgstr "La restauration de la base de données est terminée..."
 
@@ -529,7 +527,7 @@ msgstr "Préparation des blogs en cours..."
 msgid "Unable to import <strong>WordPress Network</strong> into WordPress <strong>Single</strong> site."
 msgstr "Impossible d’importer <strong>un réseau WordPress</strong> dans un site <strong>unique</strong> WordPress."
 
-#: lib/model/class-ai1wm-report.php:69 lib/model/class-ai1wm-feedback.php:78
+#: lib/model/class-ai1wm-feedback.php:78 lib/model/class-ai1wm-report.php:69
 msgid "Something went wrong: %s"
 msgstr "Quelque chose s’est mal passé : %s"
 
@@ -537,7 +535,7 @@ msgstr "Quelque chose s’est mal passé : %s"
 msgid "Please accept feedback term conditions."
 msgstr "Veuillez accepter les conditions générales de retour d’information."
 
-#: lib/model/class-ai1wm-report.php:44 lib/model/class-ai1wm-feedback.php:46
+#: lib/model/class-ai1wm-feedback.php:46 lib/model/class-ai1wm-report.php:44
 msgid "Your email is not valid."
 msgstr "Votre adresse e-mail n’est pas valide."
 
@@ -557,7 +555,7 @@ msgstr "L’archive devrait contenir <strong>un seul site WordPress</strong> ! 
 msgid "Please accept report term conditions."
 msgstr "Veuillez accepter les conditions générales de rapport d’information."
 
-#: lib/model/class-ai1wm-report.php:49 lib/model/class-ai1wm-feedback.php:56
+#: lib/model/class-ai1wm-feedback.php:56 lib/model/class-ai1wm-report.php:49
 msgid "Please enter comments in the text area."
 msgstr "Veuillez saisir vos commentaires dans la zone de texte."
 
@@ -614,7 +612,7 @@ msgstr "Date"
 msgid "Name"
 msgstr "Nom"
 
-#: lib/view/common/report-problem.php:51 lib/view/common/leave-feedback.php:64
+#: lib/view/common/leave-feedback.php:64 lib/view/common/report-problem.php:51
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -658,7 +656,7 @@ msgstr "Sauvegardes"
 msgid "File"
 msgstr "Fichier"
 
-#: lib/view/common/report-problem.php:54 lib/view/common/leave-feedback.php:67
+#: lib/view/common/leave-feedback.php:67 lib/view/common/report-problem.php:54
 msgid "Send"
 msgstr "Envoyer"
 
@@ -723,7 +721,7 @@ msgstr "Exporter le site"
 msgid "Import Site"
 msgstr "Importer le site"
 
-#: lib/view/common/report-problem.php:38 lib/view/common/leave-feedback.php:51
+#: lib/view/common/leave-feedback.php:51 lib/view/common/report-problem.php:38
 msgid "Enter your email address.."
 msgstr "Saisissez votre adresse e-mail..."
 
@@ -731,8 +729,8 @@ msgstr "Saisissez votre adresse e-mail..."
 msgid "Renaming exported file..."
 msgstr "Renommage du fichier exporté en cours..."
 
-#: lib/view/import/index.php:71 lib/view/export/index.php:75
-#: lib/view/backups/index.php:83
+#: lib/view/backups/index.php:83 lib/view/import/index.php:71
+#: lib/view/export/index.php:75
 msgid "Leave Feedback"
 msgstr "Laisser un commentaire"
 
@@ -809,17 +807,17 @@ msgstr "J’ai besoin d’aide pour cette extension"
 msgid "This screen allows you to export database, media files, themes and plugins as one zipped file."
 msgstr "Cet écran vous permet d’exporter la base de données, les fichiers de media, les thèmes et les extensions dans un fichier zip."
 
-#: lib/controller/class-ai1wm-main-controller.php:860
-#: lib/controller/class-ai1wm-main-controller.php:1043
 #: lib/controller/class-ai1wm-import-controller.php:96
 #: lib/controller/class-ai1wm-import-controller.php:97
+#: lib/controller/class-ai1wm-main-controller.php:860
+#: lib/controller/class-ai1wm-main-controller.php:1043
 msgid "Unable to import"
 msgstr "Impossible d’importer "
 
-#: lib/controller/class-ai1wm-main-controller.php:737
-#: lib/controller/class-ai1wm-main-controller.php:1034
 #: lib/controller/class-ai1wm-export-controller.php:79
 #: lib/controller/class-ai1wm-export-controller.php:80
+#: lib/controller/class-ai1wm-main-controller.php:737
+#: lib/controller/class-ai1wm-main-controller.php:1034
 msgid "Unable to export"
 msgstr "Impossible d’exporter"
 
@@ -859,15 +857,11 @@ msgstr "Décrivez votre problème ici."
 msgid "Done exporting database."
 msgstr "Export de la base de données terminé."
 
-#: lib/model/export/class-ai1wm-export-content.php:80
-#: lib/model/export/class-ai1wm-export-media.php:80
-msgid "Archiving %d files...<br />%d%% complete"
-msgstr "Stockage de %d fichiers en cours...<br />%d%% terminé"
-
 #: lib/model/export/class-ai1wm-export-archive.php:35
 msgid "Creating an empty archive..."
 msgstr "Création d’une archive vide..."
 
 #: lib/model/import/class-ai1wm-import-done.php:245
+#: lib/model/import/class-ai1wm-import-done.php:247
 msgid "Your site has been imported successfully!"
 msgstr "Votre site a bien été importé !"

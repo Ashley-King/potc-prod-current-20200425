@@ -85,7 +85,7 @@ function potc_body_class( $classes ) {
 	if ( is_page( 'thank-you' ) ){
 		$classes[] = 'thank-you_page sub_page';	
 	}
-	if ( is_page( 'ashley-king' ) ){
+	if ( is_page( 'ashley' ) ){
 		$classes[] = 'ashley_page sub_page';	
 	}
 	return $classes;

@@ -6,9 +6,10 @@
     }
     .entry-title{
         a{
-            color: $text-color;
+            color: $dark-green;
             &:hover{
                 color: $medium-green;
+                text-decoration: none;
             }
         }
 

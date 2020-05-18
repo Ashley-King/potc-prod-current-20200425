@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Autoptimize - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-02 13:23:36+0000\n"
+"PO-Revision-Date: 2020-05-07 13:46:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,7 +36,7 @@ msgstr "Quelque chose a mal tourné lors de la vérification de la clef API. Vé
 msgid "Your API key is invalid. Please enter a valid <a href=\"https://criticalcss.com/?aff=1\" target=\"_blank\">criticalcss.com</a> key."
 msgstr "Votre clef API est non valide. Veuillez saisir une  clef <a href=\"https://criticalcss.com/?aff=1\" target=\"_blank\">criticalcss.com</a> valide."
 
-#: classes/autoptimizeCriticalCSSBase.php:182
+#: classes/autoptimizeCriticalCSSBase.php:184
 msgid "Autoptimize CriticalCSS"
 msgstr "CriticalCSS avec Autoptimize"
 
@@ -78,6 +78,81 @@ msgstr "Règles"
 msgid "None"
 msgstr "Aucune"
 
+#: classes/critcss-inc/admin_settings_queue.js.php:175
+msgid "Retry"
+msgstr "Réessayer"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:155
+msgid "Delete all jobs?"
+msgstr "Supprimer toutes les tâches ?"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:114
+msgid "Job status is "
+msgstr "L’état de la tâche est "
+
+#: classes/critcss-inc/admin_settings_queue.js.php:108
+msgid "N/A"
+msgstr "N/A"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:100
+msgid "UNKNOWN"
+msgstr "INCONNU"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:92
+#: classes/critcss-inc/admin_settings_queue.js.php:101
+msgid "Get Help"
+msgstr "Obtenir de l’aide"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:91
+msgid "ERROR"
+msgstr "ERREUR"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:84
+msgid "DONE"
+msgstr "FAIT"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:77
+#: classes/critcss-inc/admin_settings_queue.js.php:91
+#: classes/critcss-inc/admin_settings_queue.js.php:100
+msgid "- Validation: "
+msgstr "– Validation : "
+
+#: classes/critcss-inc/admin_settings_queue.js.php:77
+#: classes/critcss-inc/admin_settings_queue.js.php:91
+#: classes/critcss-inc/admin_settings_queue.js.php:100
+msgid "- Result: "
+msgstr "– Résultat : "
+
+#: classes/critcss-inc/admin_settings_queue.js.php:77
+#: classes/critcss-inc/admin_settings_queue.js.php:91
+#: classes/critcss-inc/admin_settings_queue.js.php:100
+msgid "- Status: "
+msgstr "– État : "
+
+#: classes/critcss-inc/admin_settings_queue.js.php:77
+#: classes/critcss-inc/admin_settings_queue.js.php:91
+#: classes/critcss-inc/admin_settings_queue.js.php:100
+msgid "- Job ID: "
+msgstr "– ID de la tâche : "
+
+#: classes/critcss-inc/admin_settings_queue.js.php:77
+#: classes/critcss-inc/admin_settings_queue.js.php:91
+#: classes/critcss-inc/admin_settings_queue.js.php:100
+msgid "Info from criticalcss.com:"
+msgstr "Information de criticalcss.com :"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:77
+msgid "REVIEW"
+msgstr "EXAMEN"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:71
+msgid "PENDING"
+msgstr "EN ATTENTE"
+
+#: classes/critcss-inc/admin_settings_queue.js.php:65
+msgid "New"
+msgstr "Nouveau"
+
 #: classes/autoptimizeCriticalCSSSettings.php:303
 msgid "Import Settings"
 msgstr "Importer les réglages"
@@ -89,6 +164,31 @@ msgstr "Exporter les réglages"
 #: classes/autoptimizeCriticalCSSSettings.php:204
 msgid "It looks like there might be a problem with WordPress cron (task scheduling). Have a look at <a href=\"https://wordpress.org/plugins/autoptimize-criticalcss/faq/\" target=\"_blank\">the FAQ</a> or the info in the Job Queue instructions if all jobs remain in \"N\" status and no rules are created."
 msgstr "Il semblerait qu’il y ait eu un problème avec la fonction cron de WordPres (programmation de tâches). Veuillez consulter la <a href=\"https://wordpress.org/plugins/autoptimize-criticalcss/faq/\" target=\"_blank\">FAQ</a> ou vérifier dans la file d’attente des instructions de tâches si toutes les tâches sont bloquées à l’état « N » et si aucune règle n’a été créée."
+
+#. translators: the placesholder is for a line of code in wp-config.php.
+#: classes/autoptimizeCriticalCSSSettings.php:244
+msgid "<p>Critical CSS settings cannot be set at network level as critical CSS is specific to each sub-site.</p><p>You can however provide the critical CSS API key for use by all sites by adding this your wp-config.php as %s</p>"
+msgstr "<p>Les réglages de Critical CSS ne peuvent pas être définis au niveau du réseau car Critical CSS est spécifique à chaque site du réseau.</p><p>Vous pouvez néanmoins entrer la clef CSS API key à utiliser pour tous tous les sites an rajoutant ceci à wp-config.php comme %s</p>"
+
+#: classes/autoptimizeCriticalCSSSettings.php:223
+msgid "The critical CSS service has been reported to be down. Although no new rules will be created for now, this does not prevent existing rules from being applied."
+msgstr "Le service Critical CSS est signalé comme étant interrompu. Même si aucune nouvelle règle ne peut être créée pour le moment, ceci n’empêche pas les règles existantes d’être appliquées."
+
+#: classes/autoptimizeCriticalCSSSettings.php:212
+msgid "Great, Autoptimize will now automatically start creating new critical CSS rules, you should see those appearing below in the next couple of hours."
+msgstr "Magnifique, Autoptimize va maintenant créer automatiquement de nouvelles règles critical CSS. Vous devriez les voir apparaître ci-dessous dans quelques heures."
+
+#: classes/autoptimizeCriticalCSSSettings.php:151
+msgid "WordPress cron (for task scheduling) seems to be disabled. Have a look at <a href=\"https://wordpress.org/plugins/autoptimize-criticalcss/faq/\" target=\"_blank\">the FAQ</a> or the info in the Job Queue instructions if all jobs remain in \"N\" status and no rules are created."
+msgstr "Le cron WordPress (pour la programmation de tâches) semble être désactivé. Veuillez consulter la <a href=\"https://wordpress.org/plugins/autoptimize-criticalcss/faq/\" target=\"_blank\">FAQ</a> ou les informations dans les instructions de file d’attente de tâches pour vérifier si toutes les tâches gardent l’état « N » et vérifier si aucune règle n’a été créée."
+
+#: classes/autoptimizeCriticalCSSSettings.php:139
+msgid "Oops! Please <strong>activate the \"Inline and Defer CSS\" option</strong> on Autoptimize's main settings page to use this power-up."
+msgstr "Oups ! Veuillez <strong>activer l’option « Intégrer et différer le CSS »</strong> dans la page principale de réglages d’Autoptimize afin d’utiliser cette amélioration."
+
+#: classes/autoptimizeCriticalCSSSettings.php:127
+msgid "Could not create the required directory. Make sure the webserver can write to the wp-content directory."
+msgstr "Impossible de créer le répertoire nécessaire. Veuillez vérifier que le serveur Web peut écrire dans le répertoire wp-content."
 
 #: classes/autoptimizeConfig.php:204
 msgid "Multisite Options"
@@ -338,6 +438,11 @@ msgstr "L’optimisation d’image ShortPixel et le quota CDN ont été épuisé
 #: classes/autoptimizeImages.php:1167
 msgid "Your ShortPixel image optimization and CDN quota is almost used, make sure you %1$sadd more credits%2$s to avoid slowing down your website."
 msgstr "L’optimisation d’image ShortPixel et le quota CDN sont presque épuisés. Pensez à %1$sajouter plus de crédits%2$s pour éviter un ralentissement de votre site."
+
+#. translators: links "autoptimize critical CSS" tab.
+#: classes/autoptimizeConfig.php:309
+msgid "This can be fully automated for different types of pages on the %s tab."
+msgstr "Ceci peut être complètement automatisé pour différent types de page avec l’onglet %s."
 
 #: autoptimize.php:32
 msgid "Autoptimize requires PHP 5.6 (or higher) to function properly. Please upgrade PHP. The Plugin has been auto-deactivated."

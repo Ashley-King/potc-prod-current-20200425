@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-25 20:10:52+0000\n"
+"PO-Revision-Date: 2020-05-08 08:37:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -184,11 +184,11 @@ msgstr "Más formas de hacer que las entradas y páginas cobren vida con tus mej
 msgid "Every major release adds more to the block editor."
 msgstr "Cada versión mayor añade más cosas al editor de bloques."
 
-#: wp-admin/about.php:79
+#: wp-admin/about.php:46
 msgid "More ways to make your pages come alive. With easier ways to get it all done and looking better than ever&mdash;and boosts in speed you can feel."
 msgstr "Más formas de hacer que tus páginas cobren vida. Con formas más fáciles de hacer todo y que luzca mejor que nunca – ¡y mejoras de velocidad que puedes notar!"
 
-#: wp-admin/about.php:77
+#: wp-admin/about.php:44
 msgid "Say hello to more and better."
 msgstr "Di hola a más y mejor."
 
@@ -2549,7 +2549,7 @@ msgstr "No se puede instalar"
 #. translators: %s: WordPress version.
 #. translators: %s: WordPress version
 #: wp-admin/includes/update.php:300 wp-admin/install.php:239
-#: wp-admin/update-core.php:82 wp-admin/upgrade.php:83 wp-admin/about.php:65
+#: wp-admin/update-core.php:82 wp-admin/upgrade.php:83 wp-admin/about.php:73
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -3947,7 +3947,7 @@ msgstr "Desconocido"
 msgid "View posts by %s"
 msgstr "Ver entradas de %s"
 
-#: wp-admin/includes/class-wp-terms-list-table.php:542
+#: wp-admin/includes/class-wp-terms-list-table.php:543
 msgid "No description"
 msgstr "Sin descripción"
 
@@ -5064,7 +5064,7 @@ msgstr "https://es.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Imagen de perfil"
 
-#: wp-admin/about.php:45 wp-admin/about.php:267
+#: wp-admin/about.php:53 wp-admin/about.php:267
 msgid "Maintenance and Security Releases"
 msgstr "Versiones de mantenimiento y seguridad"
 
@@ -7914,7 +7914,7 @@ msgstr "Añadir"
 
 #: wp-admin/theme-install.php:118
 msgid "To install the theme so you can preview it with your site&#8217;s content and customize its theme options, click the \"Install\" button at the top of the left-hand pane. The theme files will be downloaded to your website automatically. When this is complete, the theme is now available for activation, which you can do by clicking the \"Activate\" link, or by navigating to your Manage Themes screen and clicking the \"Live Preview\" link under any installed theme&#8217;s thumbnail image."
-msgstr "Para instalar el tema, para que puedas previsualizarlo con el contenido de tu sitio y personalizar las opciones del tema, haz clic en el botón «Instalar» en la parte superior izquierda del panel. Los archivos del tema se descargarán automáticamente en tu sitio. Cuando se complete, el tema estará listo para su activación haciendo clic en el enlace «Activar» o navegando a la pantalla «Gestionar temas» y haciendo clic en el enlace de «Vista previa» debajo de la miniatura de cada tema instalado. "
+msgstr "Para instalar el tema, para que puedas previsualizarlo con el contenido de tu sitio y personalizar las opciones del tema, haz clic en el botón «Instalar» en la parte superior izquierda de la ventana. Los archivos del tema se descargarán automáticamente en tu sitio. Cuando se complete, el tema estará listo para su activación haciendo clic en el enlace «Activar» o navegando a la pantalla «Gestionar temas» y haciendo clic en el enlace de «Vista previa» debajo de la miniatura de cada tema instalado. "
 
 #: wp-admin/menu-header.php:269
 msgid "Skip to main content"
@@ -8591,7 +8591,7 @@ msgstr[1] "La <strong>versión %1$s</strong> soluciona %2$s fallos."
 #. than one security issue.
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:50 wp-admin/about.php:287
+#: wp-admin/about.php:58 wp-admin/about.php:287
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "La <strong>versión %1$s</strong> soluciona algunos problemas de seguridad y soluciona %2$s fallo."
@@ -8599,7 +8599,7 @@ msgstr[1] "La <strong>versión %1$s</strong> soluciona algunos problemas de segu
 
 #. translators: %s: HelpHub URL
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:62 wp-admin/about.php:293
+#: wp-admin/about.php:70 wp-admin/about.php:293
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Para más información, lee <a href=\"%s\">las notas de la versión</a>."
 
@@ -9388,7 +9388,7 @@ msgstr "Hay algunos elementos de menú no válidos. Por favor, compruébalos o e
 
 #: wp-admin/edit-tags.php:440
 #: wp-admin/includes/class-wp-terms-list-table.php:182
-#: wp-admin/includes/class-wp-terms-list-table.php:645
+#: wp-admin/includes/class-wp-terms-list-table.php:646
 #: wp-admin/edit-tag-form.php:132
 msgctxt "term name"
 msgid "Name"
@@ -10110,7 +10110,7 @@ msgstr "Tus plugins están actualizados."
 
 #: wp-admin/update-core.php:278
 msgid "While your site is being updated, it will be in maintenance mode. As soon as your updates are complete, your site will return to normal."
-msgstr "Tu sitio permanecerá en modo mantenimiento mientras que se actualiza. Volverá a su estado normal en cuanto terminen las actualizaciones."
+msgstr "Tu sitio permanecerá en modo mantenimiento mientras se actualiza. Volverá a su estado normal en cuanto terminen las actualizaciones."
 
 #: wp-admin/theme-editor.php:169 wp-admin/plugin-editor.php:169
 msgid "Function Name&hellip;"
@@ -12255,7 +12255,7 @@ msgstr "Título"
 msgid "Quick&nbsp;Edit"
 msgstr "Edición rápida"
 
-#: wp-admin/includes/class-wp-terms-list-table.php:642
+#: wp-admin/includes/class-wp-terms-list-table.php:643
 #: wp-admin/includes/class-wp-posts-list-table.php:1528
 msgid "Quick Edit"
 msgstr "Edición rápida"
