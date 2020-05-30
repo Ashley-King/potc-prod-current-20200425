@@ -7,3 +7,21 @@
     border: 1px solid $dark-green;
     
 }
+.tbl_page .quote {
+    padding-top: 0;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    border-left: none;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    &:before{
+        display: none;
+    }
+}
+.tbl_page .quote p {
+    color: $light-orange;
+    margin-bottom: 5px;
+}
