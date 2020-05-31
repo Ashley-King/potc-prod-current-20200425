@@ -13,10 +13,13 @@
     margin: 0 auto;
     background-color: #fff;
     border-left: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: italic;
     font-weight: 300;
     text-align: center;
+    .attribution{
+        font-size: .9rem;
+    }
     &:before{
         display: none;
     }

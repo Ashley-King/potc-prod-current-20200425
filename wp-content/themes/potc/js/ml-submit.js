@@ -1,7 +1,13 @@
 jQuery(document).ready(function($){
     //submit button click event
   
-
+    function isValidRecaptcha(){
+        $recap = $('#1xq8nm input[name="recaptcha_response"]').val();
+        if($recap.length && !$recap !== '' && $recap !== undefined){
+            return true;
+        }
+        return false;
+    }
     function isValidEmail(){
         $email = $('#1xq8nm input[name="email"]').val();
         if($email.length && $email.indexOf('@') > -1){
@@ -33,13 +39,16 @@ jQuery(document).ready(function($){
     $('.form-submit').click(function(e){
         e.preventDefault();
         formData = $('#1xq8nm').serialize();
+        // console.log(formData);
         // formData = JSON.stringify(formData);
-        console.log(formData)
+        
         if(!isValidEmail()){
             alert('add email');
         }else if(!isValidName()){
             alert('add name')
         }else if(!notBotz()){
+            alert("no botz please")
+        } else if (!isValidRecaptcha()){
             alert("no botz please")
         }else{
             $('#1xq8nm input[name="email"]').val('');
@@ -58,7 +67,7 @@ jQuery(document).ready(function($){
             success: function (data) {
                 
               window.location.href='https://pediatricotcourses.com/thank-you';
-              console.log(data)
+            //   console.log(data)
             }
           });
     }

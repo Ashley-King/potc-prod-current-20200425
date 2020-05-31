@@ -12,7 +12,9 @@
         justify-content: center;
 
         .no-image-optin__form__text {
-            .text {}
+            .text {
+                color: $text-color;
+            }
         }
 
         form {
