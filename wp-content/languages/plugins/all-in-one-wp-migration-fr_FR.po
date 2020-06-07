@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - All-in-One WP Migration - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-08 14:29:01+0000\n"
+"PO-Revision-Date: 2020-05-22 07:44:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,18 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - All-in-One WP Migration - Stable (latest release)\n"
+
+#: lib/view/import/done.php:40
+msgid "» Permalinks are set to default. <a class=\"ai1wm-no-underline\" href=\"https://help.servmask.com/knowledgebase/permalinks-are-set-to-default/\" target=\"_blank\">Why?</a> (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>. (opens a new window)"
+msgstr "» Le réglage par défaut est appliqué aux permaliens. <a class=\"ai1wm-no-underline\" href=\"https://help.servmask.com/knowledgebase/permalinks-are-set-to-default/\" target=\"_blank\">Pourquoi ?</a> (page en anglais - ouverture dans un nouvel onglet)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Si vous le souhaitez, vous pouvez aussi évaluer l’extension</a>. (ouvre un nouvel onglet)"
+
+#: lib/view/import/oxygen.php:41
+msgid "» Permalinks are set to default. <a class=\"ai1wm-no-underline\" href=\"https://help.servmask.com/knowledgebase/permalinks-are-set-to-default/\" target=\"_blank\">Why?</a> (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://oxygenbuilder.com/documentation/other/importing-exporting/#resigning\" target=\"_blank\">Re-sign Oxygen Builder shortcodes</a>. (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>. (opens a new window)"
+msgstr "» Le réglage par défaut est appliqué aux permaliens. <a class=\"ai1wm-no-underline\" href=\"https://help.servmask.com/knowledgebase/permalinks-are-set-to-default/\" target=\"_blank\">Pourquoi ?</a> (page en anglais - ouverture dans un nouvel onglet)<br />» <a class=\"ai1wm-no-underline\" href=\"https://oxygenbuilder.com/documentation/other/importing-exporting/#resigning\" target=\"_blank\">Assignez à nouveaux les codes courts d’Oxygen Builder</a>. (ouvre un nouvel onglet)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Si vous le souhaitez, vous pouvez aussi évaluer l’extension</a>. (ouvre un nouvel onglet)"
+
+#: lib/view/import/oxygen.php:32
+msgid "» <a class=\"ai1wm-no-underline\" href=\"%s\" target=\"_blank\">Save permalinks structure</a>. (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://oxygenbuilder.com/documentation/other/importing-exporting/#resigning\" target=\"_blank\">Re-sign Oxygen Builder shortcodes</a>. (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>. (opens a new window)"
+msgstr "» <a class=\"ai1wm-no-underline\" href=\"%s\" target=\"_blank\">Enregistrer la structure des permaliens</a>. (ouvre un nouvel onglet)<br />» <a class=\"ai1wm-no-underline\" href=\"https://oxygenbuilder.com/documentation/other/importing-exporting/#resigning\" target=\"_blank\">Assignez à nouveaux les codes courts d’Oxygen Builder</a>. (ouvre un nouvel onglet)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Si vous le souhaitez, vous pouvez aussi évaluer l’extension</a>. (ouvre un nouvel onglet)"
 
 #: lib/model/export/class-ai1wm-export-media.php:84
 #: lib/model/export/class-ai1wm-export-media.php:127
@@ -63,7 +75,7 @@ msgstr "%s n’est pas la dernière version. Vous devez mettre à jour l’exten
 msgid "Your backup is from a PHP 5 but the site that you are importing to is PHP 7. This could cause the import to fail. Technical details: https://help.servmask.com/knowledgebase/migrate-wordpress-from-php-5-to-php-7/"
 msgstr "La version de PHP de la sauvegarde est PHP5, mais le site sur lequel vous l’importez fonctionne avec PHP7. Cela peut causer l’échec de l’import. Détails techniques : https://help.servmask.com/knowledgebase/migrate-wordpress-from-php-5-to-php-7/ (en anglais)"
 
-#: lib/view/backups/backups-list.php:46 lib/view/backups/index.php:51
+#: lib/view/backups/index.php:51 lib/view/backups/backups-list.php:46
 msgid "Refreshing backup list..."
 msgstr "Rafraîchissement de la liste des sauvegardes&hellip;"
 
@@ -169,17 +181,17 @@ msgstr "L’importation va écraser votre site web, ce qui inclut la base de don
 msgid "WordPress Multisite is supported via our All-in-One WP Migration Multisite Extension. You can get a copy of it here"
 msgstr "WordPress multisite est pris en charge par notre extension All-in-One WP Migration Multisite. Vous pouvez l’obtenir ici"
 
-#: lib/view/main/backups-path-notice.php:35
 #: lib/view/main/storage-path-notice.php:35
+#: lib/view/main/backups-path-notice.php:35
 msgid "All-in-One WP Migration is not able to create <strong>%s</strong> folder. You will need to create this folder and grant it read/write/execute permissions (0777) for the All-in-One WP Migration plugin to function properly."
 msgstr "All-in-One WP Migration ne peut pas créer le dossier <strong>%s</strong>. Vous devrez créer ce dossier et lui donner les droits de lecture/écriture/exécution (0777) pour que l’extension All in One WP Migration fonctionne correctement."
 
+#: lib/view/main/storage-index-php-notice.php:35
 #: lib/view/main/backups-index-html-notice.php:35
-#: lib/view/main/backups-htaccess-notice.php:35
 #: lib/view/main/storage-index-html-notice.php:35
 #: lib/view/main/backups-index-php-notice.php:35
-#: lib/view/main/storage-index-php-notice.php:35
 #: lib/view/main/wordpress-htaccess-notice.php:35
+#: lib/view/main/backups-htaccess-notice.php:35
 #: lib/view/main/backups-webconfig-notice.php:35
 msgid "All-in-One WP Migration is not able to create <strong>%s</strong> file. Try to change permissions of the parent folder or send us an email at <a href=\"mailto:support@servmask.com\">support@servmask.com</a> for assistance."
 msgstr "All-in-One WP Migration ne peut pas créer le fichier <strong>%s</strong>. Essayez de changer les droits du dossier parent ou envoyez-nous un e-mail à <a href=\"mailto:support@servmask.com\">support@servmask.com</a> pour obtenir de l’aide."
@@ -418,7 +430,7 @@ msgstr "Préparation des fichiers de configuration terminée."
 msgid "Archiving configuration file...<br />%d%% complete"
 msgstr "Archivage des fichiers de configuration…<br />%d%% terminé"
 
-#: lib/view/common/leave-feedback.php:59 lib/view/common/report-problem.php:46
+#: lib/view/common/report-problem.php:46 lib/view/common/leave-feedback.php:59
 msgid "I agree that by filling in the contact form with my data, I authorize All-in-One WP Migration to use my <strong>email</strong> to reply to my requests for information. <a href=\"https://www.iubenda.com/privacy-policy/946881\" target=\"_blank\">Privacy policy</a>"
 msgstr "J’accepte qu’en remplissant le formulaire de contact avec mes données, j’autorise All-in-One WP Migration a utiliser mon <strong>e-mail</strong> pour répondre à mes demandes. <a href=\"https://www.iubenda.com/privacy-policy/946881\" target=\"_blank\">Politique de confidentialité</a>."
 
@@ -445,7 +457,7 @@ msgid "Archiving database...<br />%d%% complete"
 msgstr "Archivage de la base de données...<br />%d%% terminé"
 
 #: lib/model/import/class-ai1wm-import-database.php:78
-#: lib/model/import/class-ai1wm-import-database.php:992
+#: lib/model/import/class-ai1wm-import-database.php:984
 msgid "Restoring database...<br />%d%% complete"
 msgstr "Restauration de la base de données en cours...<br />%d%% terminé"
 
@@ -462,7 +474,7 @@ msgstr "Mensuellement"
 msgid "Weekly"
 msgstr "Hebdomadaire"
 
-#: lib/model/import/class-ai1wm-import-database.php:972
+#: lib/model/import/class-ai1wm-import-database.php:964
 msgid "Done restoring database."
 msgstr "La restauration de la base de données est terminée..."
 
@@ -527,7 +539,7 @@ msgstr "Préparation des blogs en cours..."
 msgid "Unable to import <strong>WordPress Network</strong> into WordPress <strong>Single</strong> site."
 msgstr "Impossible d’importer <strong>un réseau WordPress</strong> dans un site <strong>unique</strong> WordPress."
 
-#: lib/model/class-ai1wm-feedback.php:78 lib/model/class-ai1wm-report.php:69
+#: lib/model/class-ai1wm-report.php:69 lib/model/class-ai1wm-feedback.php:78
 msgid "Something went wrong: %s"
 msgstr "Quelque chose s’est mal passé : %s"
 
@@ -535,7 +547,7 @@ msgstr "Quelque chose s’est mal passé : %s"
 msgid "Please accept feedback term conditions."
 msgstr "Veuillez accepter les conditions générales de retour d’information."
 
-#: lib/model/class-ai1wm-feedback.php:46 lib/model/class-ai1wm-report.php:44
+#: lib/model/class-ai1wm-report.php:44 lib/model/class-ai1wm-feedback.php:46
 msgid "Your email is not valid."
 msgstr "Votre adresse e-mail n’est pas valide."
 
@@ -555,7 +567,7 @@ msgstr "L’archive devrait contenir <strong>un seul site WordPress</strong> ! 
 msgid "Please accept report term conditions."
 msgstr "Veuillez accepter les conditions générales de rapport d’information."
 
-#: lib/model/class-ai1wm-feedback.php:56 lib/model/class-ai1wm-report.php:49
+#: lib/model/class-ai1wm-report.php:49 lib/model/class-ai1wm-feedback.php:56
 msgid "Please enter comments in the text area."
 msgstr "Veuillez saisir vos commentaires dans la zone de texte."
 
@@ -595,8 +607,8 @@ msgstr "Vous n'avez pas votre ID d’achat ? Vous pouvez trouver votre ID d’a
 msgid "Enter your Purchase ID"
 msgstr "Saisir votre ID d’achat"
 
-#: lib/controller/class-ai1wm-main-controller.php:1115
 #: lib/view/updater/check.php:31
+#: lib/controller/class-ai1wm-main-controller.php:1115
 msgid "Check for updates"
 msgstr "Rechercher des mises à jour"
 
@@ -612,7 +624,7 @@ msgstr "Date"
 msgid "Name"
 msgstr "Nom"
 
-#: lib/view/common/leave-feedback.php:64 lib/view/common/report-problem.php:51
+#: lib/view/common/report-problem.php:51 lib/view/common/leave-feedback.php:64
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -646,9 +658,9 @@ msgstr "Exporter"
 msgid "Import"
 msgstr "Importer"
 
+#: lib/view/backups/index.php:37
 #: lib/controller/class-ai1wm-main-controller.php:610
 #: lib/controller/class-ai1wm-main-controller.php:611
-#: lib/view/backups/index.php:37
 msgid "Backups"
 msgstr "Sauvegardes"
 
@@ -656,7 +668,7 @@ msgstr "Sauvegardes"
 msgid "File"
 msgstr "Fichier"
 
-#: lib/view/common/leave-feedback.php:67 lib/view/common/report-problem.php:54
+#: lib/view/common/report-problem.php:54 lib/view/common/leave-feedback.php:67
 msgid "Send"
 msgstr "Envoyer"
 
@@ -721,7 +733,7 @@ msgstr "Exporter le site"
 msgid "Import Site"
 msgstr "Importer le site"
 
-#: lib/view/common/leave-feedback.php:51 lib/view/common/report-problem.php:38
+#: lib/view/common/report-problem.php:38 lib/view/common/leave-feedback.php:51
 msgid "Enter your email address.."
 msgstr "Saisissez votre adresse e-mail..."
 
@@ -729,7 +741,7 @@ msgstr "Saisissez votre adresse e-mail..."
 msgid "Renaming exported file..."
 msgstr "Renommage du fichier exporté en cours..."
 
-#: lib/view/backups/index.php:83 lib/view/import/index.php:71
+#: lib/view/import/index.php:71 lib/view/backups/index.php:83
 #: lib/view/export/index.php:75
 msgid "Leave Feedback"
 msgstr "Laisser un commentaire"
@@ -861,7 +873,7 @@ msgstr "Export de la base de données terminé."
 msgid "Creating an empty archive..."
 msgstr "Création d’une archive vide..."
 
-#: lib/model/import/class-ai1wm-import-done.php:245
-#: lib/model/import/class-ai1wm-import-done.php:247
+#: lib/model/import/class-ai1wm-import-done.php:251
+#: lib/model/import/class-ai1wm-import-done.php:253
 msgid "Your site has been imported successfully!"
 msgstr "Votre site a bien été importé !"

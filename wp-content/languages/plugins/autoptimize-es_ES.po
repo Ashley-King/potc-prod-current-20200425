@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Autoptimize - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-03 10:10:37+0000\n"
+"PO-Revision-Date: 2020-05-21 08:28:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,7 +46,7 @@ msgstr "Algo fue mal al comprobar tu clave API, asegúrate de que tu servidor pu
 msgid "Your API key is invalid. Please enter a valid <a href=\"https://criticalcss.com/?aff=1\" target=\"_blank\">criticalcss.com</a> key."
 msgstr "Tu clave API no es válida. Por favor, introduce una clave válida de <a href=\"https://criticalcss.com/?aff=1\" target=\"_blank\">criticalcss.com</a>."
 
-#: classes/autoptimizeCriticalCSSBase.php:182
+#: classes/autoptimizeCriticalCSSBase.php:184
 msgid "Autoptimize CriticalCSS"
 msgstr "Autoptimizar CSS crítico"
 
@@ -114,41 +114,41 @@ msgstr "Opciones"
 msgid "Debug Information"
 msgstr "Información de depuración"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:287
+#: classes/critcss-inc/admin_settings_rules.js.php:292
 msgid "Additional Critical CSS"
 msgstr "CSS crítico adicional"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:266
+#: classes/critcss-inc/admin_settings_rules.js.php:271
 msgid "Default Critical CSS"
 msgstr "CSS crítico por defecto"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:238
-#: classes/critcss-inc/admin_settings_rules.js.php:269
-#: classes/critcss-inc/admin_settings_rules.js.php:290
+#: classes/critcss-inc/admin_settings_rules.js.php:243
+#: classes/critcss-inc/admin_settings_rules.js.php:274
+#: classes/critcss-inc/admin_settings_rules.js.php:295
 msgid "Submit"
 msgstr "Enviar"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:211
+#: classes/critcss-inc/admin_settings_rules.js.php:216
 msgid "Add Critical CSS Rule"
 msgstr "Añadir regla de CSS crítico"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:182
+#: classes/critcss-inc/admin_settings_rules.js.php:187
 msgid "Loading critical CSS..."
 msgstr "Cargando CSS crítico…"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:171
+#: classes/critcss-inc/admin_settings_rules.js.php:176
 msgid "Edit Critical CSS Rule"
 msgstr "Editar regla de CSS crítico"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:106
+#: classes/critcss-inc/admin_settings_rules.js.php:111
 msgid "Delete All"
 msgstr "Borrar todas"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:75
+#: classes/critcss-inc/admin_settings_rules.js.php:80
 msgid "Remove"
 msgstr "Eliminar"
 
-#: classes/critcss-inc/admin_settings_rules.js.php:75
+#: classes/critcss-inc/admin_settings_rules.js.php:80
 msgid "Edit"
 msgstr "Editar"
 
@@ -252,20 +252,20 @@ msgstr "Etiqueta condicional"
 msgid "<strong>CAUTION! Only use debug mode on production/live environments for ad-hoc troubleshooting and remember to turn it back off after</strong>, as this generates a lot of log-data.<br />Check the box above to enable Autoptimize CriticalCSS Power-Up debug mode. It provides debug facilities in this screen, to the browser console and to this file: "
 msgstr "<strong>¡PRECAUCIÓN! Solo utiliza el modo de depuración en entornos de producción/directo para diagnósticos en vivo y recuerda después volver a desactivarlo</strong>, pues esto genera un montón de datos de registro.<br />Revisa la casilla de arriba para activar el modo de depuración de la mejora de CSS crítico de Autoptimize. Ofrece funcionalidades de depuración en esta pantalla, en la consola del navegador y en este archivo: "
 
-#: classes/critcss-inc/admin_settings_rules.js.php:246
+#: classes/critcss-inc/admin_settings_rules.js.php:251
 msgid "RULE VALIDATION ERROR!\\n\\nType based rules REQUIRES a minified critical CSS."
 msgstr "El tipo de ERROR DE VALIDACIÓN DE REGLA!\\n\\nbasado en reglas REQUIERE un CSS crítico minimizado."
 
-#: classes/critcss-inc/admin_settings_rules.js.php:244
+#: classes/critcss-inc/admin_settings_rules.js.php:249
 msgid "RULE VALIDATION ERROR!\\n\\nBased on your rule type, you SHOULD set a path or conditional tag."
 msgstr "ERROR DE VALIDACIÓN DE REGLA!\\n\\nbasado en  tu tipo de regla, DEBERÍAS establecer una ruta o etiqueta condicional."
 
-#: classes/critcss-inc/admin_settings_rules.js.php:226
-#: classes/critcss-inc/admin_settings_rules.js.php:365
+#: classes/critcss-inc/admin_settings_rules.js.php:231
+#: classes/critcss-inc/admin_settings_rules.js.php:370
 msgid "For path based rules, paste your specific and minified critical CSS here or leave this empty to fetch it from criticalcss.com and hit submit to save. If you want to create a rule to exclude from critical CSS injection, enter \\\"none\\\""
 msgstr "Para reglas basadas en rutas, pega aquí tu CSS crítico específico y minimizado o deja esto vacío para recuperarlo desde criticalcss.com y pulsa en enviar para guardar. Si quieres crear una regla para excluir de la inyección de CSS crítico introduce \\\"none\\\""
 
-#: classes/critcss-inc/admin_settings_rules.js.php:222
+#: classes/critcss-inc/admin_settings_rules.js.php:227
 msgid "For type based rules, paste your specific and minified critical CSS here and hit submit to save. If you want to create a rule to exclude from critical CSS injection, enter \\\"none\\\"."
 msgstr "Para reglas basadas en rutas, pega aquí tu CSS crítico específico y minimizado y pulsa en enviar para guardar. Si quieres crear una regla para excluir de la inyección de CSS crítico introduce \\\"none\\\""
 
@@ -508,19 +508,19 @@ msgstr "Regla del objetivo"
 msgid "Status"
 msgstr "Estado"
 
+#: classes/critcss-inc/admin_settings_rules.js.php:98
+#: classes/critcss-inc/admin_settings_rules.js.php:118
+#: classes/critcss-inc/admin_settings_rules.js.php:257
+#: classes/critcss-inc/admin_settings_rules.js.php:279
+#: classes/critcss-inc/admin_settings_rules.js.php:300
 #: classes/critcss-inc/admin_settings_queue.js.php:142
 #: classes/critcss-inc/admin_settings_queue.js.php:160
 #: classes/critcss-inc/admin_settings_queue.js.php:190
-#: classes/critcss-inc/admin_settings_rules.js.php:93
-#: classes/critcss-inc/admin_settings_rules.js.php:113
-#: classes/critcss-inc/admin_settings_rules.js.php:252
-#: classes/critcss-inc/admin_settings_rules.js.php:274
-#: classes/critcss-inc/admin_settings_rules.js.php:295
 msgid "Cancel"
 msgstr "Cancelar"
 
+#: classes/critcss-inc/admin_settings_rules.js.php:93
 #: classes/critcss-inc/admin_settings_queue.js.php:137
-#: classes/critcss-inc/admin_settings_rules.js.php:88
 msgid "Delete"
 msgstr "Borrar"
 
@@ -649,14 +649,14 @@ msgstr "Por favor, introduce aquí tu clave API de criticalcss.com"
 msgid "API key provided by your host/ WordPress administrator, no need to enter anything here. In case of problems with the API key, contact your host/ WordPress administrator."
 msgstr "Clave API facilitada por el administrador de tu servidor/WordPress, no es necesario introducir nada aquí. En caso de problemas con la clave API contacta con el administrador de tu servidor/WordPress."
 
-#: classes/critcss-inc/admin_settings_queue.php:56
 #: classes/critcss-inc/admin_settings_rules.php:169
+#: classes/critcss-inc/admin_settings_queue.php:56
 msgid "Click the side arrow to toggle instructions"
 msgstr "Haz clic en la flecha de al lado para mostrar las instrucciones"
 
 #: classes/critcss-inc/admin_settings_key.php:48
-msgid "Enter your <a href=\"https://criticalcss.com/account/api-keys?aff=1\" target=\"_blank\">criticalcss.com</a> API key above. The key is revalidated every time a new job is sent to it.<br />To obtain your API key, go to <a href=\"https://criticalcss.com/account/api-keys?aff=1\" target=\"_blank\">criticalcss.com</a> > Account > API Keys.<br />Requests to generate a critical CSS via the API are priced at £5 per domain per month.<br /><strong>Not sure yet? With the <a href=\"https://criticalcss.com/faq/?aff=1#trial\" target=\"_blank\">30 day free trial</a>, you have nothing to lose!</strong>"
-msgstr "Introduce arriba tu clave API de <a href=\"https://criticalcss.com/account/api-keys?aff=1\" target=\"_blank\">criticalcss.com</a>. La clave se revalida cada vez que se envía un nuevo trabajo.<br />Para conseguir tu clave API ve a <a href=\"https://criticalcss.com/account/api-keys?aff=1\" target=\"_blank\">criticalcss.com</a> > Account > API Keys.<br />Las peticiones para generar CSS crítico desde la API valen £5 por dominio y mes.<br /><strong>¿Aún no estás seguro? ¡Con la <a href=\"https://criticalcss.com/faq/?aff=1#trial\" target=\"_blank\">prueba gratuita de 30 días</a> no tienes nada que perder!</strong>"
+msgid "Enter your <a href=\"https://criticalcss.com/account/api-keys?aff=1\" target=\"_blank\">criticalcss.com</a> API key above. The key is revalidated every time a new job is sent to it.<br />To obtain your API key, go to <a href=\"https://criticalcss.com/account/api-keys?aff=1\" target=\"_blank\">criticalcss.com</a> > Account > API Keys.<br />Requests to generate a critical CSS via the API are priced at £5 per domain per month.<br /><strong>Not sure yet? With the <a href=\"https://criticalcss.com/faq/?aff=1#trial\" target=\"_blank\">30 day money back guarantee</a>, you have nothing to lose!</strong>"
+msgstr "Introduce arriba tu clave de la API de <a href=\"https://criticalcss.com/account/api-keys?aff=1\" target=\"_blank\">criticalcss.com</a>. La clave se revalida cada vez que se envía un nuevo trabajo.<br />Para conseguir tu clave de la API, ve a <a href=\"https://criticalcss.com/account/api-keys?aff=1\" target=\"_blank\">criticalcss.com</a> > Account > API Keys.<br />Las peticiones para generar CSS crítico desde la API valen 5 £ al mes por dominio.<br /><strong>¿Aún no estás seguro? ¡Con la <a href=\"https://criticalcss.com/faq/?aff=1#trial\" target=\"_blank\">devolución garantizada del dinero de 30 días</a> no tienes nada que perder!</strong>"
 
 #: classes/autoptimizeCriticalCSSSettings.php:151
 msgid "WordPress cron (for task scheduling) seems to be disabled. Have a look at <a href=\"https://wordpress.org/plugins/autoptimize-criticalcss/faq/\" target=\"_blank\">the FAQ</a> or the info in the Job Queue instructions if all jobs remain in \"N\" status and no rules are created."
@@ -688,8 +688,8 @@ msgstr "Precarga de peticiones específicas <em>(usuarios avanzados)</em>"
 msgid "includes %1$sdisplay:swap%2$s."
 msgstr "incluye %1$sdisplay:swap%2$s."
 
-#: classes/autoptimizeCriticalCSSSettings.php:47
 #: classes/critcss-inc/admin_settings_explain.php:15
+#: classes/autoptimizeCriticalCSSSettings.php:47
 msgid "Critical CSS"
 msgstr "CSS crítico"
 
@@ -843,7 +843,7 @@ msgid "<strong>Questions</strong>? Have a look at the %1$sShortPixel FAQ%2$s!"
 msgstr "¿<strong>Preguntas</strong>? ¡Dale un vistazo a las %1$sFAQ de ShortPixel%2$s!"
 
 #. Translators: the URL added points to the Autopmize Extra settings.
-#: classes/autoptimizeMain.php:663
+#: classes/autoptimizeMain.php:669
 msgid "Did you know Autoptimize includes on-the-fly image optimization (with support for WebP) and CDN via ShortPixel? Check out the %1$sAutoptimize Image settings%2$s to activate this option."
 msgstr "¿Sabías que Autoptimize incluye optimización de imágenes al vuelo (compatible con WebP) y CDN a través de ShortPixel? Echa un vistazo a los %1$sajustes extra de Autoptimize%2$s para activar esta opción."
 
@@ -1070,7 +1070,7 @@ msgid "Your Autoptimize cache might not have been purged successfully, please ch
 msgstr "Puede que la caché de Autoptimize no haya sido vaciada correctamente, por favor, compruébalo en la <a href=%s>página de ajustes de Autoptimize</a>."
 
 #. Translators: %s is the cache directory location.
-#: classes/autoptimizeMain.php:642
+#: classes/autoptimizeMain.php:648
 msgid "Autoptimize cannot write to the cache directory (%s), please fix to enable CSS/ JS optimization!"
 msgstr "Autoptimize no puede escribir en el directorio de caché (%s), por favor, ¡soluciona esto para activar la optimización de CSS/ JS!"
 
@@ -1193,8 +1193,8 @@ msgid "WordPress"
 msgstr "WordPress"
 
 #. Plugin Name of the plugin
-#: classes/autoptimizeCacheChecker.php:110 classes/autoptimizeToolbar.php:79
-#: classes/autoptimizeConfig.php:467
+#: classes/autoptimizeToolbar.php:79 classes/autoptimizeConfig.php:467
+#: classes/autoptimizeCacheChecker.php:110
 msgid "Autoptimize"
 msgstr "Autoptimize"
 
@@ -1267,9 +1267,9 @@ msgstr "Tecnología web"
 msgid "Save Changes and Empty Cache"
 msgstr "Guardar cambios y vaciar la caché"
 
-#: classes/autoptimizeImages.php:1120
+#: classes/autoptimizeImages.php:1120 classes/autoptimizeExtra.php:580
+#: classes/autoptimizeConfig.php:435
 #: classes/autoptimizeCriticalCSSSettings.php:283
-#: classes/autoptimizeExtra.php:580 classes/autoptimizeConfig.php:435
 msgid "Save Changes"
 msgstr "Guardar cambios"
 
@@ -1294,17 +1294,17 @@ msgid "If your scripts break because of a JS-error, you might want to try this."
 msgstr "Si los scripts se interrumpen debido a algún error de JavaScript, es posible que desees probar con esta opción."
 
 #: classes/autoptimizeImages.php:999 classes/autoptimizePartners.php:141
-#: classes/autoptimizeCriticalCSSSettings.php:112
 #: classes/autoptimizeExtra.php:492 classes/autoptimizeConfig.php:89
 #: classes/autoptimizeConfig.php:191
+#: classes/autoptimizeCriticalCSSSettings.php:112
 msgid "Autoptimize Settings"
 msgstr "Ajustes de Autoptimize"
 
-#: classes/autoptimizeMain.php:656
+#: classes/autoptimizeMain.php:662
 msgid "Autoptimize has just been updated. Please <strong>test your site now</strong> and adapt Autoptimize config if needed."
 msgstr "Autoptimize acaba de actualizarse. Por favor, <strong>haz una prueba de tu sitio</strong> y adapta la configuración de Autoptimize si fuese necesario."
 
-#: classes/autoptimizeMain.php:649
+#: classes/autoptimizeMain.php:655
 msgid "Thank you for installing and activating Autoptimize. Please configure it under \"Settings\" -> \"Autoptimize\" to start improving your site's performance."
 msgstr "Gracias por instalar y activar Autoptimize. Por favor, ve a \"Ajustes\" -> \"Autoptimize\" para empezar a mejorar el rendimiento de tu sitio."
 

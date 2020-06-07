@@ -20,20 +20,11 @@
             }
         }
         .entry-content{
-            h3, h2{
+            h3{
                 color: $dark-green;
                 text-transform: capitalize;
             }
         }
         
-    }
-}
-
-/**
-INDIVIDUAL POST STYLES
-**/
-.post__sick-policy{
-    img{
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
 }

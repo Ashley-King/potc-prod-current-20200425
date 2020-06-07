@@ -10,7 +10,6 @@ $dark-blue:#1e88bb;
 $pink: #f53a63;
 $light-pink:#ffb0b6;
 $orange:#ff8247;
-$light-orange: #fbc181;
 $light-purple: #e2bfdf;
 $text-color: #5f5f5f;
 $orange-overlay: rgba(255, 130, 71, .3);
@@ -35,9 +34,6 @@ body {
 }
 p, ul, li{
 	color: $text-color;
-}
-.text-md{
-	font-size: 1.25rem;
 }
 ul, .menu {
 	list-style: none !important; /* Remove default bullets */
@@ -151,9 +147,7 @@ a{
 	color: $text-color;
 }
 
-.section{
-	margin-bottom:0;
-}
+
 /* ## Entry Meta
 --------------------------------------------- */
 
@@ -300,6 +294,16 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 	display:none !important;
 }
 
+picture.aligncenter{
+	display:flex !important;
+	justify-content: center;
+	img{
+		text-align: center;
+		-webkit-box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
+		-moz-box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
+		box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
+	}
+}
 
 /* MOBILE  */
 
