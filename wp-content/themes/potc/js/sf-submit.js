@@ -68,8 +68,8 @@ jQuery(document).ready(function($){
             data: formData,
             success: function (data) {
                 
-            //   window.location.href='https://pediatricotcourses.com/thank-you';
-              console.log(data)
+              window.location.href='https://pediatricotcourses.com/thank-you';
+            //   console.log(data)
             }
           });
     }
