@@ -1,12 +1,12 @@
 .blog{
     .archive-title{
-        color: $text-color;
+        color: $dark-green;
         text-align:center;
         text-transform: uppercase;
     }
     .entry-title{
         a{
-            color: $text-color;
+            color: $dark-green;
             &:hover{
                 color: $medium-green;
             }
