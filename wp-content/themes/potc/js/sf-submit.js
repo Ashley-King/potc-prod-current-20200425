@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
     $('.form-submit').click(function(e){
         e.preventDefault();
         formData = $('#1xq8nm').serialize();
-         console.log(formData);
+        //  console.log(formData);
         // formData = JSON.stringify(formData);
         
         if(!isValidEmail()){
