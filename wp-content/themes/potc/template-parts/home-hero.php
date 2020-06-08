@@ -26,7 +26,7 @@
                 <!-- no botz please -->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input tabindex="-1"
                         autocomplete="off" name="a_password" type="text" value="" /></div>
-                        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                        <!-- <input type="hidden" name="recaptcha_response" id="recaptchaResponse"> -->
                 <button class="form-submit" type="submit">Sign Me Up!</button>
 
             </form>

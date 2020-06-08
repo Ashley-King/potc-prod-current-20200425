@@ -97,8 +97,10 @@ function potc_body_class( $classes ) {
 function custom_scripts() {
 	wp_register_script('custom_script', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'),'1.', true);
 	wp_enqueue_script('custom_script');
-	wp_register_script('ml_script', get_stylesheet_directory_uri() . '/js/ml-submit.js', array('jquery'),'1.', true);
-	wp_enqueue_script('ml_script');
+	// wp_register_script('ml_script', get_stylesheet_directory_uri() . '/js/ml-submit.js', array('jquery'),'1.', true);
+	// wp_enqueue_script('ml_script');
+	wp_register_script('sf_script', get_stylesheet_directory_uri() . '/js/sf-submit.js', array('jquery'),'1.', true);
+	wp_enqueue_script('sf_script');
 
 }
 	  
