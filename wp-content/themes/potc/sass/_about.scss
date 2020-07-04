@@ -1,5 +1,19 @@
 
+.about_page{
+    .overlay-light {
 
+        background-color: $blue-overlay;
+
+    }
+    h1{
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .about__section__text{
+        padding-top: 32px;
+    }
+}
 
 
 /* MOBILE  */

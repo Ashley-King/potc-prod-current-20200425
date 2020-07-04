@@ -9,10 +9,10 @@
         
         <div class="home__hero__form__text--top">
             <h1>It's time to focus on <span>YOUR</span> potential for a change!</h1>
-            <h3 class="top-text">Get the best ideas for <span>pediatric therapy</span>, <span>business</span> and <span>life</span>
-                delivered to your inbox every week.</h3>
+            <!-- <h3 class="top-text">Get the best ideas for <span>pediatric therapy</span>, <span>business</span> and <span>life</span>
+                delivered to your inbox every week.</h3> -->
             <h3 class="bottom-text">Try our <a href="/tbl">TBL Newsletter</a> and get <span>The Ultimate Pediatric Private Practice
-                    Checklist</span> for FREE. Unsubscribe easily anytime.</h3>
+                    Checklist</span> for FREE.</h3>
         </div><!-- home__hero__form__text--top -->
         <div class="home__hero__form__form">
             <!-- <form id="1xq8nm" class="sendfox-form" action="https://sendfox.com/form/10zgnm/1xq8nm" method="post"
@@ -38,8 +38,12 @@
 
         </div> -->
         <!-- home__hero__form__text--bottom -->
+            <a class="home__hero__blog-link" href="/blog"> Check Out Our Blog</a>
     </div><!-- home__hero__form -->
+    
     <div class="home__hero__image">
+    <div class="home__hero__image__overlay"></div>
+    <!-- <a class="home__hero__blog-link" href="/blog"> Check Out Our Blog</a> -->
         <img class="" src="/wp-content/themes/potc/images/girl-smiling-quarter-cropped.png" alt="little girl smiling" />
     </div> <!-- home__hero__image -->
 

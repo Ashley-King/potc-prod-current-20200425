@@ -1,85 +1,147 @@
-.home__hero__logo{
+.home{
+    .home__quote{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .home__boss-section{
+        .smaller-text{
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.home__hero__logo {
     width: 150px;
     margin: 20px auto;
-    a{
-        border-bottom:none;
-        &:hover{
+
+    a {
+        border-bottom: none;
+
+        &:hover {
             border-bottom: none;
         }
     }
 }
-.home__hero{
+
+.home__hero {
     display: flex;
     justify-content: center;
-    margin:0 auto;
+    margin: 0 auto;
     padding-top: 10px;
     
-    .home__hero__form{
+    .home__hero__form {
         display: flex;
         flex-direction: column;
         width: 50%;
         padding: 50px 0px 50px 0px;
-        
-        .home__hero__form__text--top{
-            h1{
+
+        .home__hero__blog-link {
+            padding-top: 30px;
+        }
+
+        .home__hero__form__text--top {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+
+            h1 {
                 color: $orange;
-                span{
+
+                span {
                     font-weight: 700;
                 }
             }
-            .top-text{
+
+            .top-text {
                 color: $text-color;
                 font-weight: 300;
                 max-width: 95%;
-                
-                span{
+
+                span {
                     font-weight: 500;
                 }
             }
-            .bottom-text{
+
+            .bottom-text {
                 margin-bottom: 15px;
                 color: $text-color;
-                font-weight:300;
-                max-width: 95%;
-                span{
+                font-weight: 300;
+                // max-width: 95%;
+
+                span {
                     color: $dark-green;
                     font-weight: 500;
                 }
             }
         }
-        .home__hero__form__form{
-            input{
+
+        .home__hero__form__form {
+            input {
                 width: 90%;
                 margin-bottom: 10px;
             }
-            button{
+
+            button {
                 background-color: $orange;
                 text-transform: uppercase;
                 font-weight: 500;
                 width: 90%;
-                &:hover{
+
+                &:hover {
                     background-color: $dark-green;
                 }
             }
+
         }
-        .home__hero__form__text--bottom{
+
+        .home__hero__form__text--bottom {
             padding-top: 25px;
-            p{
+
+            p {
                 color: $text-color;
-                font-weight:300;
+                font-weight: 300;
                 max-width: 90%;
-                span{
+
+                span {
                     font-weight: 500;
                 }
             }
         }
     }
-    .home__hero__image{
+
+    .home__hero__image {
         display: flex;
         width: 35%;
         justify-content: center;
-        img{
-            height: 665px;
+        position: relative;
+
+        // .home__hero__blog-link {
+
+        //     z-index: 20;
+        //     display: block;
+        //     position: absolute;
+        //     top: 40%;
+        //     color: white;
+        //     text-decoration: none;
+        //     font-size: 3rem;
+        // }
+
+        // .home__hero__image__overlay {
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(39, 118, 159, .5);
+        // }
+
+        img {
+            height: auto;
+            width: 80%;
         }
     }
 
@@ -89,49 +151,89 @@
     MOBILE
 */
 
-@media(max-width: 940px){
-    .home__hero{
+@media(max-width: 1024px) {
+    .home__hero {
         flex-direction: column;
-        align-items:center;
-        .home__hero__form{
+        align-items: center;
+
+        .home__hero__form {
             width: 100%;
             margin: 0 auto;
-            padding-top:0;
-            padding-bottom: 10px;
+            padding-top: 0;
+            padding-bottom: 50px;
+
+            .home__hero__blog-link {
+                display: none;
+            }
+
             .home__hero__form__text--top {
-                h1{
-                    text-align:center;
-                    max-width: 90%;
-                    margin:0 auto;
+                max-width: 80%;
+                h1 {
+                    text-align: left;
+                    width: 90%;
+                    margin: 0 auto 20px auto;
+                    font-size: 3rem;
                 }
-                .top-text{
-                    max-width: 90%;
-                    margin:10px auto;
+
+                .top-text {
+                    
+                    margin: 10px auto;
                 }
-                .bottom-text{
-                    max-width: 90%;
-                    margin:0 auto 10px auto;
+
+                .bottom-text {
+                    width: 90%;
+                    // max-width: 90%;
+                    margin: 0 auto 20px auto;
                 }
             }
-            
-            .home__hero__form__form{
+
+            .home__hero__form__form {
                 width: 90%;
                 margin: 0 auto;
-                input{
+
+                input {
                     width: 100%;
-                    
+
                 }
-                button{
+
+                button {
                     width: 100%;
                 }
             }
         }
-        .home__hero__image{
-            width: 100%;
-            img{
-                height: 500px;
-            }
+
+        .home__hero__image {
+            display: none;
+            // width: 100%;
+
+            // img {
+            //     width: 30%;
+            // }
         }
     }
-    
+
+}
+
+@media(max-width: 730px){
+    .home__hero .home__hero__form .home__hero__form__text--top h1{
+        font-size: 2rem;
+    }
+    .home__hero .home__hero__form .home__hero__form__text--top .bottom-text{
+        font-size: 1.4rem;
+        width: 80%;
+    }
+
+}
+
+@media(max-width: 650px){
+    .home__hero .home__hero__form .home__hero__form__text--top{
+        width: 100%;
+    }
+    .home__hero .home__hero__form .home__hero__form__text--top h1{
+        width: 100%;
+    }
+    .home__hero .home__hero__form .home__hero__form__text--top .bottom-text{
+        
+        width: 100%;
+    }
 }

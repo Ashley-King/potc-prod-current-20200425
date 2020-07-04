@@ -5,8 +5,8 @@ $dark-green: #53beb4;
 // $medium-green: #2fc3b5;
 $medium-green: #97D8D1;
 $light-green: #def3ec;
-$blue-overlay: rgba(39, 118, 159, 0.6);
-$dark-blue:#1e88bb;
+$blue-overlay: rgba(39, 118, 160, 0.6);
+$dark-blue:#2776a0;
 $pink: #f53a63;
 $light-pink:#ffb0b6;
 $orange:#ff8247;
@@ -298,6 +298,11 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 /* RECAPTHCA  */
 .grecaptcha-badge{
 	display:none !important;
+}
+img.aligncenter {
+    text-align: center;
+    -webkit-box-shadow: -1px 2px 5px -1px #5e5e5e;
+    box-shadow: -1px 2px 5px -1px #5e5e5e;
 }
 
 picture.aligncenter{
