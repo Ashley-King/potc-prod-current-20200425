@@ -1,0 +1,8 @@
+(function(modules){var installedModules={};function __webpack_require__(moduleId){if(installedModules[moduleId]){return installedModules[moduleId].exports}
+var module=installedModules[moduleId]={i:moduleId,l:!1,exports:{}};modules[moduleId].call(module.exports,module,module.exports,__webpack_require__);module.l=!0;return module.exports}
+__webpack_require__.m=modules;__webpack_require__.c=installedModules;__webpack_require__.d=function(exports,name,getter){if(!__webpack_require__.o(exports,name)){Object.defineProperty(exports,name,{configurable:!1,enumerable:!0,get:getter})}};__webpack_require__.r=function(exports){Object.defineProperty(exports,'__esModule',{value:!0})};__webpack_require__.n=function(module){var getter=module&&module.__esModule?function getDefault(){return module['default']}:function getModuleExports(){return module};__webpack_require__.d(getter,'a',getter);return getter};__webpack_require__.o=function(object,property){return Object.prototype.hasOwnProperty.call(object,property)};__webpack_require__.p="";return __webpack_require__(__webpack_require__.s="./blocks/frontend.js")})({"./blocks/frontend.js":
+/*!****************************!*\
+  !*** ./blocks/frontend.js ***!
+  \****************************/
+/*! no static exports found */
+(function(module,exports){eval("// Nothing to see here for now.//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ibG9ja3MvZnJvbnRlbmQuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9ibG9ja3MvZnJvbnRlbmQuanM/YjRjZCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBOb3RoaW5nIHRvIHNlZSBoZXJlIGZvciBub3cuIl0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./blocks/frontend.js\n")})})
