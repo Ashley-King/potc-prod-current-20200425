@@ -7,7 +7,17 @@
     .site-container:not(.boxed) .content-no-sidebars .section {
         overflow: visible !important;
     }
-
+    .home__optin{
+        margin-bottom: 0 !important;
+        .height-md{
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+        input{
+            margin-bottom: 10px;
+            color: $text-color;
+        }
+    }
     .home__boss-section {
         margin-bottom: 0 !important;
 

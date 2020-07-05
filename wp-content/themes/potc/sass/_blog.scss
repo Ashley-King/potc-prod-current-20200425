@@ -1,8 +1,11 @@
 .blog{
-    .archive-title{
-        color: $dark-green;
+    .banner-title, .archive-title{
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
         text-align:center;
-        text-transform: uppercase;
+        // text-transform: uppercase;
+        
     }
     .entry-title{
         a{
